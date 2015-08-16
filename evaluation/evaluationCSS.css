@@ -52,3 +52,8 @@ table td{
 	border: 1px solid #D4D4D4;
 	height: 100px;
 }
+
+.evaluation .typeDetail{
+	display: none;
+	position: absolute;
+}
