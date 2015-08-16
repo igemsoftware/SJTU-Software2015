@@ -21,6 +21,8 @@ var search = function(){
 		searchKeyWord: key, 
 		searchType: type
 	},	function(data){
-		console.log(data)
+		if (data.length > 0){
+			$(".searchResult").html(data)
+		}
 	})
 }
