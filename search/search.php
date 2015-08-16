@@ -1,11 +1,8 @@
 <?php
-	$keyword = trim($_POST['searchKeyWord']);
+	$keyword = strtolower(trim($_POST['searchKeyWord']));
 	$type = trim($_POST['searchType']);
 	exec("perl count_v2.pl $keyword $type", $out);
 	$result = "";
-	//foreach ($out as $value) {
-	//	echo $value."\n";
-	//}
 	$number = count($out);
 	if ($number <= 3){
 		$result = "<tr><td>No Results</td></tr>";
