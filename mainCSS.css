@@ -1,0 +1,59 @@
+.mainTitle{
+	text-align: left;
+	font-size: 40px;
+}
+
+.mainNav{
+	width: 80%;
+	position: relative;
+	margin: auto;
+	background-color: #D4D4D4;
+}
+
+li.am-active > a.mainNavItem{
+	color: #D4D4D4;
+	background-color: #8C8C8C;
+}
+
+li.am-active > a.mainNavItem:hover{
+	color: #D4D4D4;
+	background-color: #8C8C8C;
+}
+
+li.am-active > a.mainNavItem:visited{
+	color: #D4D4D4;
+	background-color: #8C8C8C;
+}
+
+li > a.mainNavItem{
+	color: #8C8C8C;
+	background-color: #D4D4D4
+}
+
+li > a.mainNavItem:hover{
+	color: #D4D4D4;
+	background-color: #8C8C8C
+}
+
+.helpButton{
+	position: absolute;
+	right: 10%;
+	margin-top: 20px;
+	background-color: #D4D4D4;
+	color: #8C8C8C;
+	transition:none;
+}
+
+.helpButton:hover{
+	color: #D4D4D4;
+	background-color: #8C8C8C;
+}
+
+
+
+
+
+
+
+
+

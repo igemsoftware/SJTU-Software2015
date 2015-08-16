@@ -1,0 +1,36 @@
+div.search .searchInputSection{
+	width: 60%;
+	position:relative;
+	margin: auto;
+	top: 270px;
+}
+
+div.search .searchButton{
+	width: 50%;
+	margin-top: 10px;
+
+}
+
+div.search .button{
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8C8C8C', endColorstr='#D4D4D4'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#8C8C8C), to(#D4D4D4)); /* for webkit browsers */
+	background: -moz-linear-gradient(top, #8C8C8C, #D4D4D4);/* for firefox 3.6+ */
+}
+
+div.search .buttonClick, div.search .button:hover{
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5F9EA0', endColorstr='#7AC5CD');
+	background: -webkit-gradient(linear, left top, left bottom, from(#5F9EA0), to(#7AC5CD));
+	background: -moz-linear-gradient(top, #5F9EA0, #7AC5CD);
+}
+
+div.search .resultSection{
+	width: 80%;
+	position:relative;
+	margin: auto;
+	top:400px;
+}
+
+div.search th.tableHeader{
+	text-align: center;
+	background-color: #D4D4D4;
+}

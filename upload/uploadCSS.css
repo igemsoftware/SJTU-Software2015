@@ -1,0 +1,84 @@
+.upload{
+	width: 50%;
+	position: relative;
+	margin: auto;
+}
+
+div.upload button{
+	filter: rogid:DXImageTransform.Microsoft.gradient(startColorstr='#5F9EA0', endColorstr='#7AC5CD');
+	background: -webkit-gradient(linear, left top, left bottom, from(#5F9EA0), to(#7AC5CD));
+	background: -moz-linear-gradient(top, #5F9EA0, #7AC5CD);
+	transition: none;
+}
+
+div.upload .description{
+	margin-top:20px;
+}
+
+div.upload .description .cleanAllButton{
+	float: right;
+}
+
+div.upload .description .shortDes{
+	padding-top: 22px;
+}
+
+div.upload .formGroupLabel{
+	text-align: left;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #8C8C8C;	
+}
+
+div.upload .formGroupInput{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+div.upload .description .submitButton{
+	padding-right: 0px;
+}
+
+div.upload .parameters{
+	margin-top: 50px
+}
+
+div.upload .parameters .RemoveButton{
+	width: 22.5%;
+	float: right;
+}
+
+div.upload .parameters .AddButton{
+	width: 15%;
+	float: right;
+	margin-right: 18px
+}
+
+div.upload .parameters .parameterText{
+	padding-top: 22px;
+	margin-bottom: 0px
+}
+
+div.upload .parameters .tips{
+	margin-top: 2px;
+	font-size: 14px;
+	font-style: italic;
+	color: #5F9EA0
+}
+
+div.upload .submit{
+	margin-top: 80px;
+}
+
+div.upload .submit .BBKButton{
+	float: right;
+	margin-right: 18px
+}
+
+div.upload .submit .RegistryButton{
+	float: right;
+}
+
+
+
+
