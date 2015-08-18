@@ -6,7 +6,7 @@ use DBI;
 my $host = "localhost";
 my $dbname = "base";
 my $username = "root";
-my $password = "superjjj2486";
+my $password = "huangwenze";
 
 my $object = $ARGV[0];
 my $type = $ARGV[1];
@@ -37,9 +37,7 @@ while(my $Can = $sth1->fetchrow_hashref()) {
 		@cand = (@cand,[$Can->{'Bri_id'},$Can->{'Score'}]);
 	}
 }
-for($i=0;$i<=$#cand;$i++){
-	print $cand[$i][0],"\t",$cand[$i][1],"\n";
-}
+
 
 for($i=0;$i<=$#cand;$i++){
 	$cscore = 0;

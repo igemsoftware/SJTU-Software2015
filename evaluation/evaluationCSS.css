@@ -48,6 +48,16 @@ table td{
 	font-size: 12px;
 }
 
+.evaluation .cancelButton{
+	display: none;
+	position: absolute;
+}
+.evaluation .functionInput{
+	width: 300px;	
+	display: none;
+	position: absolute;
+}
+
 .evaluation .idHistorySection{
 	height: 100px;
 }

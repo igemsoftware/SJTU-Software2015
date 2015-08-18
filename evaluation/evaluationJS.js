@@ -1,5 +1,7 @@
 var liNumber = 0
 
+var functionInput = $(".functionInput")
+
 var typeDataSource = [
 	["Cell", "Most parts in the Registry function in E. coli."],
 	["DNA", "DNA parts provide functionality to the DNA itself. DNA parts include cloning sites, scars, primer binding sites, spacers, recombination sites, conjugative tranfer elements, transposons, origami, and aptamers."],
@@ -42,6 +44,7 @@ $(document).ready(function(){
 	})
 
 	typeDetailPanel()
+	cancelSelected()
 })
 
 var beginDrag = function(ev){
@@ -56,31 +59,60 @@ var allowDrop = function(ev){
 var drop = function(ev){
 	ev.preventDefault()
 	var data = ev.dataTransfer.getData("image")
-	var target = $(".inputSection").children().eq(liNumber)
+	var target = $(".inputSection").children()
 	var width = target.css("width")
-	if (liNumber < 8) {
-		var image = document.getElementById(data)
-		var newImage = image.cloneNode(true)
-		target.append(image)
-		$(image).removeClass("tableIcon")
-		$(image).addClass("selectedIcon")
-		$(".iconSection").children().eq(parseInt(data) % 18).children().eq(parseInt(data) > 17).children().append(newImage)
-		$(".inputSection .selectedIcon").css({
-			"width": width,
-			"vertical-align": "middle",
-			"margin-top": "30px"
-		})
-		liNumber = liNumber + 1
+	for (var num = 0; num < target.length; ++num){
+		if (target.eq(num).children().length == 0) {
+			var image = document.getElementById(data)
+			var newImage = image.cloneNode(true)
+			target.eq(num).append(image)
+			$(image).removeClass("tableIcon")
+			$(image).addClass("selectedIcon")
+			$(".iconSection").children().eq(parseInt(data) % 18).children().eq(parseInt(data) > 17).children().append(newImage)
+			$(".inputSection .selectedIcon").css({
+				"width": width,
+				"vertical-align": "middle",
+				"margin-top": "50px"
+			})
+
+			$(".inputField").eq(num).append(functionInput)
+			$(".functionInput").show()
+			$(".functionInput").css({
+				"display": "table",
+			})
+			$(".tableIcon").attr("draggable", "false")
+
+			break;
+		}
 	}
 }
 
+var cancelSelected = function(){
+	var target = $(".cancelButton")
+	$(".evaluation").delegate(".cancelButton", "click", function(){
+		$(this).parent().children().remove()
+		$(".tableIcon").attr("draggable", "true")	
+	})
+
+	$(".evaluation").delegate(".inputField", "mouseover", function(){
+		if ($(this).children().length > 0){
+			$(this).prepend(target)
+			target.show()
+		}
+	})
+
+	$(".evaluation").delegate(".inputField", "mouseout", function(){
+		target.hide()
+	})
+}
+
 var typeDetailPanel = function(){
+	var target = $(".typeDetail")
 	$(".evaluation").delegate(".tableIcon", "mouseover", function(){
 		var id = $(this).attr("id")
 		var top = ((id % 18) + 1) * $(".iconSection td").outerHeight()
 		var width = $(".iconSection td").outerWidth() * 3
 		
-		var target = $(".typeDetail")
 		$(".typeDetail .am-panel-title").text(typeDataSource[id][0])
 		$(".typeDetail .am-panel-bd").text(typeDataSource[id][1])
 		target.css({
@@ -93,7 +125,7 @@ var typeDetailPanel = function(){
 	})
 
 	$(".evaluation").delegate(".tableIcon", "mouseout", function(){
-		$(".typeDetail").hide()
+		target.hide()
 	})
 }
 
