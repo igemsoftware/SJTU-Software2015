@@ -91,6 +91,13 @@ var drop = function(ev){
 var beginAdvise = function(){
 	$(".functionInput").remove()
 	$(".tableIcon").attr("draggable", "true")
+	$.post("evaluation.php", {
+		type: "RBS",
+		userFunction: "coding",
+		id: ""
+	}, function(data){
+		
+	})
 }
 
 var cancelSelected = function(){
