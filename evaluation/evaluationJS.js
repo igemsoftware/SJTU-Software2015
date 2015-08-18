@@ -80,11 +80,17 @@ var drop = function(ev){
 			$(".functionInput").css({
 				"display": "table",
 			})
+			$(".functionInput button").click(beginAdvise)
 			$(".tableIcon").attr("draggable", "false")
 
 			break;
 		}
 	}
+}
+
+var beginAdvise = function(){
+	$(".functionInput").remove()
+	$(".tableIcon").attr("draggable", "true")
 }
 
 var cancelSelected = function(){
