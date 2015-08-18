@@ -41,29 +41,12 @@ $(document).ready(function(){
 		"ondrop": "drop(event)"
 	})
 
-	$(".evaluation").delegate(".tableIcon", "mouseover", function(){
-		var id = $(this).attr("id")
-		var top = ((id % 18) + 1) * $(".iconSection td").outerHeight()
-		var width = $(".iconSection td").outerWidth() * 3
-		
-		var target = $(".typeDetail")
-		$(".typeDetail .am-panel-title").text(typeDataSource[id][0])
-		$(".typeDetail .am-panel-bd").text(typeDataSource[id][1])
-		target.css({
-			"margin-top": top,
-			"width": width,
-			"margin-left": -1 * (id <= 17) * width / 3,
-		})
-		target.show()
-	})
-
-	$(".evaluation").delegate(".tableIcon", "mouseout", function(){
-		$(".typeDetail").hide()
-	})
+	typeDetailPanel()
 })
 
 var beginDrag = function(ev){
 	ev.dataTransfer.setData("image", ev.target.id)
+	$(".typeDetail").hide()
 }
 
 var allowDrop = function(ev){
@@ -79,14 +62,39 @@ var drop = function(ev){
 		var image = document.getElementById(data)
 		var newImage = image.cloneNode(true)
 		target.append(image)
+		$(image).removeClass("tableIcon")
+		$(image).addClass("selectedIcon")
 		$(".iconSection").children().eq(parseInt(data) % 18).children().eq(parseInt(data) > 17).children().append(newImage)
-		$(".inputSection .tableIcon").css({
+		$(".inputSection .selectedIcon").css({
 			"width": width,
 			"vertical-align": "middle",
 			"margin-top": "30px"
 		})
 		liNumber = liNumber + 1
 	}
+}
+
+var typeDetailPanel = function(){
+	$(".evaluation").delegate(".tableIcon", "mouseover", function(){
+		var id = $(this).attr("id")
+		var top = ((id % 18) + 1) * $(".iconSection td").outerHeight()
+		var width = $(".iconSection td").outerWidth() * 3
+		
+		var target = $(".typeDetail")
+		$(".typeDetail .am-panel-title").text(typeDataSource[id][0])
+		$(".typeDetail .am-panel-bd").text(typeDataSource[id][1])
+		target.css({
+			"margin-top": top,
+			"width": width,
+			"margin-left": -1 * (id <= 17) * width / 3,
+			"z-index": 1000
+		})
+		target.show()
+	})
+
+	$(".evaluation").delegate(".tableIcon", "mouseout", function(){
+		$(".typeDetail").hide()
+	})
 }
 
 
