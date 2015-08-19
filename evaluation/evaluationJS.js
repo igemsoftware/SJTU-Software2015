@@ -2,6 +2,8 @@ var liNumber = 0
 
 var functionInput = $(".functionInput")
 
+var idChoose = -1
+
 var typeDataSource = [
 	["Cell", "Most parts in the Registry function in E. coli."],
 	["DNA", "DNA parts provide functionality to the DNA itself. DNA parts include cloning sites, scars, primer binding sites, spacers, recombination sites, conjugative tranfer elements, transposons, origami, and aptamers."],
@@ -42,8 +44,13 @@ $(document).ready(function(){
 		"ondragover": "allowDrop(event)",
 		"ondrop": "drop(event)"
 	})
+	$("#idChooseAlert .am-modal-footer").css("display", "none")
 	$("#idChooseAlert").on("open.modal.amui", beginAdvise)
 	$("#idChooseAlert").on("close.modal.amui", completeAdvise)
+	$(".evaluation").delegate("input:radio", "change", function(){
+		idChoose = $(this).attr("value")
+		$("#idChooseAlert .am-modal-footer").fadeIn(200)
+	})
 
 	typeDetailPanel()
 	cancelSelected()
@@ -89,17 +96,27 @@ var drop = function(ev){
 }
 
 var beginAdvise = function(){
+	var field = $(".inputField").has(".functionInput")
+	var id = field.children(".selectedIcon").attr("id")
+	var type = typeDataSource[id][0]
+
+	var func = field.children(".functionInput").children("input").val()
+
+	var history = $(".idHistory").text().substr(12)
+	history = history.substring(0, history.length - 1)
+
 	$(".functionInput").remove()
 	$(".tableIcon").attr("draggable", "true")
 	$("#idChooseAlert .am-modal-hd").html("Waiting")
 	$("#idChooseAlert .am-modal-bd").html("Loading Data...")
+
 	$.post("evaluation.php", {
-		type: "RBS",
-		userFunction: "coding",
-		id: ""
+		type: type,
+		userFunction: func,
+		id: history
 	}, function(data){
 		if (data.length != "No results"){
-			$("#idChooseAlert .am-modal-hd").html("Please choose one id")
+			$("#idChooseAlert .am-modal-hd").html("Advised ID, please choose one: ")
 		}else{
 			$("#idChooseAlert .am-modal-hd").html("Warning")
 		}
@@ -107,7 +124,11 @@ var beginAdvise = function(){
 	})
 }
 var completeAdvise = function(){
-	console.log(123)
+	if (idChoose == -1){
+		$("#idChooseAlert .am-modal-hd").css("color", "red")
+	}
+	$(".idHistory").append(idChoose + "*")
+	idChoose = -1
 }
 
 

@@ -62,11 +62,6 @@ table td{
 	height: 100px;
 }
 
-.evaluation .idHistory{
-	position: absolute;
-	margin-top: 37.5px;
-}
-
 .evaluation li.inputField{
 	border: 1px solid #D4D4D4;
 	height: 100px;

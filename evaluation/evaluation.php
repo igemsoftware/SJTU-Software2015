@@ -23,7 +23,7 @@
 		arsort($dictionary);
 		$dictionary = array_slice($dictionary, 0, 5);
 		foreach ($dictionary as $key => $value) {
-			$result .= "<label class=\"am-radio\"><input type=\"radio\" name=\"radio1\" value=\"\" data-am-ucheck>".$key."&nbsp".$value."</label>";
+			$result .= "<label class=\"am-radio\"><input type=\"radio\" name=\"radio1\" value=\"".$key."\" data-am-ucheck>".$key."&nbsp".$value."</label>";
 		}
 	}
 	echo $result;
