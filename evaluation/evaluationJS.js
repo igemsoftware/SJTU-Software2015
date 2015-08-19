@@ -42,7 +42,6 @@ $(document).ready(function(){
 		"ondragover": "allowDrop(event)",
 		"ondrop": "drop(event)"
 	})
-
 	typeDetailPanel()
 	cancelSelected()
 })
@@ -91,12 +90,19 @@ var drop = function(ev){
 var beginAdvise = function(){
 	$(".functionInput").remove()
 	$(".tableIcon").attr("draggable", "true")
+	$("#idChooseAlert .am-modal-hd").html("Waiting")
+	$("#idChooseAlert .am-modal-bd").html("Loading Data...")
 	$.post("evaluation.php", {
 		type: "RBS",
 		userFunction: "coding",
 		id: ""
 	}, function(data){
-		
+		if (data.length != "No results"){
+			$("#idChooseAlert .am-modal-hd").html("Please choose one id")
+		}else{
+			$("#idChooseAlert .am-modal-hd").html("Warning")
+		}
+		$("#idChooseAlert .am-modal-bd").html(data)
 	})
 }
 
