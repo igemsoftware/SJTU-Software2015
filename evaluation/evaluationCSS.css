@@ -66,7 +66,6 @@ table td{
 	position: absolute;
 	margin-top: 37.5px;
 }
-
 .evaluation li.inputField{
 	border: 1px solid #D4D4D4;
 	height: 100px;
@@ -75,12 +74,5 @@ table td{
 .evaluation .typeDetail{
 	display: none;
 	position: absolute;
-}
-
-
-.evaluation .idRadio{
-	width: 50%;
-	position: relative;
-	margin: auto;
 }
 
