@@ -1,8 +1,6 @@
-var liNumber = 0
-
 var functionInput = $(".functionInput")
 
-var idChoose = -1
+var idChoose = "No Result"
 
 var typeDataSource = [
 	["Cell", "Most parts in the Registry function in E. coli."],
@@ -44,7 +42,6 @@ $(document).ready(function(){
 		"ondragover": "allowDrop(event)",
 		"ondrop": "drop(event)"
 	})
-	$("#idChooseAlert .am-modal-footer").css("display", "none")
 	$("#idChooseAlert").on("open.modal.amui", beginAdvise)
 	$("#idChooseAlert").on("close.modal.amui", completeAdvise)
 	$(".evaluation").delegate("input:radio", "change", function(){
@@ -109,33 +106,47 @@ var beginAdvise = function(){
 	$(".tableIcon").attr("draggable", "true")
 	$("#idChooseAlert .am-modal-hd").html("Waiting")
 	$("#idChooseAlert .am-modal-bd").html("Loading Data...")
+	$("#idChooseAlert .am-modal-footer").css("display", "none")
 
 	$.post("evaluation.php", {
 		type: type,
 		userFunction: func,
 		id: history
 	}, function(data){
-		if (data.length != "No results"){
+		if (data != "No results"){
 			$("#idChooseAlert .am-modal-hd").html("Advised ID, please choose one: ")
 		}else{
 			$("#idChooseAlert .am-modal-hd").html("Warning")
+			$("#idChooseAlert .am-modal-footer").fadeIn(200)
 		}
 		$("#idChooseAlert .am-modal-bd").html(data)
 	})
 }
 var completeAdvise = function(){
-	if (idChoose == -1){
-		$("#idChooseAlert .am-modal-hd").css("color", "red")
-	}
 	$(".idHistory").append(idChoose + "*")
-	idChoose = -1
+	idChoose = "No Result"
 }
 
 
 var cancelSelected = function(){
 	var target = $(".cancelButton")
 	$(".evaluation").delegate(".cancelButton", "click", function(){
-		$(this).parent().children().remove()
+		var field = $(this).parent()
+		var id = parseInt(field.attr("id"))
+		field.children().remove()
+		for (var i = id; field.siblings().eq(i).children().length != 0; ++i){
+			field.siblings().eq(i).children().remove()
+		}	
+		var index = 0
+		var originText = $(".idHistory").text()
+		for (var i = 0; i < id; ++i){
+			index = originText.indexOf('*', index)
+		}
+		if (id == 0){
+			$(".idHistory").text("History id: ")
+		}else{
+			$(".idHistory").text(originText.substring(0, index + 1))
+		}
 		$(".tableIcon").attr("draggable", "true")	
 	})
 
