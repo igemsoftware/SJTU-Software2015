@@ -104,7 +104,7 @@ var beginAdvise = function(){
 
 	$(".functionInput").remove()
 	$(".tableIcon").attr("draggable", "true")
-	$("#idChooseAlert .am-modal-hd").html("Waiting")
+	$("#idChooseAlert .am-modal-hd").html("Waiting")	
 	$("#idChooseAlert .am-modal-bd").html("Loading Data...")
 	$("#idChooseAlert .am-modal-footer").css("display", "none")
 
