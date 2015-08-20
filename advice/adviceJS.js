@@ -108,7 +108,7 @@ var beginAdvise = function(){
 	$("#idChooseAlert .am-modal-bd").html("Loading Data...")
 	$("#idChooseAlert .am-modal-footer").css("display", "none")
 
-	$.post("evaluation.php", {
+	$.post("advice.php", {
 		type: type,
 		userFunction: func,
 		id: history
