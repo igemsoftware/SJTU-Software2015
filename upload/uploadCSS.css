@@ -28,11 +28,13 @@ div.upload .formGroupLabel{
 	padding-left: 0px;
 	padding-right: 0px;
 	color: #8C8C8C;	
+	width: 35%
 }
 
 div.upload .formGroupInput{
 	padding-left: 0px;
 	padding-right: 0px;
+	width: 65%
 }
 
 div.upload .description .submitButton{
@@ -67,7 +69,7 @@ div.upload .parameters .tips{
 }
 
 div.upload .submit{
-	margin-top: 80px;
+	margin-top: 20px;
 }
 
 div.upload .submit .BBKButton{
