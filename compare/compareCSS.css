@@ -31,3 +31,7 @@ div.compare .formGroupInput{
 	background: -webkit-gradient(linear, left top, left bottom, from(#5F9EA0), to(#7AC5CD));
 	background: -moz-linear-gradient(top, #5F9EA0, #7AC5CD);	
 }
+
+.compare .compareButton{
+	float: right;
+}
