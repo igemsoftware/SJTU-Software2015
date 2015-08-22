@@ -3,9 +3,9 @@
 	$function = strtolower(trim($_POST['userFunction']));
 	$id = $_POST['id'];
 	if ($id == ""){
-		exec("perl advice_v2.pl \"$id\" $function $type", $out);
+		exec("perl advice_v3.pl \"$id\" $function $type", $out);
 	}else{
-		exec("perl advice_v2.pl $id $function $type", $out);
+		exec("perl advice_v3.pl $id $function $type", $out);
 	}
 	$result = "";
 	$number = count($out);

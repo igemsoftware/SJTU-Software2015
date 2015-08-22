@@ -46,12 +46,18 @@ for($i=0;$i<=$#cand;$i++){
 		$r = 0;
 		my $sth1 = $dbh->prepare("SELECT S.Com_id,S.Bri_id,T.Bri_id,R.Score FROM (contain as S join contain as T on S.Com_id = T.Com_id) join combine as R on S.Com_id = R.Com_id where (S.Bri_id = '".$cand[$i][0]."') and (T.Bri_id = '".$brickid[$j]."')");
 		$sth1->execute();
-		while(my $Meta = $sth1->fetchrow_hashref()) {
-			$score = $score + $Meta->{'R.Score'};
-			$r = $r + 1;
+		while(my @Meta = $sth1->fetchrow_array()) {
+			#print $Meta[0],"|\t";
+			#print $Meta[1],"|\t";
+			#print $Meta[2],"|\t";
+			if($Meta[3] > 30){
+				$score = $score + $Meta[3];
+				$r = $r + 1;
+			}
+			#print $Meta[3],"|\n";
 		}
 		if($r == 0){
-		$cscore = $cscore + $score;
+			$cscore = $cscore + $score;
 		}else{
 			$score = $score/$r;
 			$cscore = $cscore + $score;
