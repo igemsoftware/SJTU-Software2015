@@ -2,7 +2,7 @@ div.compare{
 	width: 50%;
 	position: relative;
 	margin: auto;
-	margin-top: 70px;
+	margin-top: 50px;
 }
 
 
@@ -18,6 +18,10 @@ div.compare .formGroupInput{
 	padding-left: 0px;
 	padding-right: 0px;
 	width: 70%
+}
+
+.compare .score{
+	display: none;
 }
 
 .compare button{

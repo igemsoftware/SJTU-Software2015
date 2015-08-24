@@ -13,7 +13,7 @@ var beginCompare = function(){
 	$(".inputRow").each(function(){
 		if ($(this).attr("id") == ""){
 			$(this).attr("id", "compared")
-			$(this).after("<p>Optimal ID:</p>")
+			$(this).after("<p class = \"optID\">Optimal ID:</p>")
 		}
 	})
 
@@ -25,7 +25,7 @@ var beginCompare = function(){
 			checked = false
 			$(this).css("border-color", "red")
 		}else{
-			bricks += $(this).val() + '|'
+			bricks += $(this).val() + ','
 		}
 	})
 	bricks = bricks.substring(0, bricks.length - 1)
@@ -36,7 +36,7 @@ var beginCompare = function(){
 			checked = false
 			$(this).css("border-color", "red")
 		}else{
-			functions += $(this).val() + '|'
+			functions += $(this).val() + ','
 		}
 	})
 	functions = functions.substring(0, functions.length - 1)
@@ -46,7 +46,15 @@ var beginCompare = function(){
 			brick: bricks,
 			funcs: functions
 		}, function(data){
-			console.log(213)
+			var res = data.split("*")
+			var opts = res[1].split("@")
+			var num = 0
+			$(".score").text("Score: " + res[0])
+			$(".score").css("display", "block")
+			$(".optID").each(function(){
+				$(this).text("Optimal ID: " + opts[num])
+				num = num + 1
+			})
 		})
 	}
 
