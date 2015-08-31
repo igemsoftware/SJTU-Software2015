@@ -6,38 +6,44 @@ sub gscore{
 	my($Part_status,$Sample_status,$Part_results,$Uses,$DNA_status,$Qualitative_experience,$Group_favorite,$Star_rating,$Del,$Groups,$Number_comments,$Ave_rating) = @_;
 	my $score = 0.0;
 	if($Part_status eq "Released HQ 2013" ){
-		$score = $score + 1*10;
+		$score = $score + 1*7.5;
 	}
-	if($Sample_status eq "For reference only"){
-		$score = $score + 1*10;
-	}elsif($Sample_status eq "For reference only"){
-		$score = $score + 0.5*10;
-	}elsif($Sample_status eq "It&apos;s complicate"){
-		$score = $score + 0.25*10;
+	if($Sample_status eq "In Stock"){
+		$score = $score + 1*6.8;
+	}elsif($Sample_status eq "It’s complicated"){
+		$score = $score + 0.5*6.8;
+	}elsif($Sample_status eq "For Reference Only"){
+		$score = $score + 0.25*6.8;
 	}else{}
 	if($Part_results eq "Works" ){
-		$score = $score + 1*15;
+		$score = $score + 1*11.9;
 	}elsif($Part_results eq "Issues"){
-		$score = $score + 0.25*15;
+		$score = $score + 0.25*11.9;
 	}else{}
-	$score = $score + $Uses*15/2935;
+	$score = $score + $Uses*13.7/2935;
 	if($DNA_status eq "Available" ){
-		$score = $score + 1*10;
+		$score = $score + 1*6.7;
 	}else{}
 	if($Qualitative_experience eq "Works" ){
-		$score = $score + 1*5;
+		$score = $score + 1*3.5;
 	}elsif($Qualitative_experience eq "Issues" ){
-		$score = $score +  0.25*5;
+		$score = $score +  0.25*3.5;
+	}else{}
+	if($Group_favorite eq "Yes" ){
+		$score = $score + 1*2.7;
 	}else{}
 	if($Star_rating == 1 ){
-		$score = $score + 1*10;
+		$score = $score + 1*7.5;
 	}
-	$score = $score + $Number_comments*10/10;
+	$score = $score + $Number_comments*10.5/10;
 	if($Ave_rating == 0.0 || $Ave_rating == -1.0 ){
 		$score = $score;
 	}else{
-		$score = $score + $Ave_rating*20/5;
+		$score = $score + $Ave_rating*13.7/5;
 	}
+	if($Del eq "Not Deleted" ){
+		$score = $score + 1*5.5;
+	}else{}
 	return $score;
 }
 
@@ -49,7 +55,7 @@ usage: $0 <blast_output_file> <info_file>
 die $usage if $#ARGV<0;
 
 open(BLASTOUT,$input_file)||die("open $input_file error!\n");
-open(FILE1, ">Combine_v4.txt");
+open(FILE1, ">Brick_v5.txt");
 
 
 my $i = 0;

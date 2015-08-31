@@ -55,7 +55,7 @@ Bri_id varchar(16)
 );
 
 set FOREIGN_KEY_CHECKS = 0;
-load data local infile 'Combine_v4.txt' into table combine fields terminated by '|';
-load data local infile 'Brick_v4.txt' into table brick fields terminated by '|';
-load data local infile 'contain.txt' into table contain fields terminated by '|';
+load data local infile 'Combine_v5.txt' into table combine fields terminated by '|';
+load data local infile 'Brick_v5.txt' into table brick fields terminated by '|';
+load data local infile 'contain_v2.txt' into table contain fields terminated by '|';
 set FOREIGN_KEY_CHECKS = 1;
