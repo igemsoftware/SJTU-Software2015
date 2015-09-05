@@ -36,6 +36,10 @@ div.compare .formGroupInput{
 	background: -moz-linear-gradient(top, #5F9EA0, #7AC5CD);	
 }
 
+.compare .deleteButton{
+	display: none;
+}
+
 .compare .compareButton{
 	float: right;
 }

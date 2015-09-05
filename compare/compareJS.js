@@ -1,12 +1,20 @@
 $(document).ready(function(){
 	$(".compare").delegate(".addButton", "click", addRow)
 	$(".compareButton").click(beginCompare)
+	$(".compare").delegate(".deleteButton", "click", deleteRow)
 })
 
 var addRow = function(){
-	var newRow = "<form class=\"am-form am-form-horizontal am-g inputRow\" id = \"\">" + $(this).parent().parent().html() + "</form>"
-	$(".row").append(newRow)
-	$(this).css("display", "none")
+	var newRow = "<div class = \"row\"><form class=\"am-form am-form-horizontal am-g inputRow\" id = \"\">" + $(this).parent().parent().html() + "</form></div>"
+	$(this).parent().parent().parent().after(newRow)
+	$(".deleteButton").css("display", "inline")
+}
+
+var deleteRow = function(){
+	$(this).parent().parent().parent().remove()
+	if ($(".row").length == 1) {
+		$(".deleteButton").hide()
+	}
 }
 
 var beginCompare = function(){
@@ -35,6 +43,9 @@ var beginCompare = function(){
 		if ($(this).val() == ""){
 			checked = false
 			$(this).css("border-color", "red")
+			$(".optID").each(function(){
+				$(this).text("Optimal ID: Error")
+			})
 		}else{
 			functions += $(this).val() + ','
 		}
@@ -42,6 +53,9 @@ var beginCompare = function(){
 	functions = functions.substring(0, functions.length - 1)
 
 	if (checked){
+		$(".optID").each(function(){
+			$(this).text("Optimal ID: Loading")
+		})
 		$.post("compare.php", {
 			brick: bricks,
 			funcs: functions
