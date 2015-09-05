@@ -41,5 +41,9 @@ var upload = function(){
 			$("#submitAlert .am-modal-bd").text(data)
 			$("#submitAlert .am-modal-footer").fadeIn(200)
 		})
+	}else{
+		$("#submitAlert .am-modal-hd").text("Error")
+		$("#submitAlert .am-modal-bd").text("You must complete the required field.")
+		$("#submitAlert .am-modal-footer").fadeIn(200)
 	}
 }

@@ -2,7 +2,7 @@ div.search .searchInputSection{
 	width: 60%;
 	position:relative;
 	margin: auto;
-	top: 270px;
+	top: 150px;
 }
 
 div.search .searchButton{
@@ -26,10 +26,14 @@ div.search .resultSection{
 	width: 80%;
 	position:relative;
 	margin: auto;
-	top:400px;
+	top:250px;
 }
 
 div.search th.tableHeader{
 	text-align: center;
 	background-color: #D4D4D4;
+}
+
+div.search .keyWord{
+	border-radius: 5px;
 }
