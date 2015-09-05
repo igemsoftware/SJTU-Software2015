@@ -193,10 +193,6 @@ var setUpMargin = function(){
 	$("table").css({
 		"width": width * 2 / 3
 	})
-	$(".upperTable").css({
-		"width": width * 2 / 3,
-		"margin-left": leftMargin
-	})
 
 	var iconWidth = $(".evaluation table td").innerWidth()
 	var iconHeight = $(".evaluation table td").innerHeight()
