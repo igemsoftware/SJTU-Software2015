@@ -4,10 +4,6 @@ $(document).ready(function(){
 			search()
 		}
 	})
-	$(".searchButton .button").click(function(){
-		$(this).siblings().removeClass("buttonClick")
-		$(this).addClass("buttonClick")
-	})
 	$(".beginSearch").click(function(e){
 		e.preventDefault()
 		search();
@@ -16,12 +12,7 @@ $(document).ready(function(){
 
 var search = function(){
 	var key = $(".keyWord").val()
-	var type = $(".buttonClick").text()
-	if (type == "Part"){
-		type = "brick"
-	} else if (type == "Device"){
-		type = "devic"
-	}
+	var type = $("input:checked").attr("value")
 	$.post("search.php", {
 		searchKeyWord: key, 
 		searchType: type
