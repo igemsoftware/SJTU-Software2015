@@ -2,6 +2,7 @@ $(document).ready(function(){
 	$(".compare").delegate(".addButton", "click", addRow)
 	$(".compareButton").click(beginCompare)
 	$(".compare").delegate(".deleteButton", "click", deleteRow)
+	window.onbeforeunload = unloadTips
 })
 
 var addRow = function(){
@@ -71,5 +72,22 @@ var beginCompare = function(){
 			})
 		})
 	}
-
 }
+var unloadTips = function(){
+	var check = 0
+	$(":text").each(function(){
+		if ($(this).val() != ""){
+			check = 1
+		}
+	})
+	if (check){
+		return "The data input will not be maintained."
+	}else{
+		return
+	}
+}
+
+
+
+
+

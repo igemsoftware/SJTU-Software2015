@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	$(".cleanAllButton").click(clearData)
 	$(".RegistryButton").click(upload)
+	window.onbeforeunload = unloadTips
 })
 
 var clearData = function(){
@@ -45,5 +46,18 @@ var upload = function(){
 		$("#submitAlert .am-modal-hd").text("Error")
 		$("#submitAlert .am-modal-bd").text("You must complete the required field.")
 		$("#submitAlert .am-modal-footer").fadeIn(200)
+	}
+}
+var unloadTips = function(){
+	var check = 0
+	$(":text").each(function(){
+		if ($(this).val() != ""){
+			check = 1
+		}
+	})
+	if (check){
+		return "The data input will not be maintained."
+	}else{
+		return
 	}
 }

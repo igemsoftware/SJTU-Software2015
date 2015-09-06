@@ -48,6 +48,7 @@ $(document).ready(function(){
 		idChoose = $(this).attr("value")
 		$("#idChooseAlert .am-modal-footer").fadeIn(200)
 	})
+ 	window.onbeforeunload = unloadTips
 
 	typeDetailPanel()
 	cancelSelected()
@@ -210,3 +211,15 @@ var setUpMargin = function(){
 		"margin-top": buttonMarginTop,
 	})
 }
+
+var unloadTips = function(){
+	if ($(".inputField").children().length == 0){
+		return
+	}
+	return "The data input will not be maintained."
+}
+
+
+
+
+

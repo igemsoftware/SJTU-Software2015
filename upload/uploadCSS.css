@@ -4,13 +4,13 @@
 	margin: auto;
 }
 
-div.upload button{
+div.upload .RegistryButton, .cleanAllButton{
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8C8C8C', endColorstr='#D4D4D4'); /* for IE */
 	background: -webkit-gradient(linear, left top, left bottom, from(#8C8C8C), to(#D4D4D4)); /* for webkit browsers */
 	background: -moz-linear-gradient(top, #8C8C8C, #D4D4D4);/* for firefox 3.6+ */
 }
 
-div.upload button:hover{
+div.upload .RegistryButton:hover, .cleanAllButton:hover{
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5F9EA0', endColorstr='#7AC5CD');
 	background: -webkit-gradient(linear, left top, left bottom, from(#5F9EA0), to(#7AC5CD));
 	background: -moz-linear-gradient(top, #5F9EA0, #7AC5CD);	
