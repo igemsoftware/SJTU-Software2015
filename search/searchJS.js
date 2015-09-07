@@ -38,13 +38,25 @@ $(document).ready(function(){
 })
 
 var search = function(){
+	var finalWeight = []
+
 	var key = $(".keyWord").val()
 	var type = $("input:checked").attr("value")
+	var total = 0
+	for (var i = 0; i < weightList.length; ++i){
+		finalWeight.push(weightList[i])
+		total += parseFloat(weightList[i])
+	}
+	for (var i = 0; i < finalWeight.length; ++i){
+		var val = parseFloat(finalWeight[i])
+		finalWeight[i] = String(val / total * 100)
+	}
+	finalWeight = finalWeight.join("*")
 	$.post("search.php", {
 		searchKeyWord: key, 
 		searchType: type,
 		weightType: weight,
-		weightL: weightList
+		weightL: finalWeight
 	},	function(data){
 		if (data.length > 0){
 			$(".searchResult").html(data)
@@ -60,7 +72,11 @@ var beginWeight = function(){
 }
 
 var endWeight = function(){
-
+	$(".weightInput").each(function(){
+		if ($(this).val() != weightList[$(this).attr("id")] && $(this).val() != ""){
+			weightList[$(this).attr("id")] = $(this).val()
+		}
+	})
 }
 
 

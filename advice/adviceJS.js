@@ -5,30 +5,26 @@ var idChoose = "No Result"
 var typeDataSource = [
 	["Cell", "Most parts in the Registry function in E. coli."],
 	["DNA", "DNA parts provide functionality to the DNA itself. DNA parts include cloning sites, scars, primer binding sites, spacers, recombination sites, conjugative tranfer elements, transposons, origami, and aptamers."],
-	["Coding", " Protein coding sequences encode the amino acid sequence of a particular protein. Note that some protein coding sequences only encode a protein domain or half a protein. Others encode a full-length protein from start codon to stop codon. Coding sequences for gene expression reporters such as LacZ and GFP are also included here."],
-	["Composite", "unknown"],
-	["unknown", "unknown"],
-	["unknown", "unknown"],
-	["Inverter", "unknown"],
-	["Project", "unknown"],
-	["RBS", "A ribosome binding site (RBS) is an RNA sequence found in mRNA to which ribosomes can bind and initiate translation."],
-	["Regulatory", "A promoter is a DNA sequence that tends to recruit transcriptional machinery and lead to transcription of the downstream DNA sequence."],
-	["Reporter", "unknown"],
-	["RNA", "unknown"],
-	["Signalling", "unknown"],
-	["Temporary", "unknown"],
 	["Terminator", "A terminator is an RNA sequence that usually occurs at the end of a gene or operon mRNA and causes transcription to stop."],
-	["Intermediate", "unknown"],
-	["Measurement", "unknown"],
-	["Other", "unknown"],
+	["unknown", "unknown"],
+	["unknown", "unknown"],
+	["Reporter", "unknown"],
+	["Protein coding sequences", "Protein coding sequences encode the amino acid sequence of a particular protein. Note that some protein coding sequences only encode a protein domain or half a protein. Others encode a full-length protein from start codon to stop codon. Coding sequences for gene expression reporters such as LacZ and GFP are also included here."],
+	["Promoters", "A promoter is a DNA sequence that tends to recruit transcriptional machinery and lead to transcription of the downstream DNA sequence."],
+	["unknown", "unknown"],
+	["Receivers and senders", "unknown"],
 	["Plasmid_backbone", "A plasmid is a circular, double-stranded DNA molecules typically containing a few thousand base pairs that replicate within the cell independently of the chromosomal DNA. A plasmid backbone is defined as the plasmid sequence beginning with the BioBrick suffix, including the replication origin and antibiotic resistance marker, and ending with the BioBrick prefix."],
-	["Plasmid", "A plasmid is a circular, double-stranded DNA molecules typically containing a few thousand base pairs that replicate within the cell independently of the chromosomal DNA. If you're looking for a plasmid or vector to propagate or assemble plasmid backbones, please see the set of plasmid backbones. There are a few parts in the Registry that are only available as circular plasmids, not as parts in a plasmid backbone, you can find them here. Note that these plasmids largely do not conform to the BioBrick standard."],
+	["Inverter", "unknown"],
+	["T7", "Bacteriophage T7 is an obligate lytic phage of E. coli."],
+	["Protein generators", "unknown"],
 	["Primer", "A primer is a short single-stranded DNA sequences used as a starting point for PCR amplification or sequencing. Although primers are not actually available via the Registry distribution, we include commonly used primer sequences here."],
 	["Protein domain", "Protein domains are portions of proteins cloned in frame with other proteins domains to make up a protein coding sequence. Some protein domains might change the protein's location, alter its degradation rate, target the protein for cleavage, or enable it to be readily purified."],
-	["T7", "Bacteriophage T7 is an obligate lytic phage of E. coli."],
+	["Plasmid", "A plasmid is a circular, double-stranded DNA molecules typically containing a few thousand base pairs that replicate within the cell independently of the chromosomal DNA. If you're looking for a plasmid or vector to propagate or assemble plasmid backbones, please see the set of plasmid backbones. There are a few parts in the Registry that are only available as circular plasmids, not as parts in a plasmid backbone, you can find them here. Note that these plasmids largely do not conform to the BioBrick standard."],
+	["Translational_unit", "Translational units are composed of a ribosome binding site and a protein coding sequence. They begin at the site of translational initiation, the RBS, and end at the site of translational termination, the stop codon."],
+	["Ribosome Binding Site/about", "A ribosome binding site (RBS) is an RNA sequence found in mRNA to which ribosomes can bind and initiate translation."],
 	["unknown", "unknown"],
-	["Translational_unit", "Translational units are composed of a ribosome binding site and a protein coding sequence. They begin at the site of translational initiation, the RBS, and end at the site of translational termination, the stop codon."]
-
+	["Measurement devices", "unknown"],
+	["unknown", "unknown"]
 ]
 
 $(document).ready(function(){
@@ -75,7 +71,7 @@ var drop = function(ev){
 			target.eq(num).append(image)
 			$(image).removeClass("tableIcon")
 			$(image).addClass("selectedIcon")
-			$(".iconSection").children().eq(parseInt(data) % 18).children().eq(parseInt(data) > 17).children().append(newImage)
+			$(".iconSection").children().eq(parseInt(data) % 11).children().eq(parseInt(data) > 10).children().append(newImage)
 			$(".inputSection .selectedIcon").css({
 				"width": width,
 				"vertical-align": "middle",
@@ -167,7 +163,7 @@ var typeDetailPanel = function(){
 	var target = $(".typeDetail")
 	$(".evaluation").delegate(".tableIcon", "mouseover", function(){
 		var id = $(this).attr("id")
-		var top = ((id % 18) + 1) * $(".iconSection td").outerHeight()
+		var top = ((id % 11) + 1) * $(".iconSection td").outerHeight()
 		var width = $(".iconSection td").outerWidth() * 3
 		
 		$(".typeDetail .am-panel-title").text(typeDataSource[id][0])
@@ -175,7 +171,7 @@ var typeDetailPanel = function(){
 		target.css({
 			"margin-top": top,
 			"width": width,
-			"margin-left": -1 * (id <= 17) * width / 3,
+			"margin-left": -1 * (id <= 10) * width / 3,
 			"z-index": 1000
 		})
 		target.show()

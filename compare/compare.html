@@ -47,7 +47,18 @@
     <li><a class = "mainNavItem" href = "../advice/advice.html">Advice</a></li>
     <li><a class = "mainNavItem" href = "../upload/upload.html">Upload</a></li>
   </ul>
-  <button type="button" class="am-btn helpButton">Help</button>
+  <button type="button" class="am-btn helpButton" data-am-modal="{target: '#helpModel', closeViaDimmer: 0}">Help</button>
+  <div class="am-modal am-modal-alert" tabindex="-1" id="helpModel">
+    <div class="am-modal-dialog">
+      <div class="am-modal-hd">COMPARE HELP</div>
+      <div class="am-modal-bd">
+        <p>In this part you can submit a complete device,then all biobricks of your device will be evaluated. Some biobrick will be recommended to be replaced if its score is too low,instead we will provide you with better biobrick. Enter all information required of your device,then click the ‘compare’ button to get the result.</p>
+      </div>
+      <div class="am-modal-footer">
+        <span class="am-modal-btn">OK</span>
+      </div>
+    </div>
+  </div>
 
   <div class = "compare">
     <p class = "score">Score: </p>

@@ -6,7 +6,7 @@
 	if ($weight == 0){
 		exec("perl count_v2.pl $keyword $type", $out);
 	}else{
-		exec("perl count_v2.pl $keyword $type $weight", $out);
+		exec("perl hcount.pl $keyword $type $weightList", $out);
 	}
 	$result = "";
 	$number = count($out);
