@@ -44,6 +44,7 @@ $(document).ready(function(){
 		idChoose = $(this).attr("value")
 		$("#idChooseAlert .am-modal-footer").fadeIn(200)
 	})
+
  	window.onbeforeunload = unloadTips
 
 	typeDetailPanel()
@@ -182,8 +183,6 @@ var typeDetailPanel = function(){
 	})
 }
 
-
-
 var setUpMargin = function(){
 	var leftMargin = $(".mainNav").css("margin-left")
 	var width = $(".mainNavItem").innerWidth()
@@ -202,10 +201,10 @@ var setUpMargin = function(){
 		"height": $(".evaluation table").innerHeight()
 	})
 
-	var buttonMarginTop = $(".evaluation table").innerHeight() - $(".evaButtonSection").innerHeight()
+	/*var buttonMarginTop = $(".evaluation table").innerHeight() - $(".evaButtonSection").innerHeight()
 	$(".evaButtonSection").css({
 		"margin-top": buttonMarginTop,
-	})
+	})*/
 }
 
 var unloadTips = function(){
@@ -214,6 +213,7 @@ var unloadTips = function(){
 	}
 	return "The data input will not be maintained."
 }
+
 
 
 

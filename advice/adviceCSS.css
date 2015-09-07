@@ -38,16 +38,6 @@ table td{
 	margin-top: -25px;
 }
 
-.evaluation .evaButtonSection div{
-	margin: 0px;
-}
-
-.evaluation .evaButtonSection .evaButton{
-	margin-left: -5px;
-	width: 50%;
-	font-size: 12px;
-	
-}
 
 .evaluation .cancelButton{
 	display: none;
