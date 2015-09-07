@@ -50,12 +50,128 @@
   <button type="button" class="am-btn helpButton">Help</button>
 
   <div class = "search">
+
+    <div class="am-modal am-modal-alert" tabindex="-1" id="weightChoose">
+      <div class="am-modal-dialog">
+        <div class="am-modal-hd">Please input weight</div>
+        <div class="am-modal-bd">
+          <form class="am-form am-form-horizontal">
+            <ul class="am-avg-sm-2">  
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Part_status</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="0" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Sample_Status</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="1" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Part_Results</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="2" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Star_rating</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="3" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Uses</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="4" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">DNA_Status</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="5" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Qualitative_experience</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="6" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Group_favorite</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="7" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Del</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="8" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Confirmed_times</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="9" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Number_comments</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="10" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+              <li>
+                <div class="am-form-group">
+                  <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Ave_rating</label>
+                    <div class="am-u-sm-6 formGroupInput">
+                      <input type="text" id="11" class = "weightInput" placeholder = "Default: ">
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </form>
+
+        </div>
+        <div class="am-modal-footer">
+          <span class="am-modal-btn">Sure</span>
+        </div>
+      </div>
+    </div>
+
     <div class = "searchInputSection">
-      <div class="am-input-group">
-        <span class="am-input-group-btn">
-          <button class="am-btn am-btn-default beginSearch" type="button"><span class="am-icon-search"></span> </button>
-        </span>
-        <input type="text" class="am-form-field keyWord">
+      <div class = "am-g">
+        <div class="am-input-group am-u-sm-10 am-u-md-10 am-u-lg-10">
+          <span class="am-input-group-btn">
+            <button class="am-btn am-btn-default beginSearch" type="button"><span class="am-icon-search"></span> </button>
+          </span>
+          <input type="text" class="am-form-field keyWord">
+        </div>
+        <button type="button" class="am-btn am-u-sm-2 am-u-md-2 am-u-lg-2 weightButton" data-am-modal="{target:'#weightChoose', closeViaDimmer: 0}">Weight</button>
       </div>
 
       <div class="am-g searchButton">

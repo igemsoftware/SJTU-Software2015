@@ -1,7 +1,13 @@
 <?php
+	$weight = $_POST['weightType'];
 	$keyword = strtolower(trim($_POST['searchKeyWord']));
 	$type = trim($_POST['searchType']);
-	exec("perl count_v2.pl $keyword $type", $out);
+	$weightList = $_POST['weightL'];
+	if ($weight == 0){
+		exec("perl count_v2.pl $keyword $type", $out);
+	}else{
+		exec("perl count_v2.pl $keyword $type $weight", $out);
+	}
 	$result = "";
 	$number = count($out);
 	if ($number <= 3){
