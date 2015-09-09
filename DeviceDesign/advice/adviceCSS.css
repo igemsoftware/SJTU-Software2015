@@ -49,7 +49,7 @@ table td{
 	position: absolute;
 }
 
-.evaluation .idHistorySection{
+.evaluation .idHistorySection, .functionHistorySection{
 	height: 100px;
 }
 
@@ -68,4 +68,11 @@ table td{
 	position: relative;
 	margin: auto;
 }
+
+
+.evaluation .evaButtonSection .evaButton{
+	float: right;
+	color: black
+}
+
 

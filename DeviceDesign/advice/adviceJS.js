@@ -1,6 +1,7 @@
 var functionInput = $(".functionInput")
 
 var idChoose = "No Result"
+var functionInputText = "No Result"
 
 var typeDataSource = [
 	["Cell", "Most parts in the Registry function in E. coli."],
@@ -43,6 +44,13 @@ $(document).ready(function(){
 	$(".evaluation").delegate("input:radio", "change", function(){
 		idChoose = $(this).attr("value")
 		$("#idChooseAlert .am-modal-footer").fadeIn(200)
+	})
+	$(".evaButton").click(function(){
+		var passData = $(".idHistory").text()
+		$(".passDataURL").attr("href","../compare/compare.html?data=" + passData);
+		window.onbeforeunload = function(){
+			return
+		}
 	})
 
  	window.onbeforeunload = unloadTips
@@ -100,6 +108,7 @@ var beginAdvise = function(){
 	var history = $(".idHistory").text().substr(12)
 	history = history.substring(0, history.length - 1)
 
+	functionInputText = $(".functionInput input").val()
 	$(".functionInput").remove()
 	$(".tableIcon").attr("draggable", "true")
 	$("#idChooseAlert .am-modal-hd").html("Waiting")	
@@ -122,7 +131,9 @@ var beginAdvise = function(){
 }
 var completeAdvise = function(){
 	$(".idHistory").append(idChoose + "*")
+	$(".functionHistory").append(functionInputText + "*")
 	idChoose = "No Result"
+	functionInputText = "No Result"
 }
 
 
@@ -136,14 +147,19 @@ var cancelSelected = function(){
 			field.siblings().eq(i).children().remove()
 		}	
 		var index = 0
+		var funcIndex = 0
 		var originText = $(".idHistory").text()
+		var originFunctionText = $(".functionHistory").text()
 		for (var i = 0; i < id; ++i){
 			index = originText.indexOf('*', index)
+			funcIndex = originFunctionText.indexOf('*', funcIndex)
 		}
 		if (id == 0){
-			$(".idHistory").text("History id: ")
+			$(".idHistory").text("History id:")
+			$(".functionHistory").text("History Function:")
 		}else{
 			$(".idHistory").text(originText.substring(0, index + 1))
+			$(".functionHistory").text(originFunctionText.substring(0, funcIndex + 1))
 		}
 		$(".tableIcon").attr("draggable", "true")	
 	})
@@ -201,10 +217,10 @@ var setUpMargin = function(){
 		"height": $(".evaluation table").innerHeight()
 	})
 
-	/*var buttonMarginTop = $(".evaluation table").innerHeight() - $(".evaButtonSection").innerHeight()
+	var buttonMarginTop = $(".evaluation table").innerHeight() - $(".evaButtonSection").innerHeight()
 	$(".evaButtonSection").css({
 		"margin-top": buttonMarginTop,
-	})*/
+	})
 }
 
 var unloadTips = function(){

@@ -3,23 +3,25 @@ $(document).ready(function(){
 	$(".compareButton").click(beginCompare)
 	$(".compare").delegate(".deleteButton", "click", deleteRow)
 	window.onbeforeunload = unloadTips
+
+	prepareData()
 })
 
 var addRow = function(){
 	var newRow = "<div class = \"row\"><form class=\"am-form am-form-horizontal am-g inputRow\" id = \"\">" + $(this).parent().parent().html() + "</form></div>"
 	$(this).parent().parent().parent().after(newRow)
-	$(".deleteButton").css("display", "inline")
+	$(".compare .deleteButton").css("display", "inline")
 }
 
 var deleteRow = function(){
 	$(this).parent().parent().parent().remove()
-	if ($(".row").length == 1) {
-		$(".deleteButton").hide()
+	if ($(".compare .row").length == 1) {
+		$(".compare .deleteButton").hide()
 	}
 }
 
 var beginCompare = function(){
-	$(".inputRow").each(function(){
+	$(".compare .inputRow").each(function(){
 		if ($(this).attr("id") == ""){
 			$(this).attr("id", "compared")
 			$(this).after("<p class = \"optID\">Optimal ID:</p>")
@@ -29,7 +31,7 @@ var beginCompare = function(){
 	var checked = true
 
 	var bricks = ""
-	$(".brickId").each(function(){
+	$(".compare .brickId").each(function(){
 		if ($(this).val() == ""){
 			checked = false
 			$(this).css("border-color", "red")
@@ -40,11 +42,11 @@ var beginCompare = function(){
 	bricks = bricks.substring(0, bricks.length - 1)
 
 	var functions = ""
-	$('.functions').each(function(){
+	$('.compare .functions').each(function(){
 		if ($(this).val() == ""){
 			checked = false
 			$(this).css("border-color", "red")
-			$(".optID").each(function(){
+			$(".compare .optID").each(function(){
 				$(this).text("Optimal ID: Error")
 			})
 		}else{
@@ -54,7 +56,7 @@ var beginCompare = function(){
 	functions = functions.substring(0, functions.length - 1)
 
 	if (checked){
-		$(".optID").each(function(){
+		$(".compare .optID").each(function(){
 			$(this).text("Optimal ID: Loading")
 		})
 		$.post("compare.php", {
@@ -64,9 +66,9 @@ var beginCompare = function(){
 			var res = data.split("*")
 			var opts = res[1].split("@")
 			var num = 0
-			$(".score").text("Score: " + res[0])
-			$(".score").css("display", "block")
-			$(".optID").each(function(){
+			$(".compare .score").text("Score: " + res[0])
+			$(".compare .score").css("display", "block")
+			$(".compare .optID").each(function(){
 				$(this).text("Optimal ID: " + opts[num])
 				num = num + 1
 			})
@@ -75,7 +77,7 @@ var beginCompare = function(){
 }
 var unloadTips = function(){
 	var check = 0
-	$(":text").each(function(){
+	$(".compare :text").each(function(){
 		if ($(this).val() != ""){
 			check = 1
 		}
@@ -86,6 +88,30 @@ var unloadTips = function(){
 		return
 	}
 }
+
+var prepareData = function(){
+	var data = window.location.search
+	var pos = data.indexOf(":")
+	data = data.substring(pos + 1)
+	var count = 0
+	for (var i = 0; i < data.length; ++i){
+		if (data[i] == "*"){
+			++count
+		}
+	}
+	if (count >= 2){
+		for (var i = 0; i < count - 1; ++i){
+			var newRow = "<div class = \"row\"><form class=\"am-form am-form-horizontal am-g inputRow\" id = \"\">" + $(".addButton").eq(0).parent().parent().html() + "</form></div>"
+			$(".row").eq(0).after(newRow)
+			$(".compare .deleteButton").css("display", "inline")
+		}
+	}else if (count == 1){
+
+	}else{
+
+	}
+}
+
 
 
 
