@@ -10,6 +10,13 @@
 	background-color: #D4D4D4;
 }
 
+.subNav{
+	width: 50%;
+	position: relative;
+	margin: auto;
+	background-color: #D4D4D4;
+}
+
 li.am-active > a.mainNavItem{
 	color: #D4D4D4;
 	background-color: #8C8C8C;
