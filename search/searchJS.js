@@ -42,6 +42,7 @@ var search = function(){
 
 	var key = $(".keyWord").val()
 	var type = $("input:checked").attr("value")
+	console.log(type)
 	var total = 0
 	for (var i = 0; i < weightList.length; ++i){
 		finalWeight.push(weightList[i])

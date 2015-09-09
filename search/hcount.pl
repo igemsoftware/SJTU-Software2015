@@ -88,7 +88,7 @@ if($type eq "brick"){
 	}
 	print ">\n";
 }elsif($type eq "devic"){
-    my $sth1 = $dbh->prepare("SELECT Com_id,Author,Enter_time,Ctype,Part_status,Sample_status,Part_results,Star_rating,Uses,DNA_status,Qualitative_experience,Group_favorite,Del,Groups,Confirmed_times,Number_comments,Ave_rating,Des FROM brick where (Com_id like '%".$object."%') or (Ctype like '%".$object."%') or (Des like '%".$object."%')");
+    my $sth1 = $dbh->prepare("SELECT Com_id,Author,Enter_time,Ctype,Part_status,Sample_status,Part_results,Star_rating,Uses,DNA_status,Qualitative_experience,Group_favorite,Del,Groups,Confirmed_times,Number_comments,Ave_rating,Des FROM combine where (Com_id like '%".$object."%') or (Ctype like '%".$object."%') or (Des like '%".$object."%')");
     $sth1->execute();
 	print "<\n";
 	while(my $Meta = $sth1->fetchrow_hashref()) {
