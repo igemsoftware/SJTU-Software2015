@@ -3,7 +3,6 @@ $(document).ready(function(){
 	$(".compareButton").click(beginCompare)
 	$(".compare").delegate(".deleteButton", "click", deleteRow)
 	window.onbeforeunload = unloadTips
-
 	prepareData()
 })
 
@@ -35,6 +34,9 @@ var beginCompare = function(){
 		if ($(this).val() == ""){
 			checked = false
 			$(this).css("border-color", "red")
+			$(".compare .optID").each(function(){
+				$(this).text("Optimal ID: Error")
+			})
 		}else{
 			bricks += $(this).val() + ','
 		}
@@ -43,19 +45,14 @@ var beginCompare = function(){
 
 	var functions = ""
 	$('.compare .functions').each(function(){
-		if ($(this).val() == ""){
-			checked = false
-			$(this).css("border-color", "red")
-			$(".compare .optID").each(function(){
-				$(this).text("Optimal ID: Error")
-			})
-		}else{
-			functions += $(this).val() + ','
-		}
+		functions += $(this).val() + ','
 	})
 	functions = functions.substring(0, functions.length - 1)
 
 	if (checked){
+		$(".compare .brickId").each(function(){
+			$(this).css("border-color", "#CCC")
+		})
 		$(".compare .optID").each(function(){
 			$(this).text("Optimal ID: Loading")
 		})
@@ -91,24 +88,37 @@ var unloadTips = function(){
 
 var prepareData = function(){
 	var data = window.location.search
-	var pos = data.indexOf(":")
-	data = data.substring(pos + 1)
-	var count = 0
-	for (var i = 0; i < data.length; ++i){
-		if (data[i] == "*"){
-			++count
-		}
-	}
+	var arr = data.split("|")
+	var posID = arr[0].indexOf(":")
+	var posFunc = arr[1].indexOf(":")
+	arr[0] = arr[0].substring(posID + 1)
+	arr[1] = arr[1].substring(posFunc + 1)
+	var arrID = arr[0].split("*")
+	var arrFunc = arr[1].split("*")
+	var count = arrID.length - 1
 	if (count >= 2){
 		for (var i = 0; i < count - 1; ++i){
 			var newRow = "<div class = \"row\"><form class=\"am-form am-form-horizontal am-g inputRow\" id = \"\">" + $(".addButton").eq(0).parent().parent().html() + "</form></div>"
 			$(".row").eq(0).after(newRow)
 			$(".compare .deleteButton").css("display", "inline")
 		}
+		var i = 0
+		$(".brickId").each(function(){
+			if (arrID[i] != "NoResult"){
+				$(this).val(arrID[i])
+			}
+			++i
+		})
+		i = 0
+		$(".functions").each(function(){
+			$(this).val(arrFunc[i])
+			++i
+		})
 	}else if (count == 1){
-
-	}else{
-
+		if (arrID[0] != "NoResult"){
+			$(".brickId").val(arrID[0])
+		}
+		$(".functions").val(arrFunc[0])
 	}
 }
 
