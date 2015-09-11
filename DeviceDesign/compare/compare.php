@@ -1,10 +1,12 @@
 <?php
 	$bricks = trim($_POST['brick']);
 	$funcs = strtolower(trim($_POST['funcs']));
-	exec("perl score.pl $bricks $funcs", $out);	
-	$score = $out[0];
+	$weight = trim($_POST['weight']);
+	exec("perl score.pl $bricks $funcs $weight", $out);
+	$effect = $out[0];
+	$score = $out[1];
 	$opt = "";
-	for ($i = 1; $i < count($out); ++$i){
+	for ($i = 2; $i < count($out); ++$i){
 		$array = explode("\t", $out[$i]);
 		if (count($array) > 1){
 			$opt .= $array[1];
@@ -14,5 +16,8 @@
 		$opt .= "@";
 	}
 	$opt = substr($opt, 0, count($opt) - 2);
+	if ($effect == 0){
+		$score = "Uncomplete";
+	}
 	echo $score.'*'.$opt;
 ?>

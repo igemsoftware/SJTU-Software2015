@@ -60,7 +60,8 @@ var beginCompare = function(){
 		})
 		$.post("compare.php", {
 			brick: bricks,
-			funcs: functions
+			funcs: functions,
+			weight: "50"
 		}, function(data){
 			var res = data.split("*")
 			var opts = res[1].split("@")
@@ -68,6 +69,9 @@ var beginCompare = function(){
 			$(".compare .score").text("Score: " + res[0])
 			$(".compare .score").css("display", "block")
 			$(".compare .optID").each(function(){
+				if (res[0] == "Uncomplete"){
+					opts[num] = "Uncomplete"
+				}
 				$(this).text("Optimal ID: " + opts[num])
 				num = num + 1
 			})
