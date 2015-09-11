@@ -43,3 +43,12 @@ div.compare .formGroupInput{
 .compare .compareButton{
 	float: right;
 }
+
+.compare .toUpload{
+	float: right;
+	display: none;
+	color: #333344
+}
+
+
+

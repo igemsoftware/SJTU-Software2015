@@ -1,6 +1,14 @@
 $(document).ready(function(){
 	$(".cleanAllButton").click(clearData)
 	$(".RegistryButton").click(upload)
+	$(".singleSelected").change(function(){
+		if ($(this).val() == "devic"){
+			$(this).parent().parent().after("<div class=\"am-form-group partId\"><label for=\"doc-ipt-pwd-2\" class=\"am-u-sm-2 am-form-label formGroupLabel\">*Part ID:</label><div class=\"am-u-sm-10 formGroupInput\"><input type=\"text\" id=\"\" class = \"required\" placeholder = \"This text field is required.\"></div></div>")
+		}else{
+			$(".partId").remove()
+		}
+	})
+	prepareData()
 	window.onbeforeunload = unloadTips
 })
 
@@ -61,3 +69,18 @@ var unloadTips = function(){
 		return
 	}
 }
+
+var prepareData = function(){
+	var data = window.location.search
+	if (data != ""){
+		var pos = data.indexOf("=")
+		data = data.substring(pos + 1)
+		var arr = data.split("|")
+		$(".singleSelected").val("devic");
+		$(".singleSelected").parent().parent().after("<div class=\"am-form-group partId\"><label for=\"doc-ipt-pwd-2\" class=\"am-u-sm-2 am-form-label formGroupLabel\">*Part ID:</label><div class=\"am-u-sm-10 formGroupInput\"><input type=\"text\" id=\"\" class = \"required\" placeholder = \"This text field is required.\"></div></div>")
+		$(".required").eq(1).val(arr[0])
+		$(".des").val(arr[1])
+
+	}
+}
+
