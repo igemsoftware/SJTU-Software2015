@@ -1,5 +1,5 @@
-var weight = 0
 var weightList = ["7.5", "6.8", "11.9", "7.5","13.7", "6.7", "3.5", "2.7", "5.5", "10", "10.5", "13.7"]
+var limitNumber = "45"
 
 $(document).ready(function(){
 	$(".keyWord").keydown(function(e){
@@ -12,15 +12,11 @@ $(document).ready(function(){
 		search();
 	})
 
-	$(".weightButton").click(function(){
-		weight = 1
-	})
-
 	var width = $("#weightChoose").width()
 	$("#weightChoose").css("margin-left", -1 * (width) / 2)
 	$("#weightChoose").on("open.modal.amui", beginWeight)
 	$("#weightChoose").on("close.modal.amui", endWeight)
-	$(".search").delegate(".weightInput", "input onpropertychange", function(){
+	$(".search").delegate(".weightInput, .limitInput", "input onpropertychange", function(){
 		var checked = true
 		var len = $(this).val().length
 		for (var i = 0; i < len; ++i){
@@ -42,7 +38,6 @@ var search = function(){
 
 	var key = $(".keyWord").val()
 	var type = $("input:checked").attr("value")
-	console.log(type)
 	var total = 0
 	for (var i = 0; i < weightList.length; ++i){
 		finalWeight.push(weightList[i])
@@ -56,8 +51,8 @@ var search = function(){
 	$.post("search.php", {
 		searchKeyWord: key, 
 		searchType: type,
-		weightType: weight,
-		weightL: finalWeight
+		weightL: finalWeight,
+		limit: parseInt(limitNumber)
 	},	function(data){
 		if (data.length > 0){
 			$(".searchResult").html(data)
@@ -70,6 +65,8 @@ var beginWeight = function(){
 		$(this).attr("placeholder", "Default: " + weightList[$(this).attr("id")])
 		$(this).val(weightList[$(this).attr("id")])
 	})
+	$(".limitInput").attr("placeholder", "Default: " + limitNumber)
+	$(".limitInput").val(limitNumber)
 }
 
 var endWeight = function(){
@@ -78,6 +75,7 @@ var endWeight = function(){
 			weightList[$(this).attr("id")] = $(this).val()
 		}
 	})
+	limitNumber = $(".limitInput").val()
 }
 
 
