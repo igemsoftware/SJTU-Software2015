@@ -1,0 +1,1830 @@
+BBa_B0015|Terminator|double terminator (B0010-B0012)
+BBa_C0012|Coding|lacI repressor  from E. coli (+LVA)
+BBa_E0240|Reporter|GFP generator
+BBa_E0840|Reporter|GFP generator
+BBa_E1010|Coding|null
+BBa_F2622|Signalling|3OC<sub>6
+BBa_I0500|Regulatory|Inducible pBad/araC promoter
+BBa_I10020|Temporary|null
+BBa_I10042|Temporary|Toxic protein generator
+BBa_I13500|Composite|Screening plasmid intermediate
+BBa_I13507|Composite|Screening plasmid intermediate
+BBa_I13521|Reporter|Ptet mRFP
+BBa_I13522|Reporter|pTet GFP
+BBa_I13581|Measurement|AHL-inducible promoter.S.ccdB.X.GFP
+BBa_I13600|Reporter|Tet with CFP reporter (without LVA tag)
+BBa_I20100|Measurement|RBS Scaffold with GFP reporter
+BBa_I20200|Measurement|RBS Scaffold with mCherry reporter
+BBa_I20260|Measurement|Measurement Kit Test of J23101
+BBa_I51001|Plasmid|BioBrick base vector, as revised by Codon Devices
+BBa_I51019|Plasmid|BioBrick base vector, as synthesized by Codon Devices
+BBa_I51020|Plasmid|BioBrick base vector (for constructing pSB**5 vectors)
+BBa_I52001|Plasmid|ccdB and nonfunctional pUC19 derived high copy origin
+BBa_I52002|Plasmid|ccdB and minimal pUC19 derived high copy origin
+BBa_I714070|Composite|[R0040][J23078] ([pTet][Lock3])
+BBa_I732820|Intermediate|LacI (RBS+, TERM+)
+BBa_I738009|Device|null
+BBa_I738010|Device|The parts for plasmid 2 for bacteria 2 for the warefare
+BBa_I742162|Reporter|YFP with lac promoter and lacZ
+BBa_I746103|Signalling|I746101 (AIP sensor infrastructure - agrC + agrA with RBSes + Terminator) + I746104 (Inducible P2)
+BBa_I746909|Generator|superfolder GFP driven by T7 promoter
+BBa_J01101|Generator|null
+BBa_J04430|Reporter|GFP coding device switched on by IPTG
+BBa_J04450|Reporter|RFP Coding Device
+BBa_J09855|Composite|Constitutive luxR device with pLuxR
+BBa_J100164|DNA|Strong Promoter+ M6R10 Ammeline Riboswitch+ RFP
+BBa_J100177|Regulatory| -- No description -- 
+BBa_J100178|Regulatory| -- No description -- 
+BBa_J107034|Device|heat-inducible device
+BBa_J107039|Measurement|heat-inducible device + NOT gate + RFP
+BBa_J119305|Generator|T5 promoter + Theo riboswitch + RFP
+BBa_J119317|Reporter|eCDM8 expression + Theophylline riboswitch GFP
+BBa_J119318|Device|eCDM8 expression + Theophylline riboswitch tetracycline resistance protein
+BBa_J119347|Device|eCDM8 expression + Theophylline riboswitch tetracycline resistance protein + GFP expression
+BBa_J23116|Regulatory|null
+BBa_J23117|Regulatory|null
+BBa_J45119|Generator|Wintergreen odor enzyme (BMST1) generator
+BBa_J45199|Generator|Banana odor enzyme (ATF1) generator
+BBa_J45200|Generator|Banana odor generator
+BBa_J45319|Generator|PchA &amp; PchB enzyme generator
+BBa_J45700|Project|Wintergreen odor biosynthetic system
+BBa_K081018|Generator|tetR constitutive generator
+BBa_K084011|Device|Time device
+BBa_K098995|Composite|null
+BBa_K1011001|Composite|P + RBS + ftsZ + RBS + GFP + Term
+BBa_K1012005|Reporter|GFP under control of an OmpR-responsive promoter
+BBa_K1014003|Composite|HrpR Protein Generator(S)
+BBa_K1014004|Composite|HrpR Protein Generator(W)
+BBa_K1014005|Composite|HrpS Protein Generator(S)
+BBa_K1014006|Composite|HrpS Protein Generator(M)
+BBa_K1014007|Composite|HrpS Protein Generator(W)
+BBa_K1014008|Composite|tetR Protein Generator(S)
+BBa_K1014009|Composite|tetR Protein Generator(M)
+BBa_K1014010|Composite|tetR Protein Generator(W)
+BBa_K1014011|Composite|RFP Protein Generator(S)
+BBa_K1014012|Composite|RFP Protein Generator(M)
+BBa_K1014013|Composite|RFP Protein Generator(W)
+BBa_K1014014|Composite|hrpL AND Gate device
+BBa_K1014999|Composite|Biological proportional operational Mu-circuit(1)
+BBa_K1015014|Device|IRR/IRL(Ptet)-FLP-Sm(insert between lacA and cynR)
+BBa_K1015015|Device|araC-pBAD-hbiF-Tc(genome insertion parts between araC and araA)
+BBa_K1015016|Device|lacI+FRT+Cm
+BBa_K1017101|Composite|Pred ( PompC + B0032 + LacI + J61048 + Plac)
+BBa_K1017202|RBS|null
+BBa_K1017602|Translational_Unit|37&#8451; RBS  + mGFP
+BBa_K1017603|Translational_Unit|37&#8451; RBS + LuxR
+BBa_K1017726|Composite|Pcons+B0030+pcya+B0032+ho1+B0030
+BBa_K1017781|Composite|LacI+J61048+Plac
+BBa_K1017811|Composite|Pcons+rRBS-2+mRFP+J61048
+BBa_K1020003|Reporter|AlkR -PSB1C3-Low constitutive
+BBa_K1020005|Composite|Alkane Marker--Device for detection of various alkanes 
+BBa_K1020007|Composite|AlkR -PSB1C3-High constitutive
+BBa_K1020009|Composite|YbhGFSR operon
+BBa_K1020011|Composite|High expressed Alkane Selector for intracellular alkane production
+BBa_K1020012|Composite|Alkane Selector for intracellular alkane production
+BBa_K1021008|Terminator|TtrpC
+BBa_K1021015|Composite|PtrpC+nptII
+BBa_K1021016|Composite|PT7+crtE
+BBa_K1021017|Composite|PT7+crtB
+BBa_K1021018|Composite|PT7+crtI
+BBa_K1021019|Composite|PT7+crtY
+BBa_K1021020|Reporter|PT7+GFP
+BBa_K1021021|Reporter|PT7+mRFP
+BBa_K1021022|Generator|PT7+bar
+BBa_K1021023|Reporter|PtrpC+GFP
+BBa_K1021024|Reporter|PtrpC+mRFP
+BBa_K1021025|Generator|PtrpC+bar
+BBa_K1021026|Composite|Pc+T7 RNA Pol
+BBa_K1021028|Generator|PgpdA+hph
+BBa_K1021029|Generator|PtrpC+nptII+TtrpC
+BBa_K1021030|Generator|PtrpC+hph
+BBa_K1021031|Reporter|PgpdA+mRFP
+BBa_K1021032|Generator|PT7+nptII
+BBa_K1021033|Generator|PT7+hph
+BBa_K1022100|Reporter|pBAD:AIP receiver:GFP:TT
+BBa_K1022104|Composite|pT7:  RBS: His6- SUMO: MaximinH5: RBS TetR&nbsp;:TT
+BBa_K1022105|Composite|pT7: RBS: His6- SUMO: Signiferin: RBS TetR&nbsp;:TT
+BBa_K1022106|Composite|pT7:  RBS: His6- SUMO: Magainin II: RBS: TetR:TT
+BBa_K1022108|Composite|pTet: cI: TT
+BBa_K1022114|Composite|pT7&nbsp;: Lysis Device
+BBa_K1022115|Composite|pTet: cI: TT&nbsp;: pcI: Ulp
+BBa_K1022116|Composite|pBAD: Ulp: TT: pT7: RBS: His6- SUMO: MaximinH5
+BBa_K1022117|Composite|pBAD: Ulp: TT: pT7: RBS:  His6- SUMO: Signiferin
+BBa_K1022118|Composite|pBAD: Ulp: TT: pT7: RBS:  His6- SUMO: Magainin
+BBa_K1022119|Composite|pBAD: RBS&nbsp;: agrC&nbsp;: RBS&nbsp;: agrA&nbsp;: TT&nbsp;: pP2
+BBa_K1022123|Composite|pTet: cI: TT&nbsp;: pcI: Ulp&nbsp;: Lysis
+BBa_K1022124|Composite|pT7:  RBS: His6- SUMO: MaximinH5: RBS TetR&nbsp;:TT&nbsp;: pTet: cI: TT&nbsp;: pcI: Ulp&nbsp;: Lysis
+BBa_K1022125|Composite|pT7: RBS:  His6- SUMO: Signiferin: RBS: TetR:TT&nbsp;: pTet: cI: TT&nbsp;: pcI: Ulp&nbsp;: Lysis
+BBa_K1022126|Composite|pT7:  RBS: His6- SUMO: Magainin II: RBS: TetR:TT&nbsp;: pTet: cI: TT&nbsp;: pcI: Ulp&nbsp;: Lysis
+BBa_K1022127|Composite|pBAD: Agr A&nbsp;: Agr C&nbsp;: pP2&nbsp;: RBS: His6- SUMO: MaximinH5: RBS TetR&nbsp;:TT&nbsp;: pTet: cI: TT&nbsp;: pcI: Ulp&nbsp;: Lys
+BBa_K1022128|Composite|pBAD: Agr A&nbsp;: Agr C&nbsp;: pP2&nbsp;: RBS: His6- SUMO: Signiferin: RBS TetR&nbsp;:TT&nbsp;: pTet: cI: TT&nbsp;: pcI: Ulp&nbsp;: Ly
+BBa_K1022129|Composite|pBAD: Agr A&nbsp;: Agr C&nbsp;: pP2&nbsp;: RBS: His6- SUMO: Magainin II:RBS TetR&nbsp;:TT&nbsp;: pTet: cI: TT&nbsp;: pcI: Ulp&nbsp;: Ly
+BBa_K1023001|Regulatory|xlnD terminator
+BBa_K1023002|Terminator|xlnD terminator
+BBa_K1023003|Coding|FRET based ATP biosensor cds, codon optimized for Aspergillus niger
+BBa_K1026000|Composite|Constitutively Expressed dCas9 Operon
+BBa_K1026002|Composite|Constitutively Expressed gRNA targeting mRFP
+BBa_K1028001|Device|INP.Si4 Silica Binding Complex
+BBa_K1028002|Reporter|A cell membrane stress reporter gene
+BBa_K1028003|Other|Silica Detection System
+BBa_K1030000|Composite|J23100->tetA-asv+sfGFP
+BBa_K1030001|Composite|J23101->tetA-asv+sfGFP
+BBa_K1030002|Composite|J23102->tetA-asv+sfGFP
+BBa_K1030003|Composite|J23103->tetA-asv+sfGFP
+BBa_K1030004|Composite|J23104->tetA-asv+sfGFP
+BBa_K1030005|Composite|J23105->tetA-asv+sfGFP
+BBa_K1030006|Composite|J23106->tetA-asv+sfGFP
+BBa_K1030007|Composite|J23107->tetA-asv+sfGFP
+BBa_K1033003|Coding|B0034-4Cl-B0034-STS
+BBa_K1033100|Coding|geranylgeranyl diphosphate synthase (B0034-CrtE)
+BBa_K1033113|Coding|Uracil glucosyltransferase (B0034-UGTCs2-6xHis) with RBS and Histag
+BBa_K1033122|Coding|B0034-Miraculin
+BBa_K1033239|Tag|null
+BBa_K1033280|Reporter|aeBlue blue chromoprotein with strong promoter
+BBa_K1033281|Reporter|amilCP blue chromoprotein with medium strength promoter
+BBa_K1033282|Reporter|amilCP blue chromoprotein with strong promoter
+BBa_K1033900|Reporter|meffBlue, blue chromoprotein (incl RBS, J23110)
+BBa_K1033903|Reporter|tsPurple, purple chromoprotein (incl RBS, J23110)
+BBa_K1033904|Reporter|tsPurple, purple chromoprotein (incl RBS, J23106)
+BBa_K1033907|Reporter|fwYellow, yellow chromoprotein (incl RBS, J23110)
+BBa_K1033908|Reporter|fwYellow, yellow chromoprotein (incl RBS, J23106)
+BBa_K1033914|Reporter|amajLime, yellow-green chromoprotein (incl RBS &amp; J23110)
+BBa_K1033915|Reporter|amajLime, yellow-green chromoprotein (incl RBS)
+BBa_K1033917|Reporter|gfasPurple, purple chromoprotein (incl RBS, J23110)
+BBa_K1033918|Reporter|gfasPurple, purple chromoprotein (incl RBS)
+BBa_K1033920|Reporter|meffRed, red chromoprotein (incl RBS, J23110)
+BBa_K1033921|Reporter|meffRed, red chromoprotein (incl RBS, J23106)
+BBa_K1033923|Reporter|spisPink, pink chromoprotein (incl RBS, J23110)
+BBa_K1033924|Reporter|spisPink, pink chromoprotein (incl RBS, J23106)
+BBa_K1033926|Reporter|asPink, pink chromoprotein (incl RBS, J23110)
+BBa_K1033927|Reporter|asPink, pink chromoprotein (incl RBS)
+BBa_K1033928|Reporter|aeBlue, blue chromoprotein (incl RBS, J23110)
+BBa_K1033929|Reporter|aeBlue, blue chromoprotein (incl RBS)
+BBa_K1033930|Reporter|amilCP, blue/purple chromoprotein (incl RBS)
+BBa_K1033931|Reporter|amilGFP, yellow chromoprotein (incl RBS)
+BBa_K1033999|null|null
+BBa_K1036000|Composite|lux pL controlled luxR with lux pR controlled ndh (LVA-tag) coding for NADH dehydrogenase II
+BBa_K1036002|Composite|gfp (with LVA-tag) under plux R control
+BBa_K1036003|Composite|lux pL controlled luxR with lux pR controlled gfp (LVA-tag) 
+BBa_K1036005|Composite|sfgfp (with LVA-tag) under plux R control
+BBa_K1036006|Composite|lux pL controlled luxR with lux pR controlled sfgfp (with LVA-tag) 
+BBa_K1039004|Coding|null
+BBa_K1039005|DNA|null
+BBa_K1039008|Coding|null
+BBa_K1039009|Coding|null
+BBa_K1039010|Coding|null
+BBa_K1039011|DNA|null
+BBa_K1039015|Translational_Unit|null
+BBa_K1039019|Translational_Unit|pVIII of M13 Bacteriophage with strong RBS (B0034)
+BBa_K1039020|Generator|pVIII of M13 Bacteriophage with strong constitutive promoter (J23104) and RBS (B0034)
+BBa_K1039021|Composite|null
+BBa_K1039022|Coding|null
+BBa_K1039023|Coding|null
+BBa_K1039024|Coding|null
+BBa_K1039026|DNA|Bxb1 Invertible Medium Strength Promoter Switch Test Construct
+BBa_K1040005|Composite|RBS(BBa_B0034)+ilvE(BBa_K1040000)
+BBa_K1040006|Composite|RBS(BBa_B0034)+sulA(BBa_K1040006)
+BBa_K1042012|Intermediate|Cadmium Promoter + P2 ogr activator
+BBa_K1042013|Intermediate|PO promoter + GFP with Stops
+BBa_K1042015|Composite|Cadmium Responsive GFP+Ogr Activator
+BBa_K1045002|Project|CFP Reporter under control of the c-di-AMP-dependent YdaO Riboswitch
+BBa_K1045009|Terminator|Terminator BBa_B0015 with inversed Pre- and Suffix
+BBa_K1045016|Composite|Terminator BBa_B0015 with inversed Pre- and Suffix- DarR ORF with inversed Pre- and Suffix
+BBa_K1051129|Coding|GFP+VDAC1
+BBa_K1051130|Coding|GFP+TOM40
+BBa_K1051131|Coding|GFP+SAM50
+BBa_K1051133|Coding|K900002+GFP
+BBa_K1051135|Coding|morange+VDAC1
+BBa_K1051136|Coding|morange+TOM40
+BBa_K1051137|Coding|morange+SAM50
+BBa_K1051150|Measurement|GalI+GFP+VDAC1+TYB
+BBa_K1051151|Measurement|GalI+ZRC1+GFP+TYB
+BBa_K1051152|Measurement|GalI+H2A2+GFP+TYB
+BBa_K1051153|Measurement|GalI+ScSac3+GFP+TYB
+BBa_K1051257|Measurement|Construct the measurement pathway of K1051206. 
+BBa_K1051258|Measurement|Construct the measurement pathway of K1051207. 
+BBa_K1051259|Measurement|Construct the measurement pathway of K1051208. 
+BBa_K1051278|Measurement|The measurement of PEST of cln1.
+BBa_K1051279|Measurement|The measurement of D-box.
+BBa_K1051280|Measurement|Measurement parts of PEST of cln3.
+BBa_K1051281|Measurement|Measurement parts of PEST of cln2.
+BBa_K1051288|Measurement|The measurement pathway of ubiquitin fusion protein.
+BBa_K1051505|Device|GAL1- > Sic1- > TBY-1
+BBa_K1051507|Device|GAL1- > Sic1(n)- > TBY-1
+BBa_K1051706|Measurement|P+GFP+I700+mOrangeFP+T
+BBa_K1051707|Measurement|P+GFP+I701+mOrangeFP+T
+BBa_K1051708|Measurement|P+GFP+I702+mOrangeFP+T
+BBa_K1051709|Measurement|P+RFP+I703+mOrangeFP+T
+BBa_K1051745|Intermediate|GFP+I700+TOM40+T
+BBa_K1051900|Device|G1 phase magic with cell synchronization device and CRISPRi induced alternative splicing device.
+BBa_K1051970|Device|clb6 P + D-box + GFP + I700 + TOM40 + T
+BBa_K1051971|Device|clb6 P + D-box + GFP + I701 + TOM40 + T
+BBa_K1051972|Device|clb6 P + D-box + GFP + I702 + TOM40 + T
+BBa_K1051973|Device|clb6 P + D-box + GFP + I703 + TOM40 + T
+BBa_K1051974|Device|clb6 P + D-box + GFP + MER2 Intron + TOM40 + T
+BBa_K1053001|Intermediate|I0500:K1053000
+BBa_K1053006|Generator|null
+BBa_K1053110|Device|Pconst.(High)-RNA scaffold-double terminator
+BBa_K1053111|Intermediate|RNA scaffold-double terminator
+BBa_K1053200|Composite|Pconst.-SR&#8545;-Htr&#8545;-EnvZ-Pompc-HHR-GFP-DT
+BBa_K1053201|Composite|Pconst.-SR&#8545;-Htr&#8545;-EnvZ-Pompc-HHR*-GFP-DT
+BBa_K1053202|Composite|Pconst.-SR&#8545;-Htr&#8545;-EnvZ-Pompc-HHR-GFP-DT-Pconst.-taRNA-DT
+BBa_K1053203|Composite|Pconst.-SR&#8545;-Htr&#8545;-EnvZ-Pompc-taRNA-DT-Pconst.-HHR-GFP-DT
+BBa_K1053204|Composite|Pconst.-SR&#8545;-Htr&#8545;-EnvZ-Pompc-taRNA-DT-Pconst.-HHR*-GFP-DT
+BBa_K1053208|Composite|Pconst.- RBS-YF1/FixJ-DT- Pfixk2- taRNA- DT- Pconst.- HHR- GFP- DT
+BBa_K1053209|Composite|Pconst.- RBS-YF1/FixJ-DT- Pfixk2- taRNA- DT- Pconst.- HHR*- GFP- DT
+BBa_K1053212|Composite|Pfixk2- HHR- GFP- DT
+BBa_K1053300|Composite|PLtetO-1-RBS-cI-DT
+BBa_K1053301|Composite|Plac-RBS-tetR-DT
+BBa_K1053302|Composite|&#955;PR-RBS-lacI-DT
+BBa_K1054001|Coding|protein E of Phage phiX174 under pBAD
+BBa_K1055007|Composite|FsC: functional cutinase
+BBa_K1059002|Composite|null
+BBa_K1059003|Regulatory|null
+BBa_K1059004|Regulatory|null
+BBa_K1059066|Composite|null
+BBa_K1060003|Generator|Methyl Salicylate Production
+BBa_K1060004|Intermediate|J45004:K823017
+BBa_K1060005|Intermediate|J45017:K823017
+BBa_K1060006|Intermediate|K082003:B0015
+BBa_K1060007|Intermediate|C0076:B0015
+BBa_K1060008|Intermediate|K1060002:B0015
+BBa_K1060009|Generator|Medium constitutive expression of EBF synthase from Artemisia annua
+BBa_K1060010|Inverter|TetR expression under glucose limiting conditions
+BBa_K1060012|Generator|Methyl Salicylate Production under TetR regulation
+BBa_K1060014|Generator|Strong constitutive expression of EBF synthase from Artemisia annua
+BBa_K1064002|Composite|null
+BBa_K1064003|Composite|null
+BBa_K1065001|Device|AraC-pBAD + 2-oxoglutarate oxygenase/decarboxylase (EFE) + terminators
+BBa_K1065002|Composite|EFE + Terminators
+BBa_K1065100|Translational_Unit|BSMT1 enzyme
+BBa_K1065101|Device|AraCpBAD + BSMT1 
+BBa_K1065102|Device|Wintergreen device: Plac + PchBA + AraCpBAD + BSMT1
+BBa_K1065103|Translational_Unit|PchBA
+BBa_K1065105|Device|lac_promoter + RBS + SAM synthetase
+BBa_K1065106|Device|Wintergreen device with SAM: Plac + PCHBA + araCpBAD+ BSMT1 + Plac + SAM synthetase
+BBa_K1065201|Composite|Pxyl+GFP in an integrative Bacillus subtilis
+BBa_K1065203|Composite|Efe+Bba_B0015 in pSpac (BBa_K823026) 
+BBa_K1065204|Composite|Efe+Bba_B0015 in BBa_K823024 (pXyl) 
+BBa_K1065300|Device|R0010-YF1-FixJ-PfixK2-amilGFP
+BBa_K1065302|Device|Blue light sensing device without inverter for the production of amilGFP
+BBa_K1065303|Composite|B0034-YF1-B0034-FixJ-pFixK2
+BBa_K1065306|Composite|J23100+YF1+FixJ
+BBa_K1065307|Composite|J23100+YF1+FixJ+terminator
+BBa_K1065308|Composite|J23100+YF1+FixJ+FixK2+inverter
+BBa_K1065309|Device|light regulated circuit producing amilGFP+EFE at dark
+BBa_K1065310|Device|Blue light circuit with inverter for the production of amilCP
+BBa_K1065311|Device|Blue-light photoinducible AmilCP + EFE producing device
+BBa_K1067005|Coding|Nitrification system 
+BBa_K1069001|Protein_Domain|null
+BBa_K1071005|Terminator|T fcpA
+BBa_K1072000|Composite|null
+BBa_K1072002|Generator|NADH dehydrogenase
+BBa_K1072003|Composite|Lux pL controlled LuxR+Lux pR autoinduceing luxI(lva tag)+Lux pR controlled Ndh
+BBa_K1072006|Composite|Lux pR+RBS+&#945;-ALS+2TM 
+BBa_K1072012|Composite|null
+BBa_K1072013|Composite|pGAL1+ Flag + odr-10 + GFP + ADH1 Te
+BBa_K1072014|Composite|pGAL1+ Flag + Brho + odr-10 + GFP + ADH1 Te
+BBa_K1072015|Composite|GAL1 + Brho +Flag + odr-10 +GFP +ADH1
+BBa_K1072016|Composite|pGAL1 + Brho + EGFP + ADH1 Te
+BBa_K1072017|Composite|pGAL1 + Flag + odr-10 + GFP + ADH1Te + pFUS1 + BFP + ADH1Te
+BBa_K1072018|Composite|pGAL1 + Flag + Brho + odr-10 + GFP + ADH1Te  + pFUS1 + BFP + ADH1Te
+BBa_K1072019|Composite|pGAL1 + Brho + Flag + odr-10 + GFP +ADH1 Te + pFUS1 + BFP + ADH1 Te
+BBa_K1072020|Composite|FUS1+BFP+ADH1
+BBa_K1072022|Composite|Lux pI+RBS+LuxR+2TM+Lux pR+RBS+LuxI+2TM+Lux pR+RBS+GFP+2TM+Lux pR+RBS+Ndh+2TM
+BBa_K1073001|Regulatory|null
+BBa_K1073002|Regulatory|Inducible promoter of the lux quorum sensing system with RBS
+BBa_K1073003|Regulatory|Inducible promoter of the las quorum sensing system with RBS
+BBa_K1073007|Intermediate|Lactonase with double terminator
+BBa_K1073009|Intermediate|LasI synthetase + LVA with subsequent double terminator
+BBa_K1073011|Generator|Inducible ampicillin resistance cassette (regulated by RhlR + N-buturyl-HSL)
+BBa_K1073012|Generator|Inducible ampicillin resistance cassette (regulated by LuxR + N-3-oxohexanyol-HSL)
+BBa_K1073013|Generator|Inducible ampicillin resistance cassette (regulated by LasR + N-3-oxododecanoyl-HSL)
+BBa_K1073014|Generator|Constitutively expressed transcription regulator RhlR + LVA
+BBa_K1073015|Generator|Constitutively expressed transcription regulator LuxR + LVA
+BBa_K1073016|Generator|Constitutively expressed transcription regulator LasR + LVA
+BBa_K1073018|Intermediate|Autoinducer synthetase LasI ( producing N-3-oxododecanoyl-HSL) with RBS and double terminator
+BBa_K1073019|Intermediate|Autoinducer synthetase RhlI ( producing N-butyryl-HSL) with RBS and double terminator 
+BBa_K1073020|Reporter|Constitutively expressed chromoprotein aeBlue
+BBa_K1073021|Intermediate|Chromoprotein aeBlue with RBS
+BBa_K1073022|Reporter|Constitutively expressed chromoprotein eforRed
+BBa_K1073023|Intermediate|Chromoprotein eforRed with RBS
+BBa_K1073024|Reporter|Constitutively expressed chromoprotein amilGFP
+BBa_K1073025|Intermediate|Chromoprotein amilGFP with RBS
+BBa_K1073026|Reporter|Constitutively expressed chromoprotein cjBlue
+BBa_K1073027|Intermediate|Chromoprotein cjBlue with RBS
+BBa_K1073028|Composite|Inducible ampicillin resistance cassette + RhlR expression cassette
+BBa_K1073029|Composite|Inducible ampicillin resistance cassette + LuxR expression cassette
+BBa_K1073030|Composite|Inducible ampicillin resistance cassette + LasR expression cassette
+BBa_K1073031|Composite|Autoinducer synthase LuxI + LVA with combined amilGFP chromoprotein expression cassette 
+BBa_K1073032|Composite|Autoinducer synthase LasI + LVA with combined eforRed chromoprotein expression cassette
+BBa_K1073033|Composite|Autoinducer synthase RhlI + LVA with combined aeBlue chromoprotein expression cassette 
+BBa_K1073034|Composite|Inducible ampR expression combined with LasR, RhlI and aeBlue expression cassettes 
+BBa_K1073035|Composite|Inducible ampR expression combined with RhlR, LasI and eforRed expression cassettes
+BBa_K1073036|Temporary|null
+BBa_K1074006|Composite|Pgrac+RBS+SamyQ+TD1+GFP
+BBa_K1074007|Composite|Pctc+RBS+amilCP
+BBa_K1074011|Composite|PsdpRI+RBS+SDP
+BBa_K1075003|Intermediate|Promoter(const.)-AraC-Term-pBAD-RBS34 (Arabinose inducable promoter system)
+BBa_K1075004|Intermediate|SspB-TT
+BBa_K1075005|Intermediate|RBS-SspB-TT
+BBa_K1075006|Generator|pLac-1-RBS32-sspB-TT
+BBa_K1075007|Generator|AraC-pBAD2-RBS32-SspB-TT
+BBa_K1075014|Intermediate|RBS32-VinD1-sspB[XB]-TT
+BBa_K1075015|Generator|J23118-RBS32-VinD1-SspB[XB]-TT
+BBa_K1075016|Generator|AraC-pBAD(D)-RBS32-VinD1-sspB[XB]-TT 
+BBa_K1075017|Intermediate|RBS32-sspB[Core]-LOV-ipaA-TT
+BBa_K1075018|Generator|J23105-RBS32-SspB[Core]-LOV-ipaA-TT
+BBa_K1075019|Generator|AraC-pBAD-RBS32-SspB[Core]-LOV-ipaA-TT
+BBa_K1075021|Intermediate|E. coli ssrA(DAS+4)-TT
+BBa_K1075022|Intermediate|mCherry- (Ec)ssrA(DAS+4)
+BBa_K1075023|Intermediate|mCherry- (Ec)ssrA(DAS+4)-TT
+BBa_K1075024|Intermediate|RBS34- mCherry- (Ec)ssrA(DAS+4)-TT
+BBa_K1075025|Generator|pLac-RBS34-mCherry-(Ec)ssrA(DAS+4)-TT
+BBa_K1075026|Generator|AraC-pBad-RBS34-mCherry-(Ec)ssrA(DAS+4)-TT
+BBa_K1075027|Composite|SplitSspB(Rapamycin inducable)-pLac-RBS34-mCherry-(Ec)ssrA(DAS+4)-TT
+BBa_K1075028|Composite|SplitSspB(Rapamycin inducable)-pLac-RBS34-mCherry-TT
+BBa_K1075029|Intermediate|ccdB-TT
+BBa_K1075030|Intermediate|RBS32-ccdB-TT
+BBa_K1075031|Generator|AraC-pBAD-RBS32-ccdB-TT
+BBa_K1075033|Intermediate|RBS32-ccdA-ssrA
+BBa_K1075034|Intermediate|RBS32-ccdA-ssrA-TT
+BBa_K1075035|Generator|pLac-RBS32-ccdA-ssrA-TT
+BBa_K1075037|Intermediate|MazF-TT
+BBa_K1075038|Intermediate|RBS32-MazF-TT
+BBa_K1075039|Generator|pLac-RBS32-mazF-TT
+BBa_K1075040|Generator|AraC-pBAD-RBS32-mazF-TT
+BBa_K1075041|Intermediate|RBS32-MazE-(Ec)ssrA(DAS+4)
+BBa_K1075042|Intermediate|RBS32-MazE-(Ec)ssrA(DAS+4)-TT
+BBa_K1075043|Generator|pLac-RBS32-mazE-(Ec)ssrA(DAS+4)-TT
+BBa_K1075045|Generator|pDawn-RBS34-mCherry-TT
+BBa_K1075046|Generator|pDawn-RBS32-mazF-TT
+BBa_K1075047|Generator|pDawn-RBS32-ccdB-TT
+BBa_K1075048|Composite|AraC-pBAD-RBS32-mazF-TT-pLac-RBS32-mazE-(Ec)ssrA(DAS+4)-TT
+BBa_K1075049|Composite|AraC-pBAD-RBS32-sspB-TT-pLac-RBS34-mCherry-TT
+BBa_K1075051|Generator|pLac-RBS34-mazF-TT - inducible Killswitch
+BBa_K1077002|Composite|Inducible fimE and hbiF recombinase generator (tet and lux).
+BBa_K1077003|Composite|J23100 fim switch b0034 GFP
+BBa_K1077005|Composite|J23100 fim switch ON orientation
+BBa_K1077006|Composite|nat fim switch b0034 GFP OFF orientation
+BBa_K1077007|Composite|J23100 fim switch b0034 amilCP ON orientation
+BBa_K1080013|Composite|GUN4 (+ Ptac Promoter)
+BBa_K1080015|Composite|POR (+ Ptac promoter)
+BBa_K1080016|Composite|ChlI1 (+Ptac promoter)
+BBa_K1080020|Composite|CTH1 (+ Ptac promoter)
+BBa_K1084111|Composite|SD2 LacZ&alpha; dT
+BBa_K1084112|Composite|SD4 LacZ&#945; dT
+BBa_K1084113|Composite|SD6 LacZ&alpha; dT
+BBa_K1084121|Composite|pTet SD2 LacZ&alpha; dT
+BBa_K1084122|Composite|pTet SD4 LacZ&alpha; dT
+BBa_K1084123|Composite|pTet SD6 LacZ&alpha; dT
+BBa_K1084124|Composite|pTet SD8 LacZ&alpha; dT
+BBa_K1084401|Composite|promoter1-B0034-RFP-dT
+BBa_K1084402|Composite|promoter2-B0034-RFP-dT
+BBa_K1084403|Composite|promoter3-B0034-RFP-dT
+BBa_K1084404|Composite|promoter4-B0034-RFP-dT
+BBa_K1084405|Composite|promoter5-B0034-RFP-dT
+BBa_K1084406|Composite|promoter6-B0034-RFP-dT
+BBa_K1084407|Composite|promoter7-B0034-RFP-dT
+BBa_K1084408|Composite|promoter8-B0034-RFP-dT
+BBa_K1084409|Composite|promoter9-B0034-RFP-dT
+BBa_K1084410|Composite|promoter10-B0034-RFP-dT
+BBa_K1085015|Composite|RBS Start-codon Strep-tag SpiderSilkSubunitE1 SpiderSilkSubunitE2  
+BBa_K1085018|Composite|RBS Start-codon SpiderSilkSubunitE1 SpiderSilkSubunitE2 SilkTail Strep-tag stop-codon
+BBa_K1085019|Composite|RBS Start-codon EstA Strep-tag SpiderSilkSubunitE1 SpiderSilkSubunitE2 SilkTail Stop-codon
+BBa_K1085020|Composite|RBS Start-codon EstA SpiderSilkSubunitN1 SpiderSilkSubunitN2 SilkTail Strep-tag Stop-codon
+BBa_K1085021|Composite|RBS Start-codon SpiderSilkSubunitE1 SpiderSilkSubunitE2 SilkTail Stop-codon
+BBa_K1085023|Composite|RBS Start-codon EstA Strep-tag SpiderSilkSubunitE1 SpiderSilkSubunitE2 
+BBa_K1085024|Composite|RBS Start-codon EstA Strep-tag SpiderSilkSubunitN1 SpiderSilkSubunitN2
+BBa_K1085026|Composite|RBS Start-codon SpiderSilkSubunitE1 SpiderSilkSubunitE2 x2
+BBa_K1085028|Composite|RBS Start-codon SpiderSilkSubunitE1 SpiderSilkSubunitE2 x2 SilkTail Strep-tag Stop-codon
+BBa_K1085037|Composite|FliZ Strep-tag SpiderSilkSubunitE1 SpiderSilkSubunitE2
+BBa_K1085038|Composite|MotB Strep-tag SilkSubunitE1 SilkSubunitE2
+BBa_K1085040|Composite|MotB Strep-tag SilkSubunitN1 SilkSubunitN2	
+BBa_K1086001|Composite|RCNA + YFP
+BBa_K1086002|Composite|TorCAD + RFP
+BBa_K1087004|Regulatory|Ptet-Riboregulator(lock 3d)
+BBa_K1087007|Regulatory|Ptet-lock 3d-PhiR73 activator-B0015
+BBa_K1087015|Reporter|Ptet-lock 3d-mRFP1-teminator
+BBa_K1087018|Reporter|PO promoter+mRFP1
+BBa_K1088001|Reporter|null
+BBa_K1088002|Reporter|null
+BBa_K1088006|Reporter|B. subtilis dxs-AmilCP fusion (constitutive promoter)
+BBa_K1088007|Reporter|E. coli dxs-GFP fusion (lac promoter without lac inhibitor: IPTG uninducible)
+BBa_K1088008|Reporter|B. subtilis dxs-GFP fusion (lac promoter without lac inhibitor: IPTG uninducible)
+BBa_K1088009|Reporter|B. subtilis dxs-GFP protein fusion (lac promoter with LVA-tagged lac inhibitor (LacI:LVA) - IPTG ind
+BBa_K1088010|Reporter|E. coli dxs-GFP protein fusion (lac promoter with LVA-tagged lac inhibitor (LacI:LVA) - IPTG inducib
+BBa_K1088011|Device|B. subtilis dxs (lac promoter without lac inhibitor)
+BBa_K1088012|Device|E. coli dxs (lac promoter without lac inhibitor)
+BBa_K1088013|Device|B. subtilis dxs (lac promoter with lac inhibitor: IPTG inducible)
+BBa_K1088014|Device|E. coli dxs (lac promoter with lac inhibitor: IPTG inducible)
+BBa_K1088015|Regulatory| IPTG controlled B. sub. dxs  coupled with IspG from E. coli
+BBa_K1088016|Device|HRT2 prenyltransferase from Hevea Brasilianis (ara promoter with araC: arabinose inducible)
+BBa_K1088017|Regulatory|AraC device (constitutive promoter, RBS and terminator)
+BBa_K1088019|Regulatory|LacI device (constitutive promoter, RBS and terminator)
+BBa_K1088020|Regulatory|lacI:LVA device (constitutive promoter, RBS and terminator)
+BBa_K1088024|Device|HRT2 prenyltransferase from Hevea Brasilianis (ara promoter without araC: arabinose inducible)
+BBa_K1088026|Reporter|B. subtilis dxs-GFP protein fusion (lac promoter with lac inhibitor: IPTG inducible)
+BBa_K1088027|Device|Dxs from B. subtilis with lac promoter and lacI (IPTG inducible)
+BBa_K1088052|Reporter|GFP reporter with flexible linker at N-terminus for creation of GFP fusions
+BBa_K1090000|Composite|AHL signal sender with RFP reporter under lac promoter control
+BBa_K1092001|Device|T7-RBS-QsrR
+BBa_K1092003|Device|T7-RBS-Dioxygenase
+BBa_K1092005|Device|T7-RBS-Laccase
+BBa_K1092007|Protein_Domain|ssDsbA-PDZ Ligand-Voltage Switch
+BBa_K1092008|Protein_Domain|ssDsbA-PDZ Domain-Voltage Switch
+BBa_K1092009|Protein_Domain|T7-RBS-ssDsbA-PDZ Ligand-Voltage Switch
+BBa_K1092010|Protein_Domain|T7-RBS-ssDsbA-PDZ Domain-Voltage Switch
+BBa_K1092011|Protein_Domain|T7-RBS-ssDsbA-PDZ Ligand
+BBa_K1092012|Protein_Domain|RBS-ssDsbA-PDZ Domain
+BBa_K1092013|Protein_Domain|T7-RBS-Voltage Switch
+BBa_K1092014|Device|T7-QsrR Binding Site-RBS-Dioxygenase
+BBa_K1092015|Protein_Domain|ssDsbA-PDZ Ligand-FL3 Lgt FL3
+BBa_K1092016|Protein_Domain|T7-RBS-ssDsbA-PDZ Ligand-FL3 Lgt FL3
+BBa_K1092017|Protein_Domain|ssDsbA-PDZ Domain-FL3 Lgt FL3
+BBa_K1092018|Protein_Domain|T7-RBS -ssDsbA-PDZ Domain-FL3 Lgt FL3
+BBa_K1092019|Device|ssDsbA-PDZ Ligand-FL3 Lgt FL3-Laccase
+BBa_K1092020|Device|T7-RBS-ssDsbA-PDZ Ligand-FL3 Lgt FL3-Laccase
+BBa_K1092021|Device|ssDsbA-PDZ Domain-FL3 Lgt FL3-Dioxygenase
+BBa_K1092022|Device|T7-RBS-ssDsbA-PDZ Domain-FL3 Lgt FL3-Dioxygenase
+BBa_K1092023|Device|T7-RBS-ssDsbA-PDZ Ligand-Voltage Switch-RFP C terminus
+BBa_K1092024|Device|T7-RBS-ssDsbA-PDZ Domain-Voltage Switch-RFP N terminus
+BBa_K1092025|Device|T7-RBS -ssDsbA-PDZ Ligand-Voltage Switch-Laccase
+BBa_K1092026|Device|T7-RBS-ssDsbA-PDZ Domain-Voltage Switch-Dioxygenase
+BBa_K1100010|Generator|Csy4 generator (with terminator)
+BBa_K1100011|Measurement|B0015 terminator efficiency estimation device (with Csy4 system)
+BBa_K1100012|Translational_Unit|OUTS1 repressible cI
+BBa_K1100013|Device|R1051-OUT S1
+BBa_K1100015|Reporter|R0010 with insulator and sfGFP
+BBa_K1100016|Reporter|R0040 with insulator and sfGFP
+BBa_K1100017|Reporter|R0063 with insulator and sfGFP
+BBa_K1100018|Reporter|R1051 with insulator and sfGFP
+BBa_K1100019|Reporter|R1062 with insulator and sfGFP
+BBa_K1100021|Regulatory|R0040-Aleader
+BBa_K1100022|Regulatory|R0063-ALeader
+BBa_K1100100|Reporter|J23100 with insulator and sfGFP
+BBa_K1100101|Reporter|J23101 with insulator and sfGFP
+BBa_K1100104|Reporter|J23104 with insulator and sfGFP
+BBa_K1100105|Reporter|J23105 with insulator and sfGFP
+BBa_K1100110|Reporter|J23110 with insulator and sfGFP
+BBa_K1100120|Regulatory|J23100-ALeader
+BBa_K1100121|Regulatory|J23101-ALeader
+BBa_K1100125|Regulatory|J23105-ALeader
+BBa_K1100130|Regulatory|J23110-ALeader
+BBa_K1104102|Composite|pLac+RFP-FimH
+BBa_K1104241|Measurement|TrxC promoter +E0840
+BBa_K1104242|Measurement|HemH promoter +E0840
+BBa_K1104243|Measurement|AhpCp1000 +E0840
+BBa_K1104244|Measurement|AhpCp2D1 +E0840
+BBa_K1104245|Measurement|AhpC2-E0840
+BBa_K1104246|Measurement|AhpCD1-E0840
+BBa_K1104247|Measurement|AhpC1-E0840
+BBa_K1104250|Device|OxyR device
+BBa_K1104999|Coding|null
+BBa_K1106000|Composite|mRFP generator under hybrid promoter: HSL-LuxR activated, P22 C2 repressed
+BBa_K1106001|Composite|P22 c2 generator under PLL promoter
+BBa_K1106002|Composite|psp3 generator under lux pR promoter
+BBa_K1106003|Composite|mRFP generator under Ars promoter
+BBa_K1106004|Composite|GFP generator under Ars promoter
+BBa_K1106005|Composite|LuxR generator under a constitutive promoter
+BBa_K1106006|Reporter|Pulse generator part 3
+BBa_K1106007|Composite|pulse generator part 2
+BBa_K1106008|Composite|Pulse generator part 1
+BBa_K1111005|Composite|Constitutive promoter inducing GFP expression
+BBa_K1111007|Composite|MMP2 under the control of the pBAD/araC arabinose inducible promoter
+BBa_K1111009|Composite|Gelatinase under pBAD/araC arabinose inducible promoter
+BBa_K1113002|Generator|Targeting sequence for the delivery of GFP to the Carboxysome
+BBa_K1113501|Coding|GFP with a targeting sequence for delivery into the Carboxysome and a ssrA degradation tag
+BBa_K1114033|Regulatory|null
+BBa_K1114500|Reporter|MoClo Level 1 RFP reporter with AE fusion sites
+BBa_K1114501|Reporter|MoClo Level 1 RFP reporter with AE fusion sites
+BBa_K1114503|Reporter|MoClo Level 1 RFP reporter with AE fusion sites
+BBa_K1114504|Reporter| MoClo Level 1 RFP reporter with AE fusion sites
+BBa_K1114505|Reporter| MoClo Level 1 RFP reporter with AE fusion sites
+BBa_K1114508|Coding|Level 1 MoClo device with lacI and YFP
+BBa_K1114512|Coding|Level 1 MoClo device that constitutively expresses araC
+BBa_K1114514|Coding|MoClo Level 1 Device that constitutively expresses YFP
+BBa_K1114520|Composite|QS1
+BBa_K1114700|Reporter|Level 1 MoClo device that constitutively expresses mCitrine
+BBa_K1114701|Reporter|BioBrick of Level 1 MoClo RFP Reporter
+BBa_K1114702|Reporter|BioBrick adaptation of MoClo Level 1 Reporter 
+BBa_K1114703|Reporter|BioBrick adaptation of MoClo Level 1 RFP Reporter 
+BBa_K1114704|Coding|BioBrick adaption of MoClo Level 1 RFP Reporter
+BBa_K1114705|Terminator|BioBrick adaptation of MoClo Level 1 RFP Reporter 
+BBa_K1115009|Generator|Constitutive production (PCat) of dhlB and dhlA
+BBa_K1115010|Generator|Constitutive production (PTet)  of dhlB and dhlA
+BBa_K1117005|Composite|J23119-K115001-DnaK
+BBa_K1117006|Generator|J23119-K115001-GroEL
+BBa_K1117007|Generator|J23119-K115001-ThiF
+BBa_K1117008|Generator|J23110-K115002-Dnak
+BBa_K1117009|Generator|J23119-K115001
+BBa_K1117010|Generator|J23110-K115002
+BBa_K1117012|Generator|I719005-P0451
+BBa_K112236|Intermediate|{b1006}{ccdB}
+BBa_K112237|Translational_Unit|{rbs.xis.int}{rbs.ihfA}{rbs.ihfB}
+BBa_K1122674|Translational_Unit|Plac+fused PDC-ADH
+BBa_K1122676|Translational_Unit|IPTG inducible pdc and adhB
+BBa_K1122680|Translational_Unit|Plac - LacZ - Fur
+BBa_K1123001|Composite|Protamine-1-Optimized Protein Production Construct
+BBa_K1123002|Composite|1ETF Protein Production Construct
+BBa_K1123003|Composite|1PJN Protein Production Construct
+BBa_K1123004|Composite|1G70 Protein Production Construct
+BBa_K1123005|Composite|EGFP Protein Production Construct
+BBa_K1123006|Composite|P(RG) Protein Production Construct
+BBa_K1123007|Composite|P(RS) Protein Production Construct
+BBa_K1123008|Composite|P(TK) Protein Production Construct
+BBa_K1123009|Composite|P(KS) Protein Production Construct
+BBa_K1124100|Composite|clock device (plux/tet) (+luxI, +tetR, +aiiA, ++sRNA, +amilGFP, +UV reset device(E234K, -LVA)
+BBa_K1124101|Composite|clock device (plux/tet) (+luxI, +tetR, +aiiA, ++sRNA, +amilGFP)
+BBa_K1124102|Composite|clock device (plux/tet) (+luxI, -tetR, -aiiA, --sRNA, +amilGFP)(positive feedback only)
+BBa_K1124103|Composite|clock device (plux/tet) (-luxI, +tetR, +aiiA, ++sRNA, +amilGFP)(negative feedback only)
+BBa_K1124105|Composite|pLac-fhlA363-plambda-sRNA(anti-hycA) (hydrogen synthesis device)
+BBa_K1124106|Composite|plambda-sRNA(anti-tyrR)-plambda-sRNA (anti-csrA) (tyrosine synthesis device)
+BBa_K1124107|Composite|pLac-hpaBC-plambda-sRNA(anti-tyrR)-plambda-sRNA (anti-csrA) (L-DOPA synthesis device)
+BBa_K1124110|Generator|amilGFP(+LVA) generator(+RBS, +terminator)
+BBa_K1124112|Generator|sRNA scaffold (-antisense, +terminator) 
+BBa_K1124113|Generator|anti-mCherry sRNA (+termintor) (sRNA generator)
+BBa_K1124115|Generator|anti-hycA sRNA (+termintor) (sRNA generator)
+BBa_K1124116|Generator|anti-tyrR sRNA (+termintor) (sRNA generator)
+BBa_K1124117|Generator|anti-csrA sRNA (+termintor) (sRNA generator)
+BBa_K1124118|Generator|cI repressor generator (-LVA, -barcode, E234K)(+RBS, +terminator+)
+BBa_K1124123|Composite|inverse PCR template for creating new sRNA (plambda-micC sRNA scaffold-terminator) 
+BBa_K1124200|Composite|pLux/tet-mCherry-luxI-tetR-aiiA
+BBa_K1124201|Composite|pLux/tet-mCherry-luxI-tetR
+BBa_K1124202|Composite|pLux/tet-mCherry-luxI-aiiA
+BBa_K1124203|Composite|pLux/tet-mCherry-luxI
+BBa_K1124204|Composite|pLux/tet-mCherry-tetR-aiiA
+BBa_K1124205|Composite|pLux/tet-mCherry-tetR
+BBa_K1124206|Generator|pLux/tet-mCherry-aiiA
+BBa_K1124207|Composite|pLux/tet-mCherry
+BBa_K1124208|Composite|pLux-mCherry-luxI-aiiA
+BBa_K1124209|Composite|pLux-mCherry-luxI
+BBa_K1124210|Composite|pLux-mCherry-aiiA
+BBa_K1124211|Composite|pLux-mCherry
+BBa_K1124212|Composite|Pconst (strong)-luxR
+BBa_K1124213|Composite|Pconst (strong)-luxR-Pconst (strong)-amilGFP-LVA
+BBa_K1124214|Composite|pLac-mCherry-LVA
+BBa_K1124215|Composite|pLux-mCherry-LVA
+BBa_K1124216|Composite|pLac-amilGFP
+BBa_K1124217|Composite|Pconst (strong)-amilGFP-LVA
+BBa_K1127016|Composite|Gold and QS ultra complex
+BBa_K1127018|Generator|QS and gold sensing part for chracterisation
+BBa_K112808|Device|Enterobacteria phage T4  Lysis Device - no promoter
+BBa_K1129013|Coding|CaXMT1 under arabinose-induced promoter
+BBa_K1129014|Coding|CaMXMT1 under pTET constitutive promoter
+BBa_K1129015|Coding|CaMXMT1 under arabinose-induced promoter
+BBa_K1129016|Coding|CaXMT1 under pTET constitutive promoter
+BBa_K1129017|Coding|CaDXMT1 under arabinose-induced promoter
+BBa_K1129018|Coding|CaDXMT1 under pTET constitutive promoter
+BBa_K1129019|Coding|Complete caffeine synthesis pathway under pTET constitutive promoter
+BBa_K1129020|Coding|Complete caffeine synthesis pathway under arabinose-induced promoter
+BBa_K1129021|Coding|Enoyl-CoA hydratase/aldolase (Ech) under arabinose promoter
+BBa_K1129022|Coding|Enoyl-CoA hydratase/aldolase (Ech) under pTET constitutive promoter
+BBa_K1129023|Coding|	Feruloyl-CoA-Synthetase (FCS) under arabinose promoter
+BBa_K1129024|Coding|Feruloyl-CoA-Synthetase (FCS) under pTET constitutive promoter
+BBa_K1129025|Coding|Phenylalanine Ammonia Lyase (Enc-P) under arabinose promoter
+BBa_K1129026|Coding|Phenylalanine Ammonia Lyase (Enc-P) under pTET constitutive promoter
+BBa_K1129027|DNA|sense tracRNA under arabinose promoter
+BBa_K1129028|DNA|antisense tracRNA under arabinose promoter
+BBa_K1129029|DNA|T4 Repeat/Spacer Region under arabinose promoter
+BBa_K1129030|Coding|Phenylalanine ammonia lyase under arabinose promoter
+BBa_K1129037|Coding|4-coumarate-CoA ligase (4CL) under arabinose promoter
+BBa_K1129039|Coding|Cinnamoyl-CoA reductase from Arabidopsis thaliana under pTET constitutive promoter
+BBa_K1129041|Coding|Caffeic acid-o-methyltransferase under pTET constitutive promoter
+BBa_K1129042|Coding|4-coumarate-CoA ligase (4CL) under pTET constitutive promoter
+BBa_K1129043|Coding|4-coumarate 3-hydroxylase under arabinose promoter
+BBa_K1129044|Coding|Caffeic acid-o-methyltransferase under arabinose promoter
+BBa_K1129045|Coding|Phenylalanine ammonia lyase under pTET constitutive promoter
+BBa_K1129046|Coding|	4-coumarate 3-hydroxylase under pTET constitutive promoter 
+BBa_K1129050|Coding|Cinnamoyl-CoA reductase from Arabidopsis thaliana under arabinose promoter
+BBa_K1130000|Regulatory|null
+BBa_K1130001|Regulatory|null
+BBa_K1132012|Coding|heme oxygenase (ho1), ferredoxin oxidoreductase (PcyA) and tetracycline repressor (TetR)
+BBa_K1132013|Coding|heme oxygenase (ho1), ferredoxin oxidoreductase (PcyA) and tetracycline repressor (TetR) under const
+BBa_K1132014|Coding|Promoter (OmpR, positive) followed by RFP protein generator
+BBa_K1132016|Coding|Promoter (OmpR, positive) followed by RFP protein generator and Cph8 (Cph1/EnvZ fusion) under TetR r
+BBa_K1132017|Coding|For the characterisation of the red light responsive system, under tetR regulation 
+BBa_K1132018|Composite|FixK2 promoter-rbs-mRFP-term
+BBa_K1132019|Composite|term-FixK2 promoter-rbs-mRFP1-term
+BBa_K1132020|Composite|rbs-YF1-rbs-FixJ-term-pFixK2-mRFP1
+BBa_K1132021|Composite|TetR-pTet-rbs-mRFP1-term
+BBa_K1132022|Composite|BBa_J23116-TetR-pTet-RFP
+BBa_K1132023|Composite|strong prom-strong rbs-rbs-tetR-term
+BBa_K1132025|Composite|FimE integrase coding sequence with constitutive weak promoter and terminator.
+BBa_K1132026|Composite|FimE integrase coding sequence with RBS and terminator.
+BBa_K1132027|Composite|Bxb1 integrase coding sequence with constitutive weak promoter 
+BBa_K1132028|Composite|Bxb1 integrase coding sequence with RBS 
+BBa_K1132037|Composite|AND-inverted RFP gate (BBa_K1132034) with T7 polymerase under the control of a strong promoter
+BBa_K1132038|Composite|XOR-inverted RFP gate (BBa_K1132035) with T7 polymerase under the control of a strong promoter
+BBa_K1132043|Composite|R1-pLac-RFP
+BBa_K1132046|Composite|R1-pLac-Bxb1
+BBa_K1135001|Generator|mKeima down stream of strong constitutive promoter and strong RBS
+BBa_K1135004|Reporter|PcstA promoter-RBS-mKeima-Terminator
+BBa_K1137015|Coding|pRecA-LacZ 
+BBa_K1139020|Composite|PlacIq-M13-Plac-GFP on pSB3
+BBa_K1139021|Composite|Plux-M13-Plac-GFP on pSB3
+BBa_K1139023|Composite|Ptet-M13 on pSB3
+BBa_K1139024|Composite|Ptet-M13-Plac-GFP on pSB3
+BBa_K1139025|Composite|Pbad-M13 on pSB3
+BBa_K1139026|Composite|Pbad-M13-Plac-GFP on pSB3
+BBa_K1139110|Composite|Pcon-LasR-Plux/tet-GFP
+BBa_K1139150|Measurement|Prm/lac-GFP-TT
+BBa_K1139201|Measurement|PphoA
+BBa_K1140004|Composite|pLambdaCI + TetR (LVA)
+BBa_K1141000|Reporter|Plac-RBS-mCherry-double terminator (IPTG-inducible)
+BBa_K1144005|Reporter|GAL4 activation reporter
+BBa_K1144006|Reporter|GAL4 (3UAS) activation reporter
+BBa_K1144007|Reporter|GAL4 (6UAS) activation reporter
+BBa_K1144008|Reporter|GAL4 (9UAS) activation reporter
+BBa_K1149002|Composite|pelB-EstCS2-his expression (GFP reporter)
+BBa_K1149003|Composite|pelB-pueA expression
+BBa_K1149004|Composite|pelB-pueB expression
+BBa_K1149005|Composite|pelB-pudA expression
+BBa_K1149006|Composite|pelB-pulA-flag expression
+BBa_K1149007|Composite|Proteinase K
+BBa_K1149008|Composite|Proteinase K (extracellular)
+BBa_K1149009|Composite|Cutinase-Like Enzyme
+BBa_K1149010|Composite|Phaz1 expression
+BBa_K1149013|Composite|bdh2: converts 3HB to acetoacetate
+BBa_K1149020|Composite|Promoter J23104 - RBS B0034 - amilCP
+BBa_K1149021|Composite|null
+BBa_K1149051|Composite|Hybrid promoter phaCAB
+BBa_K1149052|Composite|Constitutive phaCAB
+BBa_K1150017|Device|dCas9 with CMV promoter
+BBa_K1150018|Device|Cas9 with SV40 promoter
+BBa_K1150019|Device|uniCAS Activator (SV40 promoter)
+BBa_K1150020|Device|uniCAS Activator (CMV promoter)
+BBa_K1150021|Device|uniCAS Repressor (SV40 promoter)
+BBa_K1150022|Device|uniCAS Repressor (CMV promoter)
+BBa_K1150023|Device|uniCAS Histone Modifier (SV40 promoter)
+BBa_K1150024|Device|uniCAS Histone Modifier (CMV promoter)
+BBa_K1150025|Device|uniCAS Red Light Switch Part I - Stimulator
+BBa_K1150026|Device|uniCAS Red Light Switch Part II - Activator
+BBa_K1150027|Device|uniCAS Red Light Switch Part II - Repressor
+BBa_K1150028|Device|uniCAS Red Light Switch Part II - Histone Modifier
+BBa_K1150029|Device|uniCAS UV Light Switch Part I - Stimulator
+BBa_K1150030|Device|uniCAS UV Light Switch Part II - Activator
+BBa_K1150031|Device|uniCAS UV Light Switch Part II - Repressor
+BBa_K1150032|Device|uniCAS UV Light Switch Part II - Histone Modifier
+BBa_K1150043|Device|uniCAS RNAimer multiple targets to VEGF 2 and VEGF 3
+BBa_K1150044|Device|uniCAS RNaimer multiple targets to Bla target 3 and 4
+BBa_K1150045|Device|uniCAS RNaimer multiple targets to VEGF 4 and bla target 2
+BBa_K1150046|Device|uniCAS RNaimer multiple targets to Bla target 2, 3, 4 and VEGF 4
+BBa_K1150047|Device|Truncated CMV dCas9 Device #1
+BBa_K1150048|Device|Truncated CMV dCas9 Device #2
+BBa_K1150049|Device|Truncated CMV dCas9 Device #3
+BBa_K1150050|Device|Truncated CMV dCas9 Device #4
+BBa_K1150051|Device|Truncated CMV dCas9 Device #5
+BBa_K1150052|Device|Truncated SV40 dCas9 Device #1
+BBa_K1150053|Device|Truncated SV40 dCas9 Device #2
+BBa_K1150054|Device|Truncated SV40 dCas9 Device #3
+BBa_K1150055|Device|Truncated SV40 dCas9 Device #4
+BBa_K1150056|Device|Truncated SV40 dCas9 Device #5
+BBa_K1150057|Device|Truncated dCas9 VP16 Device #1
+BBa_K1150058|Device|Truncated dCas9 VP16 Device #2
+BBa_K1150059|Device|Truncated dCas9 VP16 Device #3
+BBa_K1150060|Device|Truncated dCas9 VP16 Device #4
+BBa_K1150061|Device|Truncated dCas9 VP16 Device #5
+BBa_K1150062|Intermediate|NLS-BGH terminator
+BBa_K1150063|Intermediate|HA-NLS-Cas9-Linker 3 AA
+BBa_K1151000|null|null
+BBa_K11510017|null|null
+BBa_K1151002|null|null
+BBa_K1151003|null|null
+BBa_K1151004|null|null
+BBa_K1151006|null|null
+BBa_K1151008|null|null
+BBa_K1151009|null|null
+BBa_K1151010|null|null
+BBa_K1151011|null|null
+BBa_K1151012|null|null
+BBa_K1151013|Generator|Hpn coding device (BBa_J04500 + BBa_K1151001 + BBa_B0015)
+BBa_K1151014|null|null
+BBa_K1151015|null|null
+BBa_K1151016|null|null
+BBa_K1151017|Composite|GFP-RFP nickel regulated 1 (without terminator)
+BBa_K1151018|Composite|GFP-RFP nickel regulated 2 (without terminator)
+BBa_K1151019|null|null
+BBa_K1151020|Other|LuxI-HpNikR-GFP-RFP 1
+BBa_K1151021|Other|LuxI-HpNikR-GFP-RFP 2
+BBa_K1151022|Other|LuxI-HpNikR-GFP-RFP 3
+BBa_K1151023|Generator|HpNikR-LuxR
+BBa_K1151024|null|null
+BBa_K1151025|Generator|RBS-Hpn-TER
+BBa_K1151026|Composite|HpNikR-TER
+BBa_K1151027|Composite|pUreA-RBS-RFP (LVAtag)
+BBa_K1151028|Composite|pexbB-RBS-GFP-TER-pUreA-RBS-RFP (LVAtag)
+BBa_K1151029|Composite|pnikR-RBS-GFP-TER-pUreA-RBS-RFP (LVAtag)
+BBa_K1151030|Composite|pint-RBS-GFP-TER-pUreA-RBS-RFP (LVAtag)
+BBa_K1151031|Reporter|Final 1 sensing
+BBa_K1151032|Reporter|Final 2 sensing
+BBa_K1151033|Reporter|Final 3 sensing
+BBa_K1151034|Composite|LuxpR-RBS-LuxI 
+BBa_K1151035|Translational_Unit|Hpn translational unit
+BBa_K1151036|null|null
+BBa_K1151037|Generator|HpNikR-LuxR-LuxI-Hpn
+BBa_K1151038|null|null
+BBa_K1154006|Composite|Mating pheromone-induced IGPD and constitutive LDH expression in yeast
+BBa_K1155003|Reporter|RBS-amilCP-term
+BBa_K1155007|Reporter|RBS-lacZ-term
+BBa_K1157006|Composite|pRhl-RBS-mCherry-tt-Pc-RBS-RhlR-tt
+BBa_K1157007|Coding|Quorum sensing receptor pqsR generator
+BBa_K1157008|Composite|Las specific quorum sensing sensor
+BBa_K1157009|Generator|Quorum sensing receptor pqsR generator
+BBa_K1157010|Composite|Pc-RhlR-mCherry
+BBa_K1157011|Composite|Pc-RhlR-pRhl-RhlR-BFP
+BBa_K1157012|Composite|Pc-RhlR-pRhl-RhlR-luciferase
+BBa_K1157013|Composite|pCI-mCherry-pConst-RhlR-pRhl-RhlR-CI
+BBa_K1157014|Composite|pLas-LasR-GFPmut3-Pc-LasR
+BBa_K1157015|Composite|pConst-Rhl-pRhl-RhlR-CI-pCI-mCherry
+BBa_K1157016|Composite|Pc-LasR-pLas-BFP
+BBa_K1157018|Composite|pRhl-RhlR-mCherry-Pc-RhlR
+BBa_K1157019|Composite|Pc-PQSR
+BBa_K1157020|Composite|Pc-RhlR-pRhl-RhlR-GFPmut3
+BBa_K1157021|Composite|pRhl-RhlR-GFP-Pc-RhlR
+BBa_K1159005|Coding|Secretory Erythromycin Esterase Type II (IgKappa-SigP_EreB) in RFC[25] N-Part
+BBa_K1159006|Coding|Secretory NanoLuc Luciferase (IgKappa-SigP_nLuc) in RFC[25] N-Part
+BBa_K1159007|Coding|Secretory Laccase (IgKappa-SigP_Laccase) in RFC[25] N-Part
+BBa_K1159008|Coding|Secretory Catechol-2,3-dioxygenase (IgKappa-SigP_XylE) in RFC[25] N-Part
+BBa_K1159009|Coding|Secretory Erythromycin Esterase Type II (SERK-SigP_EreB) in RFC[25] N-Part
+BBa_K1159010|Coding|Secretory NanoLuc Luciferase (SERK-SigP_nLuc) in RFC[25] N-Part
+BBa_K1159011|Coding|Secretory Laccase (SERK-SigP_Laccase) in RFC[25] N-Part
+BBa_K1159012|Coding|Secretory Catechol-2,3-dioxygenase (SERK-SigP_XylE) in RFC[25] N-Part
+BBa_K1159013|Coding|Secretory Human Protein Phosphatase 1 (SERK-SigP_PP1) in RFC[25] N-Part
+BBa_K1159014|Coding|Membrane-anchored Erythromycin Esterase Type II in RFC[25] N-Part
+BBa_K1159015|Coding|Membrane-anchored NanoLuc Luciferase in RFC[25] N-Part
+BBa_K1159016|Coding|Membrane-anchored Laccase in RFC[25] N-Part
+BBa_K1159017|Coding|Membrane-anchored FluA triple mutant in RFC[25] N-Part
+BBa_K1159018|Coding|Membrane-anchored Catechol-2,3-dioxygenase (XylE) in RFC[25] N-Part
+BBa_K1159019|Coding|Membrane-anchored Human Protein Phosphatase 1 (PP1) in RFC[25] N-Part
+BBa_K1159106|Coding|PhyB(2-908 AA)_36AALinker_C-TEV-Protease (First part for a light-switchable TEV-Protease) in RFC[25]
+BBa_K1159107|Coding|N-TEV-Protease_36AALinker_PIF3 (Second part for a light-switchable TEV-Protease) in RFC[25]
+BBa_K1159108|Coding|N-TEV-Protease_36AALinker_PIF6 (Second part for a light-switchable TEV-Protease) in RFC[25]
+BBa_K1159109|Coding|Micrococcal nuclease (Thermonuclease) with N-terminal SV40 NLS in RFC[25]
+BBa_K1159110|Coding|Thermonuclease with N-terminal SV40 NLS and flexible linker with TEV site in RFC[25]
+BBa_K1159111|Coding|Membrane-associated Thermonuclease NucA with TEV site and SV40 NLS in RFC[25] N-Part
+BBa_K1159112|Coding|FRET Reporter for TEV Protease activity (eCFP_TEV-site-linker_SYFP2) in RFC[25]
+BBa_K1159202|Coding|Secretory SpyCatcher (IgKappa-SigP_SpyCatcher) in RFC[25] N-Part
+BBa_K1159203|Coding|Secretory SpyTag (IgKappa-SigP_SpyTag) in RFC[25] N-Part
+BBa_K1159204|Coding|Secretory SpyCatcher (SERK-SigP_SpyCatcher) in RFC[25] N-Part
+BBa_K1159205|Coding|Secretory SpyTag (SERK-SigP_SpyTag) in RFC[25] N-Part
+BBa_K1159206|Coding|Membrane-anchored SpyCatcher in RFC[25] N-Part
+BBa_K1159207|Coding|Membrane-anchored SpyTag in RFC[25] N-Part
+BBa_K1159208|Coding|Secretory SpyTag_nLuc fusion (IgKappa-SigP_SpyTag_nLuc) in RFC[25] N-Part
+BBa_K1159209|Coding|Secretory nLuc_SpyTag fusion (IgKappa-SigP_nLuc_SpyTag) in RFC[25] N-Part
+BBa_K1159210|Coding|Secretory nLuc_SpyCatcher fusion (IgKappa-SigP_nLuc_SpyCatcher) in RFC[25] N-Part
+BBa_K1159211|Coding|Secretory SpyCatcher_nLuc fusion (IgKappa-SigP_SpyCatcher_nLuc) in RFC[25] N-Part
+BBa_K1159214|Translational_Unit|Membrane-anchored SpyTag with secretory nLuc_SpyCatcher reporter fusion translational unit
+BBa_K1159314|Coding|TMD with N-terminal Signal Peptide of SERK Receptor from ''P. patens'' in RFC[25] N-Part
+BBa_K1159315|Coding|TMD of SERK Receptor from Physcomitrella patens
+BBa_K1159316|Coding|SERK-Receptor TMD with C-terminal GFP and N-terminal Strep
+BBa_K1162012|Composite|GFP with 10x His Tag
+BBa_K1162016|Coding|null
+BBa_K1162306|Composite|Antimicrobial spider silk generator with C-terminus 10x His-Tag
+BBa_K1163002|Reporter|sfGFP-Term
+BBa_K1163102|Composite|pAceB-sfGFP-Term
+BBa_K1163103|Composite|pAceB-LacI-LVA-Term
+BBa_K1163111|Composite|YncE-sfGFP-Term
+BBa_K1163999|Inverter|Inverter composed of Fur Binding site from AceB promoter + LacI-LVA
+BBa_K1165001|Reporter|GFP Fluorescent Protein under the Control of the pOmpC Promoter
+BBa_K1172203|Device|GldA - glycerol dehydrogenase from Escherichia coli with P T7 and RBS
+BBa_K1172204|Device|GldA - glycerol dehydrogenase from Escherichia coli with P lacI and RBS
+BBa_K1172205|Device|GldA - glycerol dehydrogenase from Escherichia coli with medium Anderson promoter and medium RBS
+BBa_K1172304|Device|Riboflavin synthesis gene cluster from s. oneidensis under control of T7 promoter and strong RBS
+BBa_K1172305|Device|Riboflavin synthesis gene cluster from s. oneidensis under control of a medium Anderson promoter
+BBa_K1172306|Device|Riboflavin synthesis gene cluster from s. oneidensis under control of a strong Anderson promoter
+BBa_K1172403|Device|mtrCAB with medium Promoter and medium RBS
+BBa_K1172404|Device|mtrCAB with strong Promoter and strong RBS
+BBa_K1172405|Device|mtrCAB with T7 Promoter and RBS
+BBa_K1172502|Device|Outer membrane porin OprF from Pseudomonas fluorescens with PT7 and RBS
+BBa_K1172503|Device|Outer membrane porin OprF from Pseudomonas fluorescens with Plac and RBS
+BBa_K1172504|Device|Outer membrane porin OprF from Pseudomonas fluorescens with medium Anderson promotor and weak RBS
+BBa_K1172505|Device|Outer membrane porin OprF from Pseudomonas fluorescens with medium Anderson promotor and medium RBS
+BBa_K1172507|Device|Outer membrane porin OprF from Pseudomonas fluorescens with strong Anderson promoter and strong RBS
+BBa_K1172566|Device|Combination of oprF under control of T7 promoter and gldA coding sequence
+BBa_K1172577|Coding|Combination of oprF and gldA coding sequences
+BBa_K1172588|Device|Combination of oprF and rib-synth coding sequence under control of T7 promoter
+BBa_K1172599|Coding|Combination of oprF and rib-synth coding sequences
+BBa_K1172911|Device|Biosafety-System Lac of Growth (lacI)
+BBa_K1172914|Device|Part 2 of the Biosafety-System TetOR alive (TetO GFP)
+BBa_K1173500|Composite|ompC
+BBa_K1173501|Composite|CcaS, CcaR, PcpcG2, cI(lambda), magenta
+BBa_K1173502|Composite|ompC
+BBa_K1175400|Composite|null
+BBa_K1179002|Generator|Hef1A_Cas9-VP16
+BBa_K1179021|Generator|CAG_Acyl-TyA-mKate-6xHis fusion protein
+BBa_K1179022|Generator|CAG_Acyl-TyA-rtTA3
+BBa_K1179023|Generator|CAG_Acyl-TyA-rtTA3-6xHis
+BBa_K1179024|Generator|CAG_eYFP-PEST 
+BBa_K1179025|Generator|CAG_L7Ae
+BBa_K1179026|Generator|CAG_mKate-PEST
+BBa_K1179027|Generator|CAG_tagBFP
+BBa_K1179032|Generator|CMV_ L7Ae_myc-His6
+BBa_K1179033|Generator|CMV_2xKMet-eGFP
+BBa_K1179040|Generator|TRE_Cas9-VP16
+BBa_K1179071|Generator|CMV_Acyl-TyA-eGFP
+BBa_K1179072|Generator|Hef1a_eYFP-4x451
+BBa_K1179073|Generator|TRE-tight_eYFP-4x451
+BBa_K1179074|Generator|Hef1a_eYFP-4x503
+BBa_K1179075|Generator|TRE-t_eYFP-4x503
+BBa_K1185000|DNA|null
+BBa_K1185003|Plasmid_Backbone|null
+BBa_K1188000|Composite|AmilCP screening part
+BBa_K1188007|Other|Gel Extraction of DNA
+BBa_K1189007|Coding|Beta-lactamase with His Tag under the control of the inducible lacI promoter
+BBa_K1189010|Tag|null
+BBa_K1189011|Tag|null
+BBa_K1189012|Coding|null
+BBa_K1189013|Coding|null
+BBa_K1189034|Coding|J04500_GFP_freiburg
+BBa_K1196007|Device|luciferase 
+BBa_K1197001|Composite|Anti MazF construct (pHyperspank + Anti MazF + Double Terminator)
+BBa_K1197002|Composite|pHyperspank + Anti MazF
+BBa_K1197003|Composite|AntiMazF + Double Terminator
+BBa_K1197004|Composite|RBS SpoVG + LacI + DT
+BBa_K1197005|Composite|MazF +RBS (SpoVG) + LacI + DT
+BBa_K1197006|Composite|MazF and LacI expression construct
+BBa_K1197007|Composite|IPTG dependent B.subtilis Kill Switch construct
+BBa_K1197008|Composite|Pveg (K823003) + RBS (SpoVG) + RFP + DT
+BBa_K1197009|Composite|Phyp + RBS (SpoVG) + RFP + DT
+BBa_K1197010|Composite|Pveg (K143012) + RBS (SpoVG) + RFP + DT
+BBa_K1197011|Composite|Pveg + RBS + Sam8
+BBa_K1197012|Composite|Pveg + RBS + Sam 8 + DT
+BBa_K1197015|Composite|Catalytically active CYP6G1 coding device
+BBa_K1202116|Composite|pLsr Complete System (Receiver)
+BBa_K1210000|Device|LacI-CFP-PK401-YFP
+BBa_K1210002|Device|Enhanced Lumazine Synthase (ELS) Expression Construct
+BBa_K1212009|Composite|pBAD+Riboswitch2+GFP
+BBa_K1212010|Composite|pBAD+Riboswitch1+GFP
+BBa_K1212011|Composite|pBAD+Riboswitch2+TAL1
+BBa_K1212012|Composite|pBAD+Riboswitch2+TAL8
+BBa_K1212013|Composite|pTet + TBS1 + RBS + GFP
+BBa_K1212014|Composite|pBAD+Riboswitch1+TAL1
+BBa_K1212015|Composite|pBAD+Riboswitch1+TAL8
+BBa_K1212016|Composite|pTet + TBS2 + RBS + GFP + T
+BBa_K1212020|Composite|TBS2+RBS+GFP+T
+BBa_K1212021|Composite|J23100+TBS2+GFP
+BBa_K1212022|Composite|J23101+TBS2+GFP
+BBa_K1212023|Composite|J23105+TBS2+GFP
+BBa_K1212024|Composite|J23106+TBS2+GFP
+BBa_K1212025|Composite|J23109+TBS2+GFP
+BBa_K1214011|Composite|pFru-RBS-GFP
+BBa_K1214012|Composite|pScr-RBS-GFP
+BBa_K1214013|Composite|Promoter-RBS-Cra
+BBa_K1217000|Composite|pT7-ppk1(T.forsythia)
+BBa_K1217003|Composite|pT7-ppk1(K.oralis)
+BBa_K1217004|Composite|Signal sequence fused ppk1 (T.forsythis) under T7 promoter
+BBa_K1217005|Composite|Signal sequence fused ppk1 (K.oralis) under T7 promoter
+BBa_K1217008|Composite|Localizing polyphosphate kinase (ppk1) into native Eut microcompartment (BBa_K311004)
+BBa_K1217015|Composite|Native Eut Microcompartment with Surface His-tag display
+BBa_K1217017|Composite|pT7_HisTag_EutS
+BBa_K1218020|Regulatory|sacY promoter + RBS
+BBa_K1218022|DNA|null
+BBa_K1218023|Composite|sacY + red chromoprotein
+BBa_K1218024|Composite|spo0A + blue chromoprotein
+BBa_K1218025|Composite|sacY + RFP
+BBa_K1218026|DNA|null
+BBa_K1222000|Composite|pCam (T7 promoter+lac operator+CamR antisense"2"+T7 terminator+Lac promoter+LacI)
+BBa_K1223005|Translational_Unit|cI translational unit
+BBa_K1223007|Reporter|cI translational unit with His-tag
+BBa_K1223010|Plasmid|pUC-57-P.A.S.E.1
+BBa_K1228003|Device|the device secrete Rabies virus strain ERA glycoprotein in bacillus subtilis 
+BBa_K1228010|Device|The device secrete Rabies virus strain ERA glycoprotein in bacillus subtilis
+BBa_K1230002|Intermediate|YFP generator with LsrA promoter, with terminator as a prefix 
+BBa_K1230004|Generator|MarA Generator 
+BBa_K1230007|Generator|araC-pBad-rbs-LL37
+BBa_K1230008|Intermediate|rbs-GFP-Terminator- pLsrA
+BBa_K1230009|Intermediate|AraC-pBad-rbs
+BBa_K1230014|Intermediate|rbs-GFP-pLacI-rbs-MarA Generator
+BBa_K1231003|Regulatory|Asr-64-Lpp-RBS-GFP is a dual-state construct
+BBa_K125010|Plasmid|Broad-Host-Range RSF1010 derived plasmid
+BBa_K1255002|Composite|NhaS with an RFP reporter induced by an UV promoter.
+BBa_K1255003|Composite|pConst + Riboswitch + BSMT1
+BBa_K1260003|Composite|RBS B0030+ ScFv
+BBa_K1260004|Composite|0030+ScFv+double terminator
+BBa_K1260005|Device|pbad-ScFv (whole device)
+BBa_K1260006|Composite|0030+ScFv&#65288;nonsp&#65289;
+BBa_K1260007|Composite|RBS B0030+ ScFv&#65288;nonsp&#65289;+double terminator
+BBa_K1260008|Device|pbad- ScFv(nonsp) (whole device)
+BBa_K1260011|Device|pbad promoter and membrane protein LGT (whole device)
+BBa_K1260012|Device|AFB1-ScFv and membrane protein LGT whole device
+BBa_K1293023|Temporary|Functional chitinase gene (Cv2935) of Chromobacterium violaceum
+BBa_K1298003|Composite|PcChia 1-1 (insert) using J04500
+BBa_K1298004|Composite|PgeChia 1-1 (insert) using J04500
+BBa_K1298005|Composite|PgeChia 1-2 (insert) using J04500
+BBa_K1300000|Composite|recA promoter + Key (taRNA)
+BBa_K1300001|Composite|pTet promoter + Lock (crRNA) + ccdB + dterm
+BBa_K1300003|Composite|Constitutive T7 promoter + Lock (crRNA) + ccdB + dterm
+BBa_K1300004|Composite|Constitutive T7 promoter + Lock (crRNA) + coding GFP
+BBa_K1300007|Device|recA promoter + translational ccdB
+BBa_K1300008|Composite|recA promoter + translational GFP
+BBa_K1300009|Composite|araC gene + pBAD + cI repressor
+BBa_K1300010|Composite|cI repressible promoter + translational ccdB
+BBa_K1300011|Composite|cI repressible promoter + GFP + pBAD + cI repressor
+BBa_K1300012|Composite|UV promoter + Key (taRNA)
+BBa_K1300013|Device|UV promoter + translational GFP
+BBa_K131026|Measurement|AHL inducible GFP
+BBa_K1311007|Reporter|null
+BBa_K1314001|Reporter|nifH promoter with mRFP reporter
+BBa_K1314005|Generator|nifH promoter+ B0034+T7 RNA polymerase+ B0015
+BBa_K1314006|Generator|nifH promoter+B0031+T7 RNA polymerase+ B0015
+BBa_K1314013|Project|nifK-XhoI-nifH promoter T7 expression system(strong)
+BBa_K1314014|Project|nifK-XhoI-nifH promoter T7 expression system(weak)
+BBa_K1315011|Composite|Pseudomonas
+BBa_K1316003|Measurement|yqjF promoter coupled to mKate2 reporter gene 
+BBa_K1316005|Measurement|ybiJ promoter coupled to mKate2 reporter gene
+BBa_K1316013|Generator|pRhamnose regulating csgB + J23110 constitutive Anderson promoter regulating csgA
+BBa_K1317004|Coding|Fusion protein RFP + Elastin like polypeptide (ELP)
+BBa_K1319010|Measurement|Constitutive expression of K1319000
+BBa_K1319011|Measurement|Constitutive expression of K1319001
+BBa_K1319012|Measurement|Constitutive expression of K1319002
+BBa_K1319013|Generator|Constitutive expression of GFP-REACh1 fusion protein 
+BBa_K1319014|Generator|Constitutive expression of GFP-REACh2 fusion protein
+BBa_K1319015|Generator|Constitutive expression of GFP-EYFP fusion protein
+BBa_K1319020|Translational_Unit|Translational unit of mRFP-galectin3-his
+BBa_K1320000|Composite|Cd sensitive promoter with Ogr activator, PO promoter, and GFP
+BBa_K1321090|Coding|Phytochelatin (PC) EC20 + Linker-dCBD
+BBa_K1321091|Coding|Phytochelatin (PC) EC20 fused to CBDclos
+BBa_K1321092|Coding|Phytochelatin (PC) EC20 fused to CBDcex
+BBa_K1321093|Coding|Phytochelatin (PC) EC20 + Linker-CBDcipA-Linker
+BBa_K1321094|Coding|CBDclos fused to Phytochelatin (PC) EC20
+BBa_K1321095|Coding|CBDcex fused to Phytochelatin (PC) EC20
+BBa_K1321097|Coding|CBDcenA-linker fused to Phytochelatin (PC) EC20
+BBa_K1321100|Coding|Phytochelatin (PC) EC20 fused to linker-dCBD with T7 promoter
+BBa_K1321101|Coding|Phytochelatin (PC) EC20 fused to CBDclos with T7 promoter
+BBa_K1321102|Coding|Phytochelatin (PC) EC20 + CBDcex with T7 promoter
+BBa_K1321103|Coding|Phytochelatin (PC) EC20 + linker-CBDcipA-linker with T7 promoter
+BBa_K1321104|Coding|CBDclos fused to Phytochelatin (PC) EC20 with T7 promoter
+BBa_K1321105|Coding|CBDcex fused to Phytochelatin (PC) EC20 with T7 promoter
+BBa_K1321106|Coding|Linker-CBDcipA-linker + Phytochelatin (PC) EC20 with T7 promoter
+BBa_K1321107|Coding|CBDcen-linker fused to Phytochelatin (PC) EC20 with T7 promoter
+BBa_K1321110|Coding|Phytochelatin (PC) EC20 fused to linker-dCBD with LacI 
+BBa_K1321111|Coding|Phytochelatin (PC) EC20 fused with CBDclos  with LacI promoter
+BBa_K1321112|Coding|Phytochelatin (PC) EC20 fused to CBDcex with LacI promoter
+BBa_K1321113|Coding|Phytochelatin (PC) EC20 + linker-CBDcipA-linker with LacI promoter
+BBa_K1321114|Coding|CBDclos fused to phytochelatin (PC) EC20 with LacI promoter
+BBa_K1321115|Coding|CBDcex fused to phytochelatin (PC) EC20 with LacI promoter
+BBa_K1321116|Coding|Linker-cipA-linker + phytochelatin (PC) EC20 with LacI promoter
+BBa_K1321117|Coding|CBDcenA-linker fused to Phytochelatin (PC) EC20 with LacI promoter
+BBa_K1321120|Coding|SmtA metallothionein fused to linker-dCBD
+BBa_K1321121|Generator|Smt metallothionein fused to CBDclos
+BBa_K1321122|Coding|Smt fused to CBDcex
+BBa_K1321123|Coding|Metallothionein SmtA + linker-CBDcipA-linker
+BBa_K1321126|Coding|linker-CBDcipA-linker + metallothionein SmtA
+BBa_K1321138|Coding|Metallothionein SmtA with T7 promoter
+BBa_K1321150|Coding|Metallothionein Fmt fused to linker-dCBD
+BBa_K1321151|Coding|metallothionein Fmt fused to CBDclos
+BBa_K1321152|Coding|metallothionein Fmt fused to CBDcex
+BBa_K1321154|Coding|CBDclos fused to metallothionein Fmt
+BBa_K1321159|Coding|Fmt metallothionein with T7 promoter
+BBa_K1321162|Coding|NiBP driven by LacI promoter
+BBa_K1321163|Coding|NiBP driven by T7 promoter
+BBa_K1321202|Plasmid|VHb in pSEVA321-Bb
+BBa_K1321295|Composite|CBDclos fused to sfGFP driven by LacI in pSEVA331-Bb
+BBa_K1321296|Composite|sfGFP fused to CBDclos driven by LacI in pSEVA331-Bb
+BBa_K1321297|Composite|sfGFP fused to CBDcex driven by LacI in pSEVA331-Bb
+BBa_K1321299|Composite|J23101-GFP in pSEVA321-Bb
+BBa_K1321324|Composite|tsPurple, purple chromoprotein in pSEVA331-Bb 
+BBa_K1321325|Composite|eforRed in pSEVA331-Bb
+BBa_K1321326|Composite|aeBlue chromoprotein in pSEVA331-Bb
+BBa_K1321327|Composite|gfasPurple chromoprotein in pSEVA331-Bb
+BBa_K1321328|Plasmid|spisPink in pSEVA331-Bb
+BBa_K1321329|Composite|GFP-LVA under TetR control in  pSEVA331-Bb
+BBa_K1321330|Composite|TetR repressed RFP in pSEVA331-Bb
+BBa_K1321331|Composite|araC-Pbad in pSEVA331-Bb
+BBa_K1321332|Composite|promoter(lacI regulated)-RFP in pSEVA331-Bb
+BBa_K1321336|Composite|AraC-pBAD-AcsAB
+BBa_K1321338|Coding|T7 Expression vector
+BBa_K1321341|Coding|sfGFP fused to CBDclos in RFC 25
+BBa_K1321342|Coding|sfGFP fused to CBDcex in RFC 25
+BBa_K1321343|Coding|NiBP fused to CBDclos in RFC 25
+BBa_K1321344|Coding|NiBP fused to CBDcex in RFC 25
+BBa_K1321345|Coding|NiBP fused to dCBD with linker in RFC 25
+BBa_K1321346|Coding|CBDclos fused to sfGFP in RFC 25
+BBa_K1321348|Coding|sfGFP fused to dCBD with linker in RFC 25
+BBa_K1321349|Coding|CBDcex fused to sfGFP in RFC 25
+BBa_K1321350|Coding|CBDcenA with linker fused to sfGFP in Freiburg format (RFC 25)
+BBa_K1321351|Coding|CBDcenA with linker fused to NiBP in Freiburg format (RFC 25)
+BBa_K1321352|Coding|NiBP fused to CBDcex driven by T7
+BBa_K1321353|Coding|NiBP fused to CBDclos driven by T7
+BBa_K1321354|Coding|sfGFP fused to CBDclos driven by T7
+BBa_K1321355|Coding|sfGFP fused to CBDcex driven by T7
+BBa_K1321356|Coding|sfGFP fused to CBDclos driven by LacI
+BBa_K1321357|Coding|sfGFP fused to CBDcex driven by LacI
+BBa_K1321358|Coding|CBDcenA with linker fused to NiBP driven by LacI
+BBa_K1321359|Coding|sfGFP fused to dCBD driven by LacI
+BBa_K1321360|Coding|CBDclos fused to sfGFP driven by LacI
+BBa_K1321361|Coding|CBDcenA with linker fused to NiBP driven by LacI
+BBa_K1321362|Coding|sfGFP fused to CBDcex driven by LacI
+BBa_K1321363|Coding|NiBP fused to CBDclos driven by LacI
+BBa_K1321364|Coding|NiBP fused to dCBD with linker driven by T7
+BBa_K1321365|Coding|CBDcenA with linker fused to sfGFP driven by LacI
+BBa_K1321366|Coding|CBDcex fused to sfGFP with T7 promoter
+BBa_K1321367|Coding|sfGFP + linker-CBDcipA-linker with T7 promoter
+BBa_K1321368|Coding|CBDclos + NiBP in RFC25 fusion format
+BBa_K1321369|Coding|CBDcex + NiBP in RFC25
+BBa_K1321370|Coding|NiBP + Linker-CBDcipA-Linker
+BBa_K1321371|Coding|Linker-CBDcipA-Linker + sfGFP with LacI promoter
+BBa_K1325009|Other|SensorB
+BBa_K1326000|Composite|Plac + CTH1 + YCF54
+BBa_K1326002|Composite|Plac + CTH1 + YCF54 + Plasto + ChlM
+BBa_K1326003|Composite|Plac + POR + DVR1 + ChlP + ChlG
+BBa_K1326004|Composite|Plac + ChlI1 + ChlD
+BBa_K1326005|Composite|Plac + CTH1 + YCF54 + Plasto
+BBa_K1326006|Composite|Plac + POR + DVR1
+BBa_K1326007|Composite|Plac + POR + DVR1 + ChlP
+BBa_K1326008|Composite|Plac + ChlI1 + ChlD + GUN4
+BBa_K1328000|Regulatory|null
+BBa_K1331005|Coding|Modified rhlABRI operon genes from Pseudomonas aeruginosa SQ6
+BBa_K1331006|Coding|Modified rhlAB coding sequence from Pseudomonas aeruginosa SQ6
+BBa_K1331007|Coding|Modified rhlRI coding sequence from Pseudomonas aeruginosa SQ6
+BBa_K1332006|Coding|TTHA0715 with amino acid sequence cut by thrombin
+BBa_K1332007|Coding|SmtA designed for circularization
+BBa_K1332008|Device|mRNA circularization device (5&acute; side)
+BBa_K1333101|Coding|RBS DNAQ
+BBa_K1333102|Coding|RBS umuC
+BBa_K1333103|Coding|RBS umuD
+BBa_K1333104|Coding|RBS DNAQ926
+BBa_K1333105|Coding|RBS recA730
+BBa_K1333106|Coding|RBS umuD'
+BBa_K1333204|Reporter|Or2-RBS-GFP-terminator
+BBa_K1333309|Composite|J23119-FourU-RFP	
+BBa_K1333317|Generator|I13458-I13453-FourU-RFP
+BBa_K1334003|Coding|RBS+HxlR protein
+BBa_K1334005|Composite|P-formaldehyde+RBS+GFP+terminator
+BBa_K1334019|Translational_Unit|promoter+RBS+FDH+terminator
+BBa_K1334020|Signalling|a signal complex to test whether the lux system works
+BBa_K1334030|Signalling|luxI generator
+BBa_K1336006|Composite|LacI Expression Cassette with ispB RC gene
+BBa_K1336007|Composite|LacI Expression Cassette with BsDyP gene
+BBa_K1339010|Composite|RBS-otsA-dT
+BBa_K1339011|Composite|RBS-otsB-dT
+BBa_K1339021|Composite|Pbad-RBS-G3DH-T0 terminator
+BBa_K1341000|Composite|switch device(LTT gfp)for our bio-compass
+BBa_K1341002|Composite|LACI in logic gate
+BBa_K1341003|Composite|TetR in logic gate
+BBa_K1341009|Composite|GFP that can switch logic gate promoter
+BBa_K1341011|Composite|OR LOGIC GATE IN Graph Theory (GFP OUTPUT DEVICE)
+BBa_K1344003|Composite|const.promoter-Nuc-HlyA
+BBa_K1344005|Composite|const.promoter-malS-HlyA
+BBa_K1350002|Device|Promotor+RBS(BBa_K608002) + kil protein(BBa_K1350001)
+BBa_K1350006|Device|promoter+RBS(BBa_K608002)+Mdfa
+BBa_K1350010|Composite|mdfa with terminator
+BBa_K1352000|Composite|Ag43 with PstI sites removed under the control of pBad/araC promoter
+BBa_K1352001|Composite|Ag43+FLAG+MCS under the control of pBAD promoter
+BBa_K1352002|Composite|Ag43+FLAG+MCS(-)beta-hairpins under pBAD promoter
+BBa_K1352012|Coding|null
+BBa_K1354000|Composite|UV Promoter with Phage Activator
+BBa_K1355002|Device|Mercury ions detector device
+BBa_K1355003|Device|Mercury ions accumulator device
+BBa_K1355004|Device|Mercury ions bioremediating device
+BBa_K1357003|Device|IPTG Inducible NhaR Expression Construct
+BBa_K1357004|Device|Constitutive NhaR Expression Device 
+BBa_K136060|Plasmid|null
+BBa_K1361001|Generator|Curli Fiber generator under the control of T7 promoter with a relatively weak expression of CsgA,C
+BBa_K1361002|Generator|Curli Fiber generator where CsgBtrunc, a dissociative nucleator, under the control of Pbad promoter
+BBa_K1361996|Coding|null
+BBa_K1362000|Composite|NpuDnaE intein RFC[105] circularization construct
+BBa_K1362001|Composite|NpuDnaE intein RFC[105] circularization construct (with FLAG and Smt3)
+BBa_K1362002|Composite|Sortase A circularization construct (with His6)
+BBa_K1362003|Composite|Sortase A circularization construct (with Smt3 and His6)
+BBa_K1362011|Translational_Unit|RBS + &#955;-Lysozyme
+BBa_K1362012|Translational_Unit|RBS + Circular &#955;-Lysozyme with His6 linker
+BBa_K1362013|Translational_Unit|RBS + Circular &#955;-Lysozyme with rigid linker
+BBa_K1362020|Translational_Unit|RBS + Xylanase
+BBa_K1362021|Translational_Unit|RBS + Circular Xylanase with His6 linker
+BBa_K1362022|Translational_Unit|RBS + Circular Xylanase
+BBa_K1362023|Translational_Unit|RBS + Xylanase (with His6)
+BBa_K1362050|Translational_Unit|Intein protease - T7RBS-His-SspDnaBC
+BBa_K1362051|Composite|Intein protease with arabinose inducible regulatory promoter/ repressor araC-Pbad-T7RBS-His-SspDnaBC
+BBa_K1362052|DNA|Carrier for RFC[105] C-terminal inserts
+BBa_K1362053|DNA|Carrier for RFC[105] N-terminal inserts
+BBa_K1362054|Composite|SsrA degradation tag as RFC[105] C-terminal insert
+BBa_K1362055|Composite|MinD MTS as RFC[105] C-terminal insert
+BBa_K1362056|Composite|Myristoilation signal sequence as RFC[105] N-terminal insert
+BBa_K1362057|Tag|NLS as RFC[105] N-terminal insert
+BBa_K1362058|Tag|PelB leading sequence as RFC[105] N-terminal insert
+BBa_K1362059|Tag|PKI-NES as RFC[105] N-terminal insert
+BBa_K1362060|Protein_Domain|OmpA surface protein as RFC[105] N-terminal insert
+BBa_K1362096|Plasmid_Backbone|pSB4C50: Low(?) copy BioBrick cloning/expression backbone carrying Cm resistance
+BBa_K1362100|Composite|RBS + NpuDnaE N-intein RFC[105] assembly construct (with His6)
+BBa_K1362101|Composite|RBS+NpuDnaE C-intein RFC[105] assembly construct (with His6)
+BBa_K1362107|Composite|RBS + NpuDnaE C-intein RFC[105] assembly construct with additional N-teminal insertion site
+BBa_K1362170|Translational_Unit|Split sfGFP reconstitution positive control
+BBa_K1362171|Translational_Unit|Split sfGFP reconstitution C-terminal splicing half
+BBa_K1362172|Translational_Unit|Split sfGFP reconstitution C-terminal non-splicing control half
+BBa_K1362173|Translational_Unit|Split sfGFP reconstitution N-terminal splicing half
+BBa_K1363003|Composite|OriT-K592016 the blue sensor which can be transfered into other bacterias by S17-1
+BBa_K1363006|Composite|an experimental part used to test the conjugation
+BBa_K1363200|Composite|Anti-LPS factor(LALF) regulated by lacI
+BBa_K1363201|Composite| Anti-LPS factor(LALF) regulated by IPTG
+BBa_K1363400|Composite|R0010-K592016-B0015-K502020
+BBa_K1363401|Composite|the downstream passway of the red color system
+BBa_K1364007|Composite|RBS + Antifungal GAFP-1 + Double terminator
+BBa_K1364008|Generator|Pveg - strong RBS - Antifungal GAFP-1 - Double terminator
+BBa_K1364009|Generator|Pveg - RBS - Antifungal D4E1 - Double Terminator
+BBa_K1364013|Generator|Pveg - RBS - Antifungal GAFP-1 - RBS - Antifungal D4E1 - Double terminator
+BBa_K1364015|Reporter|Pveg + RFP
+BBa_K1364016|Reporter|PlepA + RFP
+BBa_K1364017|Composite|Promotor PlepA  + RBS spoVG
+BBa_K1368003|Composite|ptetR+lox66+lacI+plac(R0011)+c1
+BBa_K137057|Device|GFP fimE switch with 150 bp tetR promoter
+BBa_K137058|Device|GFP fimE switch with 250 bp tetR promoter 
+BBa_K1371015|Composite|pT7+birA+accA+pccB+2TM-pT7+sfp+2TM
+BBa_K1371034|Intermediate|KS-AT2+DH-ER+KR1+ACP
+BBa_K1371036|Composite|pT7-RBS+loading module
+BBa_K1371037|Composite|pT7-RBS+loading module+KS-AT1+KR1+ACP+KS-AT2
+BBa_K137115|Generator|null
+BBa_K1372000|Intermediate|salicylate inducible suppressing system
+BBa_K1372001|Regulatory|Salicylate Inducible Suppressing System
+BBa_K1373000|Coding|This part encodes NAD synthetase
+BBa_K1373003|Device|nadE with strong promter and RBS
+BBa_K1373004|Device|nadE and oprF with strong promoter and strong RBS
+BBa_K1373012|Device|ppsA promoter - arcA
+BBa_K1378024|Composite|MlrA-Terminator
+BBa_K1378025|Coding|PelB-MlrA-Terminator
+BBa_K1378026|Coding|TorA-MlrA-Terminator
+BBa_K1379003|Measurement|P<sub>comFA
+BBa_K1379005|Measurement|&#963;<sup>x
+BBa_K1379006|Generator|S. pneumoniae 
+BBa_K1379007|Measurement|&#963;<sup>x
+BBa_K1379024|Intermediate|Lock 3c-GFP-B0015
+BBa_K1379025|Intermediate|Key 3c-B0015
+BBa_K1379030|Measurement|J23102-Lock 1-GFP-B0015
+BBa_K1379032|Measurement|J23102-Lock 3-GFP-B0015
+BBa_K1379034|Measurement|J23102-Lock 3c-GFP-B0015
+BBa_K1379035|Intermediate|pBad/araC-Key 3c
+BBa_K1379036|Measurement|J23102-K175031-GFP-B0015
+BBa_K1379038|Measurement|J23102-HKUST Lock 1-GFP-B0015
+BBa_K1379047|Intermediate|RBS(Lock 3c)-GFP-B0015
+BBa_K1381008|Measurement|yenbox_WT-B0032-GFP
+BBa_K1381009|Measurement|yenbox_J23113-B0032-GFP
+BBa_K1381021|Generator|J23116-B0034-pelB-CFY-X6 his
+BBa_K1381022|Device|B0034-USP45-CFY-X6 his
+BBa_K1381023|Generator|J23106-B0034-CFY-X6 his
+BBa_K1387000|Reporter|B0034 - Amil CP - B0015
+BBa_K1387002|Regulatory|null
+BBa_K1387003|Regulatory|pIBPAB - B0034 -  TetR
+BBa_K1387004|Regulatory|pIBPAB - B0034 -  TetR - B0015
+BBa_K1387005|Regulatory|pIBPAB - B0034 
+BBa_K1387006|Composite|null
+BBa_K1390007|Generator|MMOB-His Generator
+BBa_K1390008|Generator|MMOC-His Generator
+BBa_K1390009|Generator|MMOD-His Generator
+BBa_K1390010|Generator|MMOX-His Generator
+BBa_K1390011|Generator|MMOY-His Generator
+BBa_K1390012|Generator|MMOZ-His Generator
+BBa_K1390019|Generator|Complete sMMO of Methylococcus capsulatus
+BBa_K1391029|Plasmid|pENTR_BACE2
+BBa_K1391030|Plasmid|pENTR_miRNAG1
+BBa_K1391031|Plasmid|pENTR_miRNAG2
+BBa_K1391032|Plasmid|pENTR_miRNAG3
+BBa_K1391033|Plasmid|pENTR_miRNAG4
+BBa_K1391129|Plasmid|pEXPR_BACE2
+BBa_K1391130|Plasmid|pEXPR_TRE:miRNAG1
+BBa_K1391131|Plasmid|pEXPR_TRE:miRNAG2
+BBa_K1391132|Plasmid|pEXPR_TRE:miRNAG3
+BBa_K1391133|Plasmid|pEXPR_TRE:miRNAG4
+BBa_K1391139|Plasmid|null
+BBa_K1391140|Plasmid|null
+BBa_K1392939|Composite|RBS + tetR-LVA
+BBa_K1392973|Composite|AracC+Antiholin+RBS+TetLVA+Term+TetR Promoter+ T4 Endolysin+Holin+Terminator
+BBa_K1392991|Composite|with constitutive promoter (J23108),  XylE(K316003) coding sequence
+BBa_K1393000|Coding|null
+BBa_K1393001|Coding|null
+BBa_K1393002|Composite|null
+BBa_K1393003|Coding|null
+BBa_K1394000|Device|null
+BBa_K1394001|Coding|null
+BBa_K1394002|Coding|null
+BBa_K1398001|Composite|XenB (Inducible Construct)
+BBa_K1398003|Composite|NemA (Inducible Construct) 
+BBa_K1398004|Composite|NemR Intergenic Reporter
+BBa_K1398007|Composite|NemR Promoter Reporter
+BBa_K1399014|Reporter|Plac-GFP(AAV)
+BBa_K1399015|Reporter|Plac-GFP(LVA)
+BBa_K1399016|Reporter|Plac-GFP(LAA)
+BBa_K1399017|Reporter|Plac-GFP(DAS+2)
+BBa_K1399018|Reporter|Plac-GFP(DAS)
+BBa_K1399019|Reporter|Ptet-GFP(AAV)
+BBa_K1399020|Reporter|Ptet-GFP(LVA)
+BBa_K1399021|Reporter|Ptet-GFP(LAA)
+BBa_K1399022|Reporter|Ptet-GFP(DAS+2)
+BBa_K1399023|Reporter|Ptet-GFP(DAS)
+BBa_K1403000|Measurement|GFP generator in pSB1C3
+BBa_K1403001|Measurement|GFP generator in pSB1C3 under a  weak promoter
+BBa_K1404001|Composite|Ptac-NiCoTB-rcn-csgBAEFG, turns E. coli into a functional Ni and Co biofilter
+BBa_K1407008|Composite|constitutive production of LasR+LasR/PAI1 Inducible promoter +RBS(B0034)+GFP+Terminator
+BBa_K1407012|Composite|constitutive promoter+RhlR protein generator(LVA-)+RhlR/PAI2 Inducible promoter+RBS(B0030)+RFP+Termi
+BBa_K1407027|Composite|a bistable system
+BBa_K1412000|Device|CheZ generator under Lac promoter
+BBa_K1412001|Device|Endow the E.coli engineered strain(CL-1) the ability of chemotaxis
+BBa_K1412002|Composite|null
+BBa_K1412005|Composite|RBS (1.0) CheZ double terminators 
+BBa_K1412006|Composite|RBS (0.01) CheZ double terminators -- derivative of BBa_K1412005
+BBa_K1412007|Composite|CheZ
+BBa_K1412008|Device|Drive the E.coli engineered strain(CL-1) towards death region
+BBa_K1412010|Device|Drive the E.coli engineered strain(CL-1) towards death region
+BBa_K1412014|Composite|Characterize the efficiency of pTetR (R0040) with chemotaxis
+BBa_K1412033|Device|null
+BBa_K1412600|Device|Endow the CL-1(E.coli engineered strain) the ability of chemotaxis and quorum sensing 
+BBa_K1412614|Composite|Characterize the efficiency of promoter(<bbpart>BBa_K206000
+BBa_K1412716|Measurement|GFP generator with J23101
+BBa_K1412801|Device|Characterize efficiency of RBS with chemotaxis
+BBa_K1412829|Device|Characterize efficiency of RBS with chemotaxis
+BBa_K1412924|Measurement|GFP generator with J23101
+BBa_K1412999|Measurement|GFP generator with J23115
+BBa_K1413023|Composite|Promoter-RBS-bphr2 mutated-Terminator
+BBa_K1413024|Composite|bphR1-RBS-RFP-Terminator
+BBa_K1418002|Generator|Chlorophyllase (TaCHL) generator with C-terminal 10x His tag
+BBa_K1418012|Generator|Cellulase (cenA) generator with 10x His-tag
+BBa_K1418050|Generator|Inducible PHB generator
+BBa_K1418061|Generator|phaCAB-p-GFPPhaC-B0015
+BBa_K1421003|Device|pCl+RBS+LacI+2TE
+BBa_K1422502|Protein_Domain|null
+BBa_K1422503|Protein_Domain|null
+BBa_K1422505|Plasmid|Lactose-inducible killswitch, produces SAMS and NAS1
+BBa_K1422506|Plasmid|Plasmid producing corn NAAT1, DMAS, and TOM1
+BBa_K1423000|Protein_Domain|null
+BBa_K1423002|Intermediate|BCLA N-terminal domain and CAEV p-28
+BBa_K1423003|Composite|BCLA-YFP
+BBa_K1423004|Composite|CAEV capsid protein anchored in cell membrane
+BBa_K1423005|Composite|Const. Promoter-RBS-BclA-YFP-DT
+BBa_K1423006|Reporter|Arsenic Inducible Banana Odor Generator
+BBa_K1423007|Reporter|Constitutive Banana Odor Generator
+BBa_K1424005|Composite|Kan insert for Synechocystis
+BBa_K1430007|Device|Tool to tag yeast proteins with GFP
+BBa_K1430008|Device|Tool to tag yeast proteins with GFP
+BBa_K1431812|Reporter|amilCP, blue chromoprotein reporter system (Strong Promoter, Strong RBS)
+BBa_K1431813|Reporter|cjBlue, green chromoprotein reporter system (Strong Promoter, Strong RBS)
+BBa_K1431814|Reporter|amajLime, yellow-green chromoprotein reporter system (Strong Promoter, Strong RBS)
+BBa_K1431824|Reporter|amajLime, yellow-green chromoprotein reporter system (Weak Promoter, Weak RBS)
+BBa_K1431832|Reporter|amilCP, blue chromoprotein reporter system (Weak Promoter, Strong RBS)
+BBa_K1431834|Reporter|amajLime, yellow-green chromoprotein reporter system (Weak Promoter, Strong RBS)
+BBa_K1433011|Coding|Terminator-RFP-RBS-attB-P-attP-RBS-GFP-Terminator
+BBa_K1439001|Composite|This part contains a reporter gene BBa_J04450, combined with OriTRP4. Used to test plasmid mobility.
+BBa_K1439002|Composite|This part contains a reporter gene BBa_J04450, combined with OriTR. Used to test plasmid mobility. 
+BBa_K1439010|Device|Lysis device induced by aTc
+BBa_K1440088|Regulatory|long parts consist of part2 and part3 
+BBa_K1442031|Coding|Split Neomycin 
+BBa_K1443000|Composite|Blue Light Response Element
+BBa_K1444000|Regulatory|Composite promoter and weak B. subtilis RBS - pLacI
+BBa_K1444001|Regulatory|Composite promoter and weak B. subtilis RBS - pLacI x3
+BBa_K1444002|Regulatory|Composite promoter and consensus B.subtilis
+BBa_K1444003|Regulatory|Composite promoter and consensus B. subtilis
+BBa_K1444004|Regulatory|Composite promoter and weak B. subtilis 
+BBa_K1444005|Regulatory|Composite promoter and consensus B. subtilis RBS - C2P22
+BBa_K1444006|Regulatory|Composite promoter and consensus B. subtilis RBS - C2P22 x3
+BBa_K1444007|Regulatory|Composite promoter and weak B. subtilis RBS - C2P22
+BBa_K1444008|Regulatory|Composite promoter and consensus B. subtilis RBS - C1-434
+BBa_K1444009|Regulatory|Composite promoter and consensus B.subtilis RBS - C1-434 x3
+BBa_K1444010|Regulatory|Composite promoter and weak B. subtilis RBS - C1-434 
+BBa_K1444011|Regulatory|Composite promoter and consensus B. subtilis RBS - pTetR
+BBa_K1444012|Regulatory|Composite promoter and consensus B. subtilis RBS - pTetR x2
+BBa_K1444013|Regulatory|Composite promoter and weak B. subtilis RBS - pTetR 
+BBa_K1444014|Regulatory|Composite promoter and weak B. subtilis RBS - pTetR x2
+BBa_K1444015|Regulatory|Composite promoter and consensus B. subtilis RBS - pLacI
+BBa_K1444016|Regulatory|Composite promoter and consensus B. subtilis RBS - pLacI
+BBa_K1444022|Generator|Repressible RFP
+BBa_K1444023|Generator|Constitutive repressor generator
+BBa_K1444024|Regulatory|Composite promoter and weak B.subtilis RBS - C1-434 x3
+BBa_K1448008|Generator|In E coli mono-terpene production cassette
+BBa_K1448013|Device|In E coli mono-terpene production cassette
+BBa_K145009|Generator|Lux P<sub>R
+BBa_K145010|Other|Killing switch
+BBa_K145109|Generator|Hybrid P22 c2 - luxP<sub>R
+BBa_K145110|Other|Cell death mechanism
+BBa_K145230|Device|CELL DEATH
+BBa_K145257|Intermediate|CELL DEATH Part 2
+BBa_K1453302|null|null
+BBa_K1453902|null|null
+BBa_K1455001|Composite|pTet - amilCP 
+BBa_K1455002|Composite|pBAD - luxO D47E - GFP
+BBa_K1455003|Composite|pTet - mRFP
+BBa_K1455004|Composite|QPI (TetR inverter) - AmilCP
+BBa_K1456025|Composite|tetR-ODD-VP16 
+BBa_K1458000|Coding|null
+BBa_K1458001|Regulatory|null
+BBa_K1459016|Coding|null
+BBa_K1459017|Reporter|pmrC-GFP
+BBa_K1460006|Coding|Anderson Promoter + nixA + Ter + pT7 + GST-CRS5 + Ter
+BBa_K1461209|Generator|arabinose-induced ecf20 generator
+BBa_K1461210|Generator|constitutive ecf20 generator
+BBa_K1461211|Generator|arabinose-induced ecf11 generator
+BBa_K1461212|Generator|constitutive ecf11 generator
+BBa_K1461213|Generator|arabinose-induced cr-ecf20 generator
+BBa_K1461214|Generator|constitutive cr-ecf20 generator
+BBa_K1461215|Generator|arabinose-induced cr-ecf11 generator
+BBa_K1461216|Generator|constitutive cr-ecf11 generator
+BBa_K1461225|Measurement|ecf20 promoter measurement system
+BBa_K1461226|Measurement|ecf11 promoter measurement system
+BBa_K1461302|Composite|RBS-GFP-4 miR 142 3p non-binding site-d.term
+BBa_K1461304|Composite|RBS-GFP-2miR 142 3p bindng sites-2miR 142 5p bindng sites-d.term
+BBa_K1461305|Composite|RBS-GFP-2miR 142 3p non-bindng sites-2miR 142 5p non-bindng sites-d.term
+BBa_K1461310|Translational_Unit|pCMV-RBS-GFP-2 miR 142 3p bindgin sites-2 miR 142 5p binding site-d.term
+BBa_K1462070|Terminator|cyc1
+BBa_K1462090|Composite|Gal1+cox6+GFP+ADH1
+BBa_K1462100|Composite|Gal1+GFP+TOM22+ADH1
+BBa_K1462110|Composite|Gal1+Erg10+GFP+ADH1
+BBa_K1462130|Composite|Gal1+Crt+GFP+ADH1
+BBa_K1462150|Composite|Gal1+AdhE2+GFP+ADH1
+BBa_K1462190|Composite|Gal1+cox6+Ccr+GFP+ADH1
+BBa_K1462200|Composite|Gal1+cox6+AdhE2+GFP+ADH1
+BBa_K1462210|Composite|Gal1+Erg10+cyc1
+BBa_K1462220|Composite|Gal1+Hbd+ADH1
+BBa_K1462230|Composite|Gal1+Crt+cyc1
+BBa_K1462240|Composite|Gal1+Ccr+ADH1
+BBa_K1462260|Composite|Gal1+cox6+Erg10+cyc1
+BBa_K1462270|Composite|Gal1+cox6+Hbd+ADH1
+BBa_K1462300|Composite|Gal1+cox6+AdhE2+cyc1
+BBa_K1462320|Composite|pGAL1+PRK+GBD-ligand+tADH1 
+BBa_K1462370|Composite|pTEF2+GroES+tADH1+pTEF2+GroEL+tADH1 
+BBa_K1462390|Composite|pTDH3+CA+PDZ-ligand+tADH1 
+BBa_K1462410|Project|pTEF2+GroES+tADH1+pTEF2+GroEL+tADH1+pGAL1+PRK+GBD-ligand+tADH1+pTDH3+RuBisCo+SH3-ligand+tADH1+pTDH3+
+BBa_K1462420|Project|pTEF2+GroES+ADH1+pTEF2+GroEL+ADH1+pGAL1+PRK+GBD-ligand+ADH1+pTDH3+RuBisCo+SH3-ligand+ADH1 
+BBa_K1462430|Composite|pTEF2+GFP+tADH1 
+BBa_K1462440|Composite|pTDH3+GFP+tADH1 
+BBa_K1462450|Composite|pGAL1+GFP+tADH1 
+BBa_K1462490|Composite|GAL1 + BFP + GBD ligand + ADH1
+BBa_K1462500|Composite|GAL1+GFP+PDZ-lig+ADH1
+BBa_K1462520|Composite|GAL1+YFP+SH3-lig+ADH1+GAL1+GFP+PDZ-lig+ADH1+GAL1+BFP+GBD-lig+ADH1
+BBa_K1462540|Composite|GAL1+GBD+SH3+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462550|Composite|GAL1+GBD+SH3+PDZ+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462560|Composite|GAL1+GBD+SH3+PDZ+PDZ+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462570|Composite|GAL1+GBD+SH3+SH3+PDZ+Tom22+ADH1 
+BBa_K1462580|Composite|GAL1+GBD+SH3+SH3+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462590|Composite|GAL1+GBD+SH3+SH3+PDZ+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462600|Composite|GAL1+GBD+SH3+SH3+PDZ+PDZ+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462610|Composite|GAL1+GBD+SH3+SH3+SH3+PDZ+Tom22+ADH1 
+BBa_K1462620|Composite|GAL1+GBD+SH3+SH3+SH3+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462630|Composite|GAL1+GBD+SH3+SH3+SH3+PDZ+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462640|Composite|GAL1+GBD+SH3+SH3+SH3+PDZ+PDZ+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462650|Composite|GAL1+GBD+SH3+SH3+SH3+SH3+PDZ+Tom22+ADH1 
+BBa_K1462660|Composite|GAL1+GBD+SH3+SH3+SH3+SH3+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462670|Composite|GAL1+GBD+SH3+SH3+SH3+SH3+PDZ+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462680|Composite|GAL1+GBD+SH3+SH3+SH3+SH3+PDZ+PDZ+PDZ+PDZ+Tom22+ADH1 
+BBa_K1462690|Composite|GAL1+GBD+SH3+PDZ+ADH1 
+BBa_K1462700|Composite|GAL1+GBD+SH3+PDZ+PDZ+ADH1 
+BBa_K1462710|Composite|GAL1+GBD+SH3+PDZ+PDZ+PDZ+ADH1 
+BBa_K1462720|Composite|GAL1+GBD+SH3+PDZ+PDZ+PDZ+PDZ+ADH1 
+BBa_K1462730|Composite|GAL1+GBD+SH3+SH3+PDZ+ADH1 
+BBa_K1462740|Composite|GAL1+GBD+SH3+SH3+PDZ+PDZ+ADH1 
+BBa_K1462750|Composite|GAL1+GBD+SH3+SH3+PDZ+PDZ+PDZ+ADH1 
+BBa_K1462760|Composite|GAL1+GBD+SH3+SH3+PDZ+PDZ+PDZ+PDZ+ADH1 
+BBa_K1462770|Composite|GAL1+GBD+SH3+SH3+SH3+PDZ+ADH1 
+BBa_K1462780|Composite|GAL1+GBD+SH3+SH3+SH3+PDZ+PDZ+ADH1 
+BBa_K1462790|Composite|GAL1+GBD+SH3+SH3+SH3+PDZ+PDZ+PDZ+ADH1 
+BBa_K1462800|Composite|GAL1+GBD+SH3+SH3+SH3+PDZ+PDZ+PDZ+PDZ+ADH1 
+BBa_K1462810|Composite|GAL1+GBD+SH3+SH3+SH3+SH3+PDZ+ADH1 
+BBa_K1462820|Composite|GAL1+GBD+SH3+SH3+SH3+SH3+PDZ+PDZ+ADH1 
+BBa_K1462830|Composite|GAL1+GBD+SH3+SH3+SH3+SH3+PDZ+PDZ+PDZ+ADH1 
+BBa_K1462840|Composite|GAL1+GBD+SH3+SH3+SH3+SH3+PDZ+PDZ+PDZ+PDZ+ADH1 
+BBa_K1462850|Composite|TDH3+CFP+CIIC+ADH1
+BBa_K1462860|Composite|TDH3+ZRC1+YFP+ADH1
+BBa_K1462870|Composite|TDH3+H2A2+OFP+ADH1
+BBa_K1462890|Composite|ZRC1+YFP
+BBa_K1462920|Composite|PTS1+GFP
+BBa_K1462921|Composite|TDH3+PTS1+GFP+ADH1
+BBa_K1463000|Composite|Recombinase Switch With GFP and RFP
+BBa_K1463001|Composite| Recombinase Switch With GFP 
+BBa_K1463002|Composite| Recombinase Switch With GFP (weaker RBS)
+BBa_K1463205|Composite|GvpA and B0034
+BBa_K1463207|Composite|GvpA in J61002 vector
+BBa_K1463210|Composite|GvpA with RBS
+BBa_K1463225|Composite|GvpC and B0032
+BBa_K1463340|Composite|GvpA and GvpC
+BBa_K1463350|Composite|K1463100 RBS + GvpA + B0032 RBS + GvpC
+BBa_K1463601|Composite|FliC with RBS
+BBa_K1463602|Composite|FliC with RBS and J23116 promoter
+BBa_K1463603|Composite|FliC with RBS and J23106 promoter
+BBa_K1463604|Composite|FliC with RBS and J23100 promoter
+BBa_K1463701|Composite|MotA and B0032 RBS
+BBa_K1463702|Composite|MotA with B0032 RBS under J23100 promoter
+BBa_K1463703|Composite|MotA and B0032 RBS under J23103 promoter
+BBa_K1463704|Composite|MotA and B0032 RBS under J23106 promoter
+BBa_K1463705|Composite|MotA and B0032 RBS under J23112 promoter
+BBa_K1463706|Composite|MotA and B0032 RBS under J23116 promoter
+BBa_K1463751|Composite|MotB with B0032 RBS
+BBa_K1463752|Composite|MotB with B0032 RBS under J23100 promoter
+BBa_K1463753|Composite|MotB and B0032 RBS under J23103 promoter
+BBa_K1463754|Composite|MotB and B0032 RBS under J23106 promoter
+BBa_K1463755|Composite|MotB and B0032 RBS under J23112 promoter
+BBa_K1463756|Composite|MotB and B0032 RBS under J23116 promoter
+BBa_K1463760|Composite|MotA and MotB with RBS
+BBa_K1463770|Composite|MotA and MotB under J23103 Promoter
+BBa_K1463771|Composite|MotA and MotB under J23112 promoter
+BBa_K1463772|Composite|MotA and MotB under J23106 Promoter
+BBa_K1463773|Composite|MotA and MotB under J23116 Promoter
+BBa_K1463774|Composite|MotA and MotB under J23100 Promoter
+BBa_K1465105|Device|Fumarate reductase (Fum) under control of the T7 promoter
+BBa_K1465208|Composite|Carbonic anhydrase (csoS3) and shell-proteins (csoS14) of the carboxysome of H. neapolitanus
+BBa_K1465209|Composite|Carbonic anhydrase (csoS3), shell-proteins (csoS14) and pore protein (csoS1D) of the carboxysome
+BBa_K1465212|Device|Phosphoribulokinase (prkA) from Synechoccus elongatus under the control of the ptac promoter
+BBa_K1465213|Device|RubisCO of Halothiobacillus neapolitanus under control of the ptac promoter
+BBa_K1465214|Device|RubisCO of Halothiobacillus neapolitanus and phosphoribulokinase A (prkA) under control of ptac 
+BBa_K1465223|Composite|Functional carboxysome of Halothiobacillus neapolitanus with a GFP fusion under T7 control
+BBa_K1465226|Device|sRNA of phosphofructokinase A under the control of ptac promoter (ptac_sRNA:pfkA)
+BBa_K1465227|Device|sRNA of phosphofructokinase A under the control of T7 promoter (T7_sRNA:pfkA)
+BBa_K1465229|Device|Sedoheptulose 1,7-bisphosphatase (glpX) from Bacillus methanolicus under the control of ptac
+BBa_K1465303|Translational_Unit|Isobutanol pathway with adhA
+BBa_K1465304|Device|adhA
+BBa_K1465305|Device|adhA
+BBa_K1465306|Device|Isobutanol pathway under Ptac control
+BBa_K1465307|Device|Isobutanol pathway with adhA
+BBa_K1471003|Composite|RBS with MerB.
+BBa_K1471005|Composite|AGS (Linker) - VP16 (Activation domain).
+BBa_K1471006|Composite|RBS with PhyB.
+BBa_K1471007|Device|RBS - MerB - RBS - MerE.
+BBa_K1471008|Composite|RBS - PhyB - AGS - VP16.
+BBa_K1471009|Device|RBS - PhyB - AGS - VP16 - NLS - PolyA.
+BBa_K1471010|Composite|pCMV - YFP.
+BBa_K1471012|Device|RBS - MerE - RBS - MerB - RBS -  GFP
+BBa_K1472606|Generator|TetR repressible FadL &amp; FadD generator 
+BBa_K1472611|Generator|IPTG inducible expression of &#8710;9, &#8710;12, and &#8710;15 desaturases
+BBa_K1472612|Translational_Unit|Delta 9,12 and 15 Desaturase 
+BBa_K1472614|Generator|&#8710;9, &#8710;12, &#8710;15 desaturases with LacI promoter
+BBa_K1475000|Device|Protein containing all amino acids
+BBa_K1475008|Device|lacI protein produced by constitutive promoter
+BBa_K1475012|Device|GFP controlled by the lacI and plac system
+BBa_K1477014|Generator|Constitutive promoter +RBS+LacZ alpha+Term.
+BBa_K1477030|Coding|T7 strong promoter + endolysin cassette
+BBa_K1479001|Terminator|0.0 Testing the UE of the bio-brick upload page, not designing a real one
+BBa_K1480002|Composite|null
+BBa_K1480003|Composite|TetR generator (Promoter J23109)
+BBa_K1480004|Composite|TetR generator (Promoter J23106 )
+BBa_K1480005|Composite|TetR generator (Promoter J23111 )
+BBa_K1486001|Coding|Arabinose promoter + CpxR
+BBa_K1486002|Generator|Arabinose promoter + sfGFP CpxR (Nterm)
+BBa_K1486005|Generator|Arabinose promoter + sfGFP-CpxR [Cterm]
+BBa_K1486008|Generator|CxpR &amp; Split IFP1.4 [Cterm + Cterm][1]
+BBa_K1486009|Generator|CxpR &amp; Split IFP1.4 [Nterm + Nterm]
+BBa_K1486010|Generator|CxpR &amp; Split IFP1.4 [Nterm + Cterm]
+BBa_K1486011|Generator|CxpR &amp; Split IFP1.4 [Cterm + Nterm]
+BBa_K1486012|Generator|CpxR-IFP[1] under pBAD
+BBa_K1486013|Generator|CpxR-IFP[2] under pBAD
+BBa_K1486014|Generator|IFP[1]-CpxR under pBAD 
+BBa_K1486015|Generator|IFP[2]-CpxR under pBAD
+BBa_K1486018|Generator|Arabinose promoter + fLuc[1] + fLuc[2]
+BBa_K1486021|Generator|Arabinose promoter + rLuc[1] + rLuc[2]
+BBa_K1486022|Generator|Renilla Luciferase
+BBa_K1486033|Tag|R.reniformis luciferase + ADH1 terminator + CaUra3
+BBa_K1486035|Tag|Yeast Optimized sfGFP-C + ADH1 terminator + CaUra3 Cassette
+BBa_K1486036|Tag|rLucC + ADH1 terminator + CaUra3 cassette
+BBa_K1486040|Generator|sfGFPN + CpxR
+BBa_K1486041|Generator|sfGFPC + CpxR
+BBa_K1486048|Reporter|CpxR reporter
+BBa_K1486049|Reporter|CpxR promoter FW + RFP
+BBa_K1486050|Reporter|CpxR promoter RV + RFP
+BBa_K1486056|Coding|CxpR &amp; Split IFP1.4 [Cterm + Cterm][2]
+BBa_K1487021|Composite|Promoter + Guide RNA (gRNA) target for acfA
+BBa_K1487022|Composite|Promoter + Guide RNA (gRNA) target for acfB
+BBa_K1487026|Composite|Promoter + Guide RNA (gRNA) target for ctxB
+BBa_K1489000|Composite|pBAD-RBS-Bovine Galectin-1-B0012 Terminator
+BBa_K1489004|Composite|pBAD-RBS-OmpA-Bovine Galectin-1-B0012 Terminator
+BBa_K1491010|Composite|WTLac-RBS-BFP-His
+BBa_K1491011|Composite|WTLac-RBS-GFP-His
+BBa_K1491012|Composite|WTLac-RBS-YFP-His
+BBa_K1491013|Composite|WTLac-RBS-OFP-His
+BBa_K1491014|Composite|WTLac-RBS-RFP-His
+BBa_K1491016|Composite|Lac Inducible Codon Optimized KillerRed
+BBa_K1491018|Composite|Lac Inducible Codon Optimized Supernova
+BBa_K1491019|Composite|Constitutive Killer Red
+BBa_K1491020|Composite|Constitutive Codon Optimized Killer Red
+BBa_K1491021|Composite|Constitutive Codon Optimized Super Nova
+BBa_K1491025|Coding|T7 RNA Polymerase with ER Intein
+BBa_K1491027|Coding|T7 RNA Polymerase with Dead ER Intein
+BBa_K1491028|Device|J23115-B0034-T7 RNA Polymerase
+BBa_K1491029|Device|J23115-B0034-T7 RNA Polymerase with ER Intein
+BBa_K1491032|Device|T7 promoter-RBS-RFP-T7 Terminator
+BBa_K1491033|Device|T7 promoter-RBS-RFP-T7 Terminator
+BBa_K1491034|Device|Constitutive T7 RNAP with YFPH
+BBa_K1491035|Device|Constitutive ER Intein T7 RNAP with YFPH
+BBa_K1491036|Device|Constitutive Dead ER Intein T7 RNAP with YFPH
+BBa_K1493502|Composite|pCI/Lac gfp
+BBa_K1493503|Composite|pCI/Tet gfp
+BBa_K1493504|Composite|pTet+GFP
+BBa_K1493510|Composite|pRHA+cI&#955;
+BBa_K1493520|Composite|pRHA+LacI
+BBa_K1493530|Composite|pRHA+TetR
+BBa_K1493540|Composite|pRHA+cI&#955;+LacI
+BBa_K1493560|Composite|pRHA+cI&#955;+pcI/tet+GFP
+BBa_K1493701|Composite|pCI/Lac
+BBa_K1497014|Generator|Pelargonidin producing operon (low yield)- T7-B0034-F3H-B0034-DFR-B0034-ANS
+BBa_K1497015|Generator|Pelargonidin producing operon - T7-B0034-F3H-B0034-DFR-B0034-eANS
+BBa_K1497017|Generator|Naringenin producing operon under the T7 promoter BBa_I712074
+BBa_K1497018|Composite|B0034-F3H-B0034-DFR
+BBa_K1497020|Reporter|Naringenin sensor (FdeR) with GFP as reporter
+BBa_K1497023|Composite|Pelargonidin producing operon B0034-F3H-B0034-DFR-B0034-eANS
+BBa_K1498001|Composite|constitutive promoter with lipase (BBa_J23110, BBa_K258006)
+BBa_K1499205|Composite|MntH with amber stop codon with promoter for expression, no tRNA
+BBa_K1499252|Composite|GFP with 2 stop codons generator + supP tRNA
+BBa_K1499500|Composite|quorum sensing machinery that activates GFP expression
+BBa_K1499503|Composite|quorum sensing machinery that activates GFP expression with extra terminator
+BBa_K1500010|Translational_Unit|IPTG--GFP--EmrR
+BBa_K1500013|Translational_Unit|ParoF--mCherry--dam
+BBa_K1500014|Translational_Unit|paroF->MCherry-MutH(E56A)
+BBa_K1500015|Translational_Unit|paroF->MCherry-MutH()
+BBa_K150004|Generator|lambda cI generator
+BBa_K1507000|Composite|PfadBA Repressor (J23119- B0034-FadR-B0015)
+BBa_K1507007|Composite|Rose fragrance generator (PfadBA-RBS34-CCD1-B0015)
+BBa_K1507014|Composite|Fatty acid induced expression auto regulator (pfadBA-B0030-C0051-R0051-B0034-E0040-B0015)
+BBa_K1507015|Composite|Fatty acid induced expression auto regulator (pfadBA-B0034-C0051-R0051-B0034-E0040-B0015)
+BBa_K1507016|Composite|Fatty acid induced expression auto regulator (pfadBA-B0034-C0051-pfadBA-B0034-C0051-R0051-B0034-E004
+BBa_K1510005|Terminator| B0012+B0012
+BBa_K1510214|Conjugation|Dispersin generator circuit
+BBa_K1510233|Coding|A blue light regulated ccdb apoptosis gene
+BBa_K1510904|Conjugation|Truncated lysostaphin coding circuit
+BBa_K1510915|Conjugation| ketoisocaproate decarboxylase (THI3) Circuit
+BBa_K1510922|Conjugation|Fragrance generator part1: ketoisocaproate decarboxylase (THI3) and RBS
+BBa_K1513001|Composite| Fast-type merR biosensor
+BBa_K1519123|Device|OsmY based secretion for purification
+BBa_K1519124|Reporter|MCherry fused to K1519123 for Characterization
+BBa_K1520003|Generator|Pcons2-rbs-luxR-Ter
+BBa_K1520004|Composite|Prlux-rbs-lacI-Ter
+BBa_K1520005|Reporter|Plac-rbs-rfp-Ter
+BBa_K1520006|Composite|Prlux-rbs-cI-Ter
+BBa_K1520008|Generator|Pcons2-rbs-lacI-Ter
+BBa_K1520010|Reporter|Prlux-rbs-rfp-Ter
+BBa_K1520011|Composite|Prlux-rbs-rfp-rbs-luxI-Ter
+BBa_K1520012|Composite|Prlux-rbs-rfp-rbs-luxR-Ter
+BBa_K1520013|Composite|Prlux-rbs-rfp-rbs-luxI-rbs-luxR-Ter
+BBa_K1520014|Reporter|Ptet-rbs-rfp-Ter
+BBa_K1520015|Composite|Plac-rbs-tetR-Ter
+BBa_K1520016|Composite|Pcons2-rbs-luxR-Ter-Prlux-rbs-lacI-Ter
+BBa_K1520017|Composite|Pcons2-rbs-luxR-Ter-Prlux-rbs-lacI-Ter-Plac-rbs-rfp-Ter
+BBa_K1520019|Composite|Pcons2-rbs-lacI-Ter-Plac-rbs-luxI-Ter
+BBa_K1520021|Composite|Pcons2-rbs-lacI-Ter-Plac-rbs-luxI-Ter-Pcons2-rbs-luxR-Ter-Prlux-rbs-rfp-Ter
+BBa_K1520022|Composite|Pcons2-rbs-lacI-Ter-Plac-rbs-luxI-Ter-Pcons2-rbs-luxR-Ter-Prlux-rbs-rfp-rbs-luxI-Ter
+BBa_K1520023|Composite|Pcons2-rbs-lacI-Ter-Plac-rbs-luxI-Ter-Pcons2-rbs-luxR-Ter-Prlux-rbs-rfp-rbs-luxR-Ter
+BBa_K1520024|Composite|Pcons2-rbs-lacI-Ter-Plac-rbs-luxI-Ter-Pcons2-rbs-luxR-Ter-Prlux-rbs-rfp-rbs-luxI-rbs-luxR-Ter
+BBa_K1520511|Composite|MC7-rbs-luxI-Ter
+BBa_K1520512|Composite|MC31-rbs-luxI-Ter
+BBa_K1520513|Composite|MC7-rbs-tetR-Ter-PtetO-rbs-rfp-Ter-Plac-rbs-tetR-Ter-Pcons2-rbs-lacI-Ter
+BBa_K1520514|Composite|MC31-rbs-tetR-Ter-PtetO-rbs-rfp-Ter-Plac-rbs-tetR-Ter-Pcons2-rbs-lacI-Ter
+BBa_K1520515|Composite|MC7-rbs-luxI-Ter-Pcons2-rbs-luxR-Ter-Prlux-rbs-OMPA-golB-rbs-luxI-Ter.
+BBa_K1520516|Composite|MC31-rbs-luxI-Ter-Pcons2-rbs-luxR-Ter-Prlux-rbs-OMPA-golB-rbs-luxI-Ter
+BBa_K1520520|Composite|PgolTS-golS-PgolB-tetR-Ter-PtetO-rfp-Ter-Plac-tetR-Ter
+BBa_K1520521|Composite|PgolTS-golS-PgolB-tetR-Ter-PtetO-rfp-Ter-Plac-tetR-Ter-Pcons2-lacI-Ter
+BBa_K1521002|Intermediate|LasR functional construction + GFP reporter
+BBa_K1523008|Composite|A device can reduce Cr(VI)
+BBa_K1523025|Coding|ChrR coding sequence
+BBa_K1523101|Reporter|PyeaR->Riboflavin synthase
+BBa_K1526004|Composite|pYoda + SpPCS
+BBa_K1526005|Composite|LacRS + Gsh1*
+BBa_K1526006|Composite|LacRS + SpPCS
+BBa_K1526008|Composite|LacRS + CysP
+BBa_K1526009|Regulatory|Lac repressor System (LacRS)
+BBa_K1529199|Composite|null
+BBa_K1529264|Composite|Plux_CmR_luxI
+BBa_K1529265|Composite|Plux_CmR_RhlI
+BBa_K1529301|Composite|Prhl(RL)-GFP
+BBa_K1529302|Composite|Prhl(RL)-CmR-LasI
+BBa_K1529311|Composite|Prhl(LR)_GFP
+BBa_K1529321|Composite|Prhl(RR)_GFP
+BBa_K1529797|Composite|Plux-CmR-RhlI
+BBa_K1529951|Composite|1
+BBa_K1532007|Device|LacI Producer
+BBa_K1537002|Device|it's our vector backbone.
+BBa_K1537009|Device|piGEM002+HPS-PHI+AtFDH+FALDH
+BBa_K1537010|Device|piGEM002+TCP02-HPS-PHI+Tp-AtFDH+FALDH
+BBa_K1537011|Device|piGEM002+Tp02HpsPhi+Tp-FDH+Tp-FALDH
+BBa_K1537018|DNA|null
+BBa_K1541009|Reporter|sfGFP under promoter P(Rhl) with riboregulator RR12
+BBa_K1547010|Terminator|PSAD terminator
+BBa_K1548002|Generator|Hsp60 Promoter-RBS-mRFP1-6xHisTag
+BBa_K1555003|Measurement|GFP induced by micro-aerobic promoter vgb
+BBa_K1559003|Generator|CRISPR/Cas9 system with Anderson high-expression constitutive promoter
+BBa_K1559004|Generator|CRISPR/Cas9 system with Anderson medium-expression constitutive promoter
+BBa_K1559005|Generator|CRISPR/Cas9 system with Anderson low-expression constitutive promoter
+BBa_K1559006|Generator|CRISPR/Cas9 system with pBAD inducible promoter
+BBa_K1559007|Generator|CRISPR/Cas9 system with pLac inducible promoter
+BBa_K1559008|Generator|CRISPR/Cas9 system with pRha inducible promoter
+BBa_K1560000|DNA|null
+BBa_K1565002|Composite|ColiAlert
+BBa_K1638003|Composite|T25 domain of bacterial two-hybrid system (IPTG inducible)
+BBa_K1638005|Composite|T18 domain of bacterial two-hybrid system (IPTG inducible)
+BBa_K1638007|Reporter|GFP reporter with flexible linker
+BBa_K1638009|Composite|T18 domain of bacterial two-hybrid system with GFP reporter
+BBa_K173003|Generator|pdc and adhB protein generator
+BBa_K173007|Device|aTc inducible system (aTc->PoPS) with J23100 promoter
+BBa_K176010|Translational_Unit|PoPS->RBS+ccdB->PoPS
+BBa_K176033|Generator|PoPS->RBS+ccdB+T
+BBa_K176035|Signalling|TetR repressible AHL->Death Receiver: pCon 0.70->luxR+pLux/Tet->ccdB
+BBa_K176060|Translational_Unit|PoPS->RBS(weak)+ccdB->PoPS
+BBa_K176062|Generator|PoPS->RBS(weak)+ccdB+T
+BBa_K176089|Signalling|TetR repressible AHL->Death Receiver: pCon 0.70->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176115|Device|Cell density controller: PoPS->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176116|Device|Cell density controller: pCon max->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176117|Device|Cell density controller: pCon 1.00->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176118|Device|Cell density controller: pCon 0.70->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176119|Device|Cell density controller: pCon 0.36->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176120|Device|Cell density controller: pCon 0.15->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176121|Device|Cell density controller: pCon 0.04->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176122|Device|Cell density controller: pCon 0.01->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176131|Signalling|TetR repressible AHL->Death Receiver: pCon 0.36->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176146|Device|Cell density controller: pCon 0.36->luxI-LVA+pCon 0.36->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176149|Device|Cell density controller: pCon 0.15->luxI-LVA+pCon 0.36->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176152|Device|Cell density controller: pCon 0.04->luxI-LVA+pCon 0.36->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176155|Device|Cell density controller: pCon 0.01->luxI-LVA+pCon 0.36->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176185|Signalling|TetR repressible AHL->Death Receiver: pCon 0.15->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176187|Signalling|TetR repressible AHL->Death Receiver: pCon 0.04->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176195|Device|Cell density controller: pCon 0.70->luxI-LVA+pCon 0.36->luxR+pLux/Tet->ccdB(weak RBS)
+BBa_K176209|Device|Cell density controller: pCon 0.04->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB-LVA
+BBa_K176211|Device|Cell density controller: pCon 0.04->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB-LVA(weak RBS)
+BBa_K176213|Device|Cell density controller: pCon 0.01->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB-LVA
+BBa_K176215|Device|Cell density controller: pCon 0.01->luxI-LVA+pCon 0.70->luxR+pLux/Tet->ccdB-LVA(weak RBS)
+BBa_K177004|Device|bistable_1_R
+BBa_K177005|Device|Bistable_1
+BBa_K177013|Temporary|operon1_part3
+BBa_K177029|Generator|cell Invasion device (testing)
+BBa_K177038|Reporter|Bistable switch 1 testing device
+BBa_K188006|Reporter|Expression of ccdB for self-destruction of bacteria. Since promoter lux/cIIp22, this sequence can be
+BBa_K188661|Temporary|ccdB
+BBa_K200017|Composite|RBS + OtsB
+BBa_K215091|Generator|pLac+RBS+OpdA
+BBa_K215104|Intermediate|prtD_prtE_prtF from erwinia chrysanthemi
+BBa_K218011|Generator|LuxO inducible GFP
+BBa_K225001|Composite|Green light activated actuator
+BBa_K239009|Device|GFP test devise for Spy promoter
+BBa_K272501|Composite|TetR repressible promoter-Rbs-ccdB toxin - EYFP-constitutive promoter-Rbs-Streptomycin resistance ma
+BBa_K272991|Composite|Rbs-ccdB toxin - EYFP-constitutive promoter-Rbs-Streptomycin resistance marker-ECFP
+BBa_K272993|Composite|Rbs-ccdB toxin - EYFP
+BBa_K272996|Composite|Rbs - ccdB toxin
+BBa_K299810|Intermediate|B0032+Invasin
+BBa_K299811|Intermediate|B0032 Listeriolysin
+BBa_K299812|Intermediate|Invasin + Listeriolysin
+BBa_K299813|Device|AraC regulated cell invasion device
+BBa_K299814|Composite|invasin listeriolysin GFP
+BBa_K299815|Device|invasion device constitutively expressed
+BBa_K299816|Device|control construct - invasin + GFP under J23102
+BBa_K316003|Coding|XylE - catechol 2,3-dioxygenase from P.putida with terminator
+BBa_K316005|Composite|Functional XylE under Pveg promoter, with double terminator
+BBa_K322124|Translational_Unit|null
+BBa_K325108|Generator|EPIC Firefly Luciferase (under pBAD)<BR>P. Pyralis<BR>(E. coli optimised)
+BBa_K336016|Composite|Plux+RBS+ccdB+stop
+BBa_K336017|Composite|Plux &#945;-amylase+ccdB
+BBa_K336019|Project|&#945;-amylase&#12288;generating all in one model
+BBa_K336101|Composite|p(tetR)+&#945;-amylase+luxR+lux reciever+ccdB
+BBa_K343006|Generator|Expresses B-carotene monooxygenase on a constitutive promotor
+BBa_K346083|Translational_Unit|RBS(B0034)+lacZ alpha(BBa_I732006)
+BBa_K371035|Translational_Unit|MPF(meta-prefix)+pduN+RBS+pduU+MSF(meta-suffix)
+BBa_K371036|Translational_Unit|MPF(meta-prefix)+pduN+RBS+pduT+MSF(meta-suffix)
+BBa_K381001|Composite|Nitrate reporter: PyeaR - GFP composite
+BBa_K389010|Generator|VirA receptor (expressed)
+BBa_K389422|Composite|VirA/G signaling system + sensitivity tuner + luciferase
+BBa_K393000|Generator|phsABC_generator
+BBa_K411003|Generator|pLAC promotor,Theophylline-inducible Riboswitch, GFP+Terminator
+BBa_K511801|Generator|Red Fluorescent Protein Generator (Hef1a-mKate) MammoBlock Device
+BBa_K511803|Generator|Repressible Fluorescence/Repression Generator (Hef1a-LacO-AmCyan-miRFF4) MammoBlock Device
+BBa_K511805|Generator|Repressible Yellow Fluorescence Generator (Hef1a-LacO-EYFP-4xFF4) MammoBlock Device 
+BBa_K511807|Generator|Repressible Red Fluorescent Protein Generator (Hef1a-LacO-mKate) MammoBlock Device
+BBa_K511811|Signalling|Notch-Gal4-ESN Juxtacrine Receptor Generator (CMV-Notch-Gal4-ESN) MammoBlock Device
+BBa_K511818|Signalling|Inducible Notch-Gal4-ESN Receptor Generator (TRE-Tight-Notch-Gal4-ESN) MammoBlock Device 
+BBa_K511819|Generator|Inducible Yellow Fluorescent Protein Generator (UAS-Gal4-Citrine) MammoBlock Device 
+BBa_K511821|Generator|Inducible Fluorescence/Repression Generator (UAS-Gal4-amCyan-miRFF4) MammoBlock Device 
+BBa_K511823|Generator|Inducible Red Fluorescent Protein Generator (UAS-Gal4-mKate) MammoBlock Device 
+BBa_K511825|Signalling|Inducible Notch-Gal4-ESN Receptor Generator (UAS-Gal4-Notch-Gal4-ESN) MammoBlock Device	
+BBa_K511826|Generator|Inducible N-Cadherin-2A-EYFP Generator (UAS-Gal4-N-Cadherin-2A-EYFP) MammoBlock Device 
+BBa_K511909|Generator|Inducible LacI Repressor Generator (TRE-Tight-LacI) MammoBlock Device	
+BBa_K515102|Composite|J23100 promoter - PA2652
+BBa_K515107|Composite|Composite p(tetR) - Dendra2
+BBa_K518007|Device|cheZ expression cassette (no promoter)
+BBa_K525512|Composite|Polycistronic expression of BisdA and BisdB
+BBa_K538120|Intermediate|pLacI + RBS
+BBa_K542009|Composite|pLacI Regulated AG43
+BBa_K560000|Composite| Blue Light Sensor+PtrpL+mRFP1
+BBa_K575024|Composite|LasR/PAI1 Inducible Promoter + RBS (B0030) + GFP, Constitutive Promoter + RBS (B0030) + LasR
+BBa_K575033|Composite|RhlR/PAI2 Inducible Promoter + RBS (B0030) + GFP + Constitutive Promoter + RBS (B0034) + RhlR
+BBa_K577881|Reporter|pC+AraC+pBad+GFPc
+BBa_K581008|Generator|RBS+ccdB+Termintor 
+BBa_K590015|Coding|sfGFP_mamK_pGA1C3
+BBa_K590025|Composite|The PetroBrick:  Strong Constitutive Expression of ADC and AAR in pSB1C3
+BBa_K592016|Composite|B0034-YF1-B0034-FixJ, blue light sensor and RR with RBS 
+BBa_K592025|Reporter|B0034-amilCP
+BBa_K593009|Composite|ROSE regulated kill switch
+BBa_K624004|Coding|ori+Pmsp1+rep (pYMB essentials)
+BBa_K624042|Generator|pT7 + RBS + LLO + RBS + Invasin + RBS + ECFP + Ter
+BBa_K624043|Composite|RBS + LLO + RBS + Invasin + RBS + ECFP + Ter
+BBa_K624044|Generator|pYMB essentials + RBS + LLO + RBS + Invasin + RBS + ECFP
+BBa_K624047|Composite|RBS(pmsp3) + LLO + RBS(pmsp3) + Inv + RBS(pmsp3) + ECFP
+BBa_K624048|Composite|RBS(trunc.) + LLO + RBS(trunc.)  + Inv + RBS(trunc.) + ECFP
+BBa_K624051|Generator|pYMB essentials + RBS(trunc.) + LLO + RBS(trunc.) + Invasin + RBS(trunc.) + ECFP
+BBa_K624057|Generator|pYMB essentials + RBS(Pmsp3) + LLO
+BBa_K624058|Generator|pYMB essentials + RBS(Pmsp3) + Inv
+BBa_K624061|Generator|pYMB essentials + RBS(trunc.) + LLO
+BBa_K624062|Generator|pYMB essentials + RBS(trunc.) + Inv
+BBa_K639003|Composite|rrnB P1-LacI-pLac-mCherry plausible stress sensor
+BBa_K643000|Coding|null
+BBa_K649001|Reporter|GFP regulated by 3OC12-HSL and LasR
+BBa_K658001|Device|a bacteria population-control device with RBS1.0 driven by lacl+pL
+BBa_K658003|Device|a bacteria population-control device with RBS0.6 driven by lacl+pL 
+BBa_K658005|Device|a bacteria population-control device with RBS0.07 driven by lacl+pL 
+BBa_K658016|Device|LuxI->LuxR->lux pR->GFP
+BBa_K731520|Composite|IPTG inducible GFPmut3b
+BBa_K732002|Composite|synCG-&#946; + Promoter + RBS
+BBa_K733018|Composite|xylR
+BBa_K737010|Generator|Gvp cluster 
+BBa_K737024|Composite|PhoB promotor ligated to GFP 
+BBa_K737027|Composite|Ugp promoter 
+BBa_K741002|Generator|plac-RBS-GFP-T
+BBa_K750000|Signalling|pBADGLT:unstable gfp expression device activated by arabinose
+BBa_K759001|Device|Aggregation Module inducible by arabinose in E.coli.
+BBa_K774007|Reporter|Mammalian-Bacterial promoter with RFP reporter: CArG promoter sequence + BBaK216005 + BBa_K08101
+BBa_K777110|Composite|fliC under the control of constitutive promoter J23100
+BBa_K777111|Composite| fliC under the control of constitutive promoter J23112
+BBa_K777112|Composite|fliC under the control of constitutive promoter J23114
+BBa_K820009|Device|LacI-inducible ccdB
+BBa_K824008|Composite|Cadmium Promoter with GFP Reporter 
+BBa_K830000|Composite|anti legionella cassette
+BBa_K844015|Generator|lac/IPTG inducible Spider Silk 1x "F" Subunit fused to GFP
+BBa_K855000|Intermediate|pvdQ-B0015
+BBa_K861061|Reporter|Efficacy testing RFP generator of BBa_K861060 (PfadR)
+BBa_K880001|Measurement|null
+BBa_K880002|Measurement|null
+BBa_K880003|Measurement|null
+BBa_K896012|Composite|Inv+LLO+RFP ( reporter for invasin&amp; listeriolysin)
+BBa_K934025|Reporter|Plux/tet-GFP
+BBa_K952003|Intermediate|B0034-YF1-B0034-FixJ-PfixK2-amilGFP
+BBa_K976002|Composite|FGFR-1 + FRS2 Complex
+BBa_K976004|Composite|psbA2 promoter, 5
+BBa_K976005|Composite|psbA2 promoter, 5
+BBa_K976006|Composite|Yeast ADH1 promoter + Firefly Luciferase
+BBa_K976007|Composite|Yeast ADH1 promoter + Renilla Luciferase
+BBa_K976008|Composite|Yeast ADH1 Promoter + Firefly Luciferase + Yeast ADH1 Promoter + Renilla Luciferase
+BBa_K976009|Translational_Unit|null
+BBa_K999999|null|null
+BBa_M1193|Composite|Gabi's part in GFP assay
+BBa_M1612|Composite|mioC promoter + RBS + tetR (standard 10 compatible)
+BBa_M1613|Composite|mioC promoter + RBS + GFP + double terminator (standard 10 compatible)
+BBa_M1614|Composite|Pr promoter+RBS+ XylR + terminator
+BBa_M1615|Temporary|MioCpromoter+RBS tetR+stop+tetp+RBS+GFP+stop
+BBa_M1616|Temporary|Pr+ XylR + Pu + GFP
+BBa_M1617|Temporary|loXf+tetP+RBS+cre+ssRa+stop+loXr
+BBa_M1618|Temporary|Cell Replication Counter Device
+BBa_M1630|Temporary|mioC activated tet R +terminator
+BBa_M1637|Composite|LacSwap &amp; Bioluminescence
+BBa_M1702|Composite|ScrR Promoter + RBS + ScrR + coding+Transcription terminator 
+BBa_M30109|Composite|Light responsive system, dual regulation
+BBa_M36019|Composite|Lactate Sensor
+BBa_M36031|Composite|Composite part for non specific acid phosphatase actuator
+BBa_M36032|Composite|Composite part for Bone Sialoprotein Actuator
+BBa_M36081|Composite|Tenebrio Molitor Antifreeze Protein Actuator With Secretion Tag
+BBa_M36085|Composite|Winter Flounder Antifreeze Protein Actuator With Secretion Tag
+BBa_M36086|Composite|Tenebrio Molitor Antifreeze Protein without Secretion Tag
+BBa_M36087|Composite|Winter Flounder Antifreeze Protein Actuator without Secretion Tag
+BBa_M36122|Composite|Myoglobin Actuator
+BBa_M36154|Composite|NifA sensor
+BBa_M36158|Composite|E.coli Temperature Shock Sensor/Actuator
+BBa_M36268|Composite|LasR-N-(3-oxododecanoyl)-homoserine lactone qsc102 sensor
+BBa_M36363|Generator|PoPS -> DbjA
+BBa_M36414|Device|Pb (II) Sensor
+BBa_M36459|Composite|PoPS -> Cell Lysis
+BBa_M36475|Composite|Codes for AraC, a transcription factor which represses operon. Arabinose dislodges TF protein. 
+BBa_M36523|Composite|ALDH2 actuator
+BBa_M36547|Composite|cAMP sensor
+BBa_M36558|Composite|PoPS estrogen receptor beta and ERE operon.
+BBa_M36561|Terminator|This terminator is a general terminator of transcription. It forms a stem loop which stops transcrip
+BBa_M36598|Device|Yeast-Optimized Chicken Lysozyme (LysC) Secretor
+BBa_M36644|Composite|promoter plus xpt(C74U)/metE riboswitch
+BBa_M36645|Composite|promoter plus riboswitch ribD/metE
+BBa_M36646|Composite|promoter plus theo/lysC riboswitch 
+BBa_M36647|Composite|promoter plus theo/metE riboswitch
+BBa_M36689|Composite|HSE 2x Promoter + Bxb1 Recombinase w/ NLS + SV40 Terminator + attB site + CMV Reverse + attP site
+BBa_M36748|Composite|Glucose Sensor
+BBa_M36763|Device|Yeast-Optimized Chicken Lysozyme (LysA) Secretor 
+BBa_M36772|Composite|Detergent Resistance Actuator
+BBa_M36776|Signalling|pH sensor
+BBa_M36782|Generator|PoPS -> Melamine deaminase
+BBa_M36805|Device|Acetaldehyde Sensor
+BBa_M36826|Composite|Phenylalanine Hydroxylase w/ RBS and Terminator
+BBa_M36855|Device|Recombinase-based heat-inducible sensor
+BBa_M36900|Composite|Salt Stress Sensor (Eukaryotes)
+BBa_M36918|Terminator|T1 from E. coli rrnB
+BBa_M36921|Composite|Zinc Sensor 
+BBa_M36928|Composite|Beta-glucosidase actuator
+BBa_M36938|Composite|Enoyl-[acyl-carrier-protien] reductase actuator with GFP reporter
+BBa_M36939|Composite|Enoyl-[acyl-carrier-protien] reductase actuator
+BBa_M45006|Composite|Hairpin designed to silence canine F1 allergen
+BBa_M45114|Coding|null
+BBa_M45117|Reporter|Uranium Inducible GFPuv Reporter
+BBa_M45123|Device|Uranium Reducing and Detection Device for E. coli
+BBa_M45125|Composite|F-Plasmid OriT with Autolysin for Cell Death Induced Conjugation
+BBa_M45136|Coding|null
+BBa_M45138|Device|Type II Secretion of Chromate and Uranium Reductase with TorA
+BBa_M45415|Composite|Human Fibronectin With GFP
+BBa_M45418|Composite|A signalling molecule
+BBa_M45503|Composite|PF + RBS
+BBa_M45750|Composite|P-rbs-10xhis-EPS-Hd1a-Stop
+BBa_P0312|Generator|PoPS -> LacI   [S0156]
+BBa_P0440|Generator|PoPS -> TetR  [S0151]
+BBa_P0451|Generator|PoPS -> cI (lambda)   [S0153]
+BBa_P1010|Generator|ccdB cell death gene
+BBa_S03509|Intermediate|B0034:J32010
+BBa_S03651|Intermediate|S00159:P1010
+BBa_S03706|Intermediate|J23100:P0440
+BBa_S03882|Intermediate|null
+BBa_S04584|Intermediate|I712074:P1010
+BBa_S04745|Intermediate|J176019:J176041
+BBa_S05240|Intermediate|K808000:B0034
+BBa_T1002|DNA|Testing the categories
+BBa_T9002|Signalling|GFP Producer Controlled by 3OC6HSL Receiver Device
