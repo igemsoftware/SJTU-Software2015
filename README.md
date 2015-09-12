@@ -61,7 +61,7 @@ This is the last part of our design. After completing the required information o
 ## Install
 You can just visit our website without any installation. But you are permitted to boot up a copy of your web server.
 
-What you need is __Apache__, __MySQL__, __Perl__, __PHP__ and __downloading this project__.
+What you need is __Apache__, __MySQL__, __Perl__, __PHP__ and __this project__.
 
 ### Apache
 
@@ -89,8 +89,33 @@ MySQL is not included in the original operating system. We can download it from 
 
 XAMPP will do most of works.
 
+### Perl
+
+#### MacOS
+
+Perl is automatically installed in MacOS.
+  - Type in ```perl xxx.pl arguments...``` to run the __xxx.pl__.
+
+#### Other OS
+
+XAMPP will do most of works.
+
 ### PHP
 
 #### MacOS
 
 PHP is automatically installed in MacOS. 
+  - Type in ```$ sudo open -e /etc/apache2/httpd.conf``` in __terminal__.
+  - Find ```#LoadModule php5_module``` in this file and remove the \#.
+  - Restart apache server. ```$ sudo apachectl restart```
+  - Then put the directory of our project into ___/Library/WebServer/Documents___.
+  - Open your browser, visit __http://localhost/iGem2015_SJTU_Software/search/search.html___ to use our website.
+
+#### Other OS
+
+XAMPP will do most of works.
+
+### Project
+
+Find ```my $password = "superjjj2486";``` in all the __.pl__ file. Change it to ```my $password = "xxx";``` where xxx is your password of username __root__ in MySQL.
+  
