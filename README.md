@@ -1,7 +1,7 @@
 BASE
 ======
 
-![image](https://github.com/igemsoftware/SJTU-Software2015/icon/baselogoweb-color-02.png)
+![image](https://github.com/igemsoftware/SJTU-Software2015/blob/master/icon/baselogoweb-color-03.png)
 
 ## Introduction
 
