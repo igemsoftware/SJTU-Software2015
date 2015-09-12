@@ -130,7 +130,8 @@ if($type eq "brick"){
 	my $sth1 = $dbh->prepare($string);
 	$sth1->execute();
 	while(my $Meta = $sth1->fetchrow_hashref()) {
-		@brickid = (@brickid,[$Meta->{'Com_id'},gscore($Meta->{'Part_status'},$Meta->{'Sample_status'},$Meta->{'Part_results'},$Meta->{'Star_rating'},$Meta->{'Uses'},$Meta->{'DNA_status'},$Meta->{'Qualitative_experience'},$Meta->{'Group_favorite'},$Meta->{'Del'},$Meta->{'Groups'},$Meta->{'Confirmed_times'},$Meta->{'Number_comments'},$Meta->{'Ave_rating'},$hPower),$Meta->{'Author'},$Meta->{'Enter_time'},$Meta->{'Ctype'},$Meta->{'Uses'},$Meta->{'Des'}]);
+		@score=gscore($Meta->{'Part_status'},$Meta->{'Sample_status'},$Meta->{'Part_results'},$Meta->{'Star_rating'},$Meta->{'Uses'},$Meta->{'DNA_status'},$Meta->{'Qualitative_experience'},$Meta->{'Group_favorite'},$Meta->{'Del'},$Meta->{'Groups'},$Meta->{'Confirmed_times'},$Meta->{'Number_comments'},$Meta->{'Ave_rating'},$hPower);
+		@brickid = (@brickid,[$Meta->{'Com_id'},$score[0],$Meta->{'Author'},$Meta->{'Enter_time'},$Meta->{'Ctype'},$Meta->{'Uses'},$Meta->{'Des'},$score[1]]);
 		$i=$i+1;
 	}
 	@brickid = sort{$a->[1] <=> $b->[1]}@brickid;
@@ -138,7 +139,8 @@ if($type eq "brick"){
 		if($brickid[$j][1] < $limit ){
 			last;
 		}
-		print $brickid[$j][0],"|",$brickid[$j][4],"|",$brickid[$j][6],"|",$brickid[$j][2],"|",$brickid[$j][3],"|",sprintf "%.2f\n",$brickid[$j][1];		
+		print $brickid[$j][0],"|",$brickid[$j][4],"|",$brickid[$j][6],"|",$brickid[$j][2],"|",$brickid[$j][3],"|",sprintf "%.2f\n",$brickid[$j][1];	
+		print $brickid[$j][7],"\n";	
 	}
 	print ">\n";
 }
