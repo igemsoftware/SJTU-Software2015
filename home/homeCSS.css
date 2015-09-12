@@ -3,6 +3,7 @@ div.home{
 	position: relative;
 	margin: auto;
 	text-align: center;
+	z-index: -100;
 }
 
 div.home .logo{
