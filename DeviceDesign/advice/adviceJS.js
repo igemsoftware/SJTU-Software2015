@@ -201,7 +201,7 @@ var setUpMargin = function(){
 	var leftMargin = $(".mainNav").css("margin-left")
 	var width = $(".mainNav .mainNavItem").innerWidth()
 	$("table").css({
-		"width": width / 3
+		"width": width / 2
 	})
 
 	var iconWidth = $(".evaluation table td").innerWidth()
