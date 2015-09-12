@@ -4,7 +4,6 @@ var idChoose = "NoResult"
 var functionInputText = "NoResult"
 
 var typeDataSource = [
-	["Cell", "Most parts in the Registry function in E. coli."],
 	["Dna", "DNA parts provide functionality to the DNA itself. DNA parts include cloning sites, scars, primer binding sites, spacers, recombination sites, conjugative tranfer elements, transposons, origami, and aptamers."],
 	["Termminator", "A terminator is an RNA sequence that usually occurs at the end of a gene or operon mRNA and causes transcription to stop."],
 	["Composite", "unknown"],
@@ -14,13 +13,11 @@ var typeDataSource = [
 	["Regulatory", "A promoter is a DNA sequence that tends to recruit transcriptional machinery and lead to transcription of the downstream DNA sequence."],
 	["Rna", "unknown"],
 	["Signalling", "unknown"],
-	["Plasmid_Backbone", "A plasmid is a circular, double-stranded DNA molecules typically containing a few thousand base pairs that replicate within the cell independently of the chromosomal DNA. A plasmid backbone is defined as the plasmid sequence beginning with the BioBrick suffix, including the replication origin and antibiotic resistance marker, and ending with the BioBrick prefix."],
 	["Inverter", "unknown"],
 	["T7", "Bacteriophage T7 is an obligate lytic phage of E. coli."],
 	["Generators", "unknown"],
 	["Primer", "A primer is a short single-stranded DNA sequences used as a starting point for PCR amplification or sequencing. Although primers are not actually available via the Registry distribution, we include commonly used primer sequences here."],
 	["Protein_Domain", "Protein domains are portions of proteins cloned in frame with other proteins domains to make up a protein coding sequence. Some protein domains might change the protein's location, alter its degradation rate, target the protein for cleavage, or enable it to be readily purified."],
-	["Plasmid", "A plasmid is a circular, double-stranded DNA molecules typically containing a few thousand base pairs that replicate within the cell independently of the chromosomal DNA. If you're looking for a plasmid or vector to propagate or assemble plasmid backbones, please see the set of plasmid backbones. There are a few parts in the Registry that are only available as circular plasmids, not as parts in a plasmid backbone, you can find them here. Note that these plasmids largely do not conform to the BioBrick standard."],
 	["Translational_Unit", "Translational units are composed of a ribosome binding site and a protein coding sequence. They begin at the site of translational initiation, the RBS, and end at the site of translational termination, the stop codon."],
 	["RBS", "A ribosome binding site (RBS) is an RNA sequence found in mRNA to which ribosomes can bind and initiate translation."],
 	["Intermediate", "unknown"],
@@ -78,9 +75,10 @@ var drop = function(ev){
 			var image = document.getElementById(data)
 			var newImage = image.cloneNode(true)
 			target.eq(num).append(image)
+			$(image).attr("draggable", "false")
 			$(image).removeClass("tableIcon")
 			$(image).addClass("selectedIcon")
-			$(".iconSection").children().eq(parseInt(data) % 11).children().eq(parseInt(data) > 10).children().append(newImage)
+			$(".iconSection").children().eq(parseInt(data) % 10).children().eq(parseInt(data) > 9).children().append(newImage)
 			$(".inputSection .selectedIcon").css({
 				"width": width,
 				"vertical-align": "middle",
@@ -180,7 +178,7 @@ var typeDetailPanel = function(){
 	var target = $(".typeDetail")
 	$(".evaluation").delegate(".tableIcon", "mouseover", function(){
 		var id = $(this).attr("id")
-		var top = ((id % 11) + 1) * $(".iconSection td").outerHeight()
+		var top = ((id % 10) + 1) * $(".iconSection td").outerHeight()
 		var width = $(".iconSection td").outerWidth() * 3
 		
 		$(".typeDetail .am-panel-title").text(typeDataSource[id][0])
@@ -188,7 +186,7 @@ var typeDetailPanel = function(){
 		target.css({
 			"margin-top": top,
 			"width": width,
-			"margin-left": -1 * (id <= 10) * width / 3,
+			"margin-left": -1 * (id <= 9) * width / 3,
 			"z-index": 1000
 		})
 		target.show()
