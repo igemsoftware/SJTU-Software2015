@@ -44,7 +44,15 @@ In this part, you can drag the __left icons__ to the blank and input functions y
   - You can add no more than __32__ bricks.
   - The sequence of bricks is important. 
   - Click __Next-Compare__ to evaluation your device.
+  - __Help__ button is always useful.
 
 #### Evaluate
+
+According to the brick id and functions, the back-end will automaticlly evaluate your device, tell you the score and the optimal one of each brick.
+  - The text fields will be automaticlly filled with the brick id and functions in __Contruct__ part if you click the __Next-Compre__ button.
+  - You can add and delete as many rows as you want.
+  - Click __Upload__ button to upload your device after evaluation.
+
+#### Upload
 
 
