@@ -61,8 +61,11 @@ This is the last part of our design. After completing the required information o
 ## Install
 You can just visit our website without any installation. But you are permitted to boot up a copy of your web server.
 
-What you need is __Apache__, __MySQL__ and __downloading this project__.
+What you need is __Apache__, __MySQL__, __Perl__, __PHP__ and __downloading this project__.
 
 ### Apache
-  - MacOS: Apache is installed and you don't have to download it from the Internet. Just open the __terminal__ and input ```sudo apachectl start``` command.
-  - 
+  - MacOS: Apache is installed and you don't have to download it from the Internet. Just open the __terminal__ and input '''sudo apachectl start''' command.
+  - Other OS: We recommand you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefriends.org/download.html) to configure the environment.
+
+### MySQL
+  - MacOS: MySQL is not included in the original operating system. We can download it from [MySQL Download](http://dev.mysql.com/downloads/mysql/). But it is not fast for most chinese users. [MySQL SOHU Mirror](http://mirrors.sohu.com/mysql/MySQL-5.6/) will be a better choice.
