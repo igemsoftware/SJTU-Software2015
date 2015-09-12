@@ -76,14 +76,16 @@ We recommand you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefr
 ### MySQL
 
 #### MacOS
-
 MySQL is not included in the original operating system. We can download it from [MySQL Download](http://dev.mysql.com/downloads/mysql/). But it is not fast for most chinese users. [MySQL SOHU Mirror](http://mirrors.sohu.com/mysql/MySQL-5.6/) will be a better choice.
   - Luanch: You can easily control the status of MySQL in __perference__ after installation.
   - Login: Open terminal, type in ```$ mysql -u root -p```. At first the password is empty. You can change it by ```$ sudo /usr/local/mysql/bin/mysqladmin -u root password yourpassword``` command.
   - Remember to change your password in __Perl__ source file. I will remind you later.
   - Then type in ```MySQL> create database base;``` to create __base__ database.
   - Type in ```MySQL> source xxx;``` to update data in the database. __xxx__ is the route of the __base_v6.sql__ file in our project.
+  - After that, all the data is stored in the database named __base__.
 
 #### Other OS
-
 XAMPP will do most of works.
+
+### PHP
+
