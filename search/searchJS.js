@@ -55,7 +55,10 @@ var search = function(){
 		limit: parseInt(limitNumber)
 	},	function(data){
 		if (data.length > 0){
-			$(".searchResult").html(data)
+			var arr = data.split("@")
+			$(".searchResult").html(arr[0])
+			$(".rowNumber").css("display", "inline")
+			$(".rowNumber p").text("Total: " + arr[1])
 		}
 	})
 }

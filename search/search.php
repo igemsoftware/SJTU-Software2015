@@ -30,5 +30,5 @@
 			$result .= "</tr>";
 		}
 	}
-	echo $result;
+	echo $result."@".($number - 3);
 ?>
