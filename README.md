@@ -64,7 +64,7 @@ You can just visit our website without any installation. But you are permitted t
 What you need is __Apache__, __MySQL__, __Perl__, __PHP__ and __downloading this project__.
 
 ### Apache
-  - MacOS: Apache is installed and you don't have to download it from the Internet. Just open the __terminal__ and input '''sudo apachectl start''' command.
+  - MacOS: Apache is installed and you don't have to download it from the Internet. Just open the __terminal__ and input ```sudo apachectl start``` command.
   - Other OS: We recommand you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefriends.org/download.html) to configure the environment.
 
 ### MySQL
