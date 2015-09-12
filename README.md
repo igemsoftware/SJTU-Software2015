@@ -55,4 +55,6 @@ According to the brick id and functions, the back-end will automaticlly evaluate
 
 #### Upload
 
+This is the last part of our design. After completing the required information of your device, you can upload it to our database and iGem official database soon.
+  - Some text fields will be automaticlly filled with what you input in the former parts.
 
