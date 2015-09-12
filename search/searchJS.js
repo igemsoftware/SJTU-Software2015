@@ -1,4 +1,6 @@
 var weightList = ["7.5", "6.8", "11.9", "7.5","13.7", "6.7", "3.5", "2.7", "5.5", "10", "10.5", "13.7"]
+var scoreType = ["Part_status: ", "Sample_Status: ", "Part_Results: ", "Star_rating: ", "Uses: ", "DNA_Status: ", "Qualitative_experience: ", "Group_favorite: ", "Del: ", "Confirmed_times: ", "Number_comments: ", "Ave_rating: "]
+var score = []
 var limitNumber = "45"
 
 $(document).ready(function(){
@@ -13,7 +15,7 @@ $(document).ready(function(){
 	})
 
 	var width = $("#weightChoose").width()
-	$("#weightChoose").css("margin-left", -1 * (width) / 2)
+	$("#weightChoose, #scoreModel").css("margin-left", -1 * (width) / 2)
 	$("#weightChoose").on("open.modal.amui", beginWeight)
 	$("#weightChoose").on("close.modal.amui", endWeight)
 	$(".search").delegate(".weightInput, .limitInput", "input onpropertychange", function(){
@@ -31,6 +33,7 @@ $(document).ready(function(){
 			$(".am-modal-footer").fadeOut(200)
 		}
 	})
+	$(".search").delegate(".scoreDetail", "click", showScore)
 })
 
 var search = function(){
@@ -55,10 +58,14 @@ var search = function(){
 		limit: parseInt(limitNumber)
 	},	function(data){
 		if (data.length > 0){
+			score = []
 			var arr = data.split("@")
 			$(".searchResult").html(arr[0])
 			$(".rowNumber").css("display", "inline")
 			$(".rowNumber p").text("Total: " + arr[1])
+			for (var i = 2; i < arr.length; ++i){
+				score.push(arr[i])
+			}
 		}
 	})
 }
@@ -80,7 +87,16 @@ var endWeight = function(){
 	})
 	limitNumber = $(".limitInput").val()
 }
-
+var showScore = function(){
+	var i = 0
+	var scoreList = score[$(this).attr("id")]
+	var arr = scoreList.split("|")
+	$("#scoreModel p").each(function(){
+		$(this).text(scoreType[i] + arr[i])
+		++i
+	})
+	$("#scoreModel").modal()
+}
 
 
 

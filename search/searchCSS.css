@@ -35,6 +35,10 @@ div.search #weightChoose{
 	width: 1000px;
 }
 
+div.search #scoreModel{
+	width: 1000px;
+}
+
 div.search .resultSection{
 	width: 80%;
 	position:relative;
