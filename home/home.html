@@ -34,7 +34,7 @@
   <link rel="stylesheet" href="../assets/css/amazeui.min.css">
   <link rel="stylesheet" href="../assets/css/app.css">
   <link rel="stylesheet" href="../mainCSS.css">
-  <link rel="stylesheet" href="searchCSS.css">
+  <link rel="stylesheet" href="homeCSS.css">
 </head>
 <body>
   <div class = "am-g">
@@ -55,15 +55,25 @@
       </ul>
     </li>
   </ul>
-  <div>
+  <div class = "home">
+    <img class = "logo" src = "../icon/baselogoweb-color-03.png"></img>
+    <div class = "intro">
+      <h1>BASE: Biobrick Auxiliary Selection Explorer</h1>
+      <p>A web-based tool for biobrick evaluation, helping researchers bulid new devices and systems.</p>
+      <p>The BASE web server is designed to provide a ranking to all existing biobricks and help users design their new devices.</p>
+      <p>Firstly, users can use the search function to find biobricks according to the score given by BASE and choose one they need.</p>
+      <p>Then users can make their own devices by using construction function. After constructing, users could upload the device to BASE, and improve the device via the compare function. </p>
+      <p>At last, users may apply the upload function to submit the device to the iGEM Registry and/or BASE database.</p>
+    </div>
   </div>
+  <br/>
 
 <!--在这里编写你的代码-->
 
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="../assets/js/jquery.min.js"></script>
 <script src="../mainJS.js"></script>
-<script src="searchJS.js"></script>
+<script src="homeJS.js"></script>
 <!--<![endif]-->
 <!--[if lte IE 8 ]>
 <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
