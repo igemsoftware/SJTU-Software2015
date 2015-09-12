@@ -76,6 +76,7 @@ We recommand you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefr
 ### MySQL
 
 #### MacOS
+
 MySQL is not included in the original operating system. We can download it from [MySQL Download](http://dev.mysql.com/downloads/mysql/). But it is not fast for most chinese users. [MySQL SOHU Mirror](http://mirrors.sohu.com/mysql/MySQL-5.6/) will be a better choice.
   - Luanch: You can easily control the status of MySQL in __perference__ after installation.
   - Login: Open terminal, type in ```$ mysql -u root -p```. At first the password is empty. You can change it by ```$ sudo /usr/local/mysql/bin/mysqladmin -u root password yourpassword``` command.
@@ -85,7 +86,11 @@ MySQL is not included in the original operating system. We can download it from 
   - After that, all the data is stored in the database named __base__.
 
 #### Other OS
+
 XAMPP will do most of works.
 
 ### PHP
 
+#### MacOS
+
+PHP is automatically installed in MacOS. 
