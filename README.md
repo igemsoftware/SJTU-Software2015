@@ -21,11 +21,11 @@ We use [Perl](https://www.perl.org) as back-end and [MySQL](http://www.mysql.com
 
 You can visit [BASE](http://www.igembase.com) to use our software.
 
-### Home
+#### Home
 
 A brief introduction of our project.
 
-### Search
+#### Search
 
 You can type in the keywords you want to search into the input field. Of course, our back-end supports multi-keywords. What you have to do is just seperating the words by '\*'. 
   - For example, Terminator\*RBS
@@ -34,11 +34,11 @@ You can type in the keywords you want to search into the input field. Of course,
   - The results will be demostrated as a table. Of course you will be informed of how many rows there are. There are four colors, blue implies high score and red implies the lower one. You can click the __Brick_id__ to redirect to the iGem official website so that you can get more information. The details of score will be shown if you click __Score__ of a specific row.
   - Remember to click the __help__ button if you want more instructions.
 
-### Device Design
+#### Device Design
 
 You can design your own bio-brick in this part of our software.
 
-#### Construct
+###### Construct
 
 In this part, you can drag the __left icons__ to the blank and input functions you would like to realize. Our back-end algorithm will tell you which brick you should choose.
   - You can add no more than __32__ bricks.
@@ -46,14 +46,14 @@ In this part, you can drag the __left icons__ to the blank and input functions y
   - Click __Next-Compare__ to evaluation your device.
   - __Help__ button is always useful.
 
-#### Evaluate
+###### Evaluate
 
 According to the brick id and functions, the back-end will automaticlly evaluate your device, tell you the score and the optimal one of each brick.
   - The text fields will be automaticlly filled with the brick id and functions in __Contruct__ part if you click the __Next-Compre__ button.
   - You can add and delete as many rows as you want.
   - Click __Upload__ button to upload your device after evaluation.
 
-#### Upload
+###### Upload
 
 This is the last part of our design. After completing the required information of your device, you can upload it to our database and iGem official database soon.
   - Some text fields will be automaticlly filled with what you input in the former parts.
@@ -63,19 +63,19 @@ You can just visit our website without any installation. But you are permitted t
 
 What you need is __Apache__, __MySQL__, __Perl__, __PHP__ and __this project__.
 
-### Apache
+#### Apache
 
-#### MacOS
+###### MacOS
 
 Apache is installed and you don't have to download it from the Internet. Just open the __terminal__ and input ```$ sudo apachectl start``` command.
 
-#### Other OS
+###### Other OS
 
 We recommand you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefriends.org/download.html) to configure the environment.
 
-### MySQL
+#### MySQL
 
-#### MacOS
+###### MacOS
 
 MySQL is not included in the original operating system. We can download it from [MySQL Download](http://dev.mysql.com/downloads/mysql/). But it is not fast for most chinese users. [MySQL SOHU Mirror](http://mirrors.sohu.com/mysql/MySQL-5.6/) will be a better choice.
   - Luanch: You can easily control the status of MySQL in __perference__ after installation.
@@ -85,24 +85,24 @@ MySQL is not included in the original operating system. We can download it from 
   - Type in ```MySQL> source xxx;``` to update data in the database. __xxx__ is the route of the __base_v6.sql__ file in our project.
   - After that, all the data is stored in the database named __base__.
 
-#### Other OS
+###### Other OS
 
 XAMPP will do most of works.
 
-### Perl
+#### Perl
 
-#### MacOS
+###### MacOS
 
 Perl is automatically installed in MacOS.
   - Type in ```perl xxx.pl arguments...``` to run the __xxx.pl__.
 
-#### Other OS
+###### Other OS
 
 XAMPP will do most of works.
 
-### PHP
+#### PHP
 
-#### MacOS
+###### MacOS
 
 PHP is automatically installed in MacOS. 
   - Type in ```$ sudo open -e /etc/apache2/httpd.conf``` in __terminal__.
@@ -111,11 +111,11 @@ PHP is automatically installed in MacOS.
   - Then put the directory of our project into ___/Library/WebServer/Documents___.
   - Open your browser, visit __http://localhost/iGem2015_SJTU_Software/search/search.html___ to use our website.
 
-#### Other OS
+###### Other OS
 
 XAMPP will do most of works.
 
-### Project
+#### Project
 
 Find ```my $password = "superjjj2486";``` in all the __.pl__ file. Change it to ```my $password = "xxx";``` where xxx is your password of username __root__ in MySQL.
   
