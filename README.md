@@ -26,3 +26,10 @@ You can visit [BASE](http://www.igembase.com) to use our software.
     - You can choose either __part__ or __device__ type.
     - The button __Advanced__ will lead to make some advanced choices. Now you can change the weight of each dimension so that the back-end algorithm will pay more attention on the one with higher weight. In addition, modifying the number of rows which will be shown is permitted.
     - The results will be demostrated as a table. Of course you will be informed of how many rows there are. You can click the __Brick_id__ to redirect to the iGem official website so that you can get more information. The details of score will be shown if you click __Score__ of a specific row.
+    - Remember to click the __help__ button if you want more instructions.
+  - Device Design: You can design your own bio-brick in this part of our software.
+    - Construct: In this part, you can drag the __left icons__ to the blank and input functions you would like to realize. Our back-end algorithm will tell you which brick you should choose.
+      - You can add no more than __32__ bricks.
+      - The sequence of bricks is important. 
+      - Click __Next-Compare__ to evaluation your device.
+    - Evaluate: 
