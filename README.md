@@ -31,7 +31,7 @@ You can type in the keywords you want to search into the input field. Of course,
   - For example, Terminator\*RBS
   - You can choose either __part__ or __device__ type.
   - The button __Advanced__ will lead to make some advanced choices. Now you can change the weight of each dimension so that the back-end algorithm will pay more attention on the one with higher weight. In addition, modifying the number of rows which will be shown is permitted.
-  - The results will be demostrated as a table. Of course you will be informed of how many rows there are. You can click the __Brick_id__ to redirect to the iGem official website so that you can get more information. The details of score will be shown if you click __Score__ of a specific row.
+  - The results will be demostrated as a table. Of course you will be informed of how many rows there are. There are four colors, blue implies high score and red implies the lower one. You can click the __Brick_id__ to redirect to the iGem official website so that you can get more information. The details of score will be shown if you click __Score__ of a specific row.
   - Remember to click the __help__ button if you want more instructions.
 
 ### Device Design
@@ -58,3 +58,10 @@ According to the brick id and functions, the back-end will automaticlly evaluate
 This is the last part of our design. After completing the required information of your device, you can upload it to our database and iGem official database soon.
   - Some text fields will be automaticlly filled with what you input in the former parts.
 
+## Install
+You can just visit our website without any installation. But you are permitted to boot up a copy of your web server.
+
+What you need is __Apache__, __MySQL__ and __downloading this project__.
+
+### Apache
+  - MacOS: Apache is installed and you don't have to download it from the Internet. Just open the __terminal__ and input '''sudo apachectl start''' command.
