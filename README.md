@@ -22,4 +22,4 @@ We use [Perl](https://www.perl.org) as back-end and [MySQL](http://www.mysql.com
 You can visit [BASE](http://www.igembase.com) to use our software.
   - Home: A brief introduction of our project.
   - Search: You can type in the keywords you want to search into the input field. Of course, our back-end supports multi-keywords. What you have to do is just seperating the words by '\*'. 
-  - For example, >Terminator\*RBS
+>Terminator\*RBS
