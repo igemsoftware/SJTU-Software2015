@@ -1,4 +1,5 @@
 var weightList = ["7.5", "6.8", "11.9", "7.5","13.7", "6.7", "3.5", "2.7", "5.5", "10", "10.5", "13.7"]
+var typeExp = ["Pieces of DNA that form a functional unit (for example promoter, RBS, etc.)", "Collection set of parts with defined function. In simple terms, a set of complementary BioBrick parts put together forms a device."]
 var scoreType = ["Part_status: ", "Sample_Status: ", "Part_Results: ", "Star_rating: ", "Uses: ", "DNA_Status: ", "Qualitative_experience: ", "Group_favorite: ", "Del: ", "Confirmed_times: ", "Number_comments: ", "Ave_rating: "]
 var score = []
 var limitNumber = "45"
@@ -12,6 +13,24 @@ $(document).ready(function(){
 	$(".beginSearch").click(function(e){
 		e.preventDefault()
 		search();
+	})
+
+	$(".search").delegate(".searchButton label", "mouseover", function(){
+		var left = $(this).position().left - 150 + 35
+		var id = $(this).attr("id")
+		if (id == 0){
+			$(".typeExplanation").css("height", "100px")
+			$(".typeExplanation").css("width", "250px")
+		}else{
+			$(".typeExplanation").css("height", "130px")
+			$(".typeExplanation").css("width", "320px")
+		}
+		$(".typeExplanation p").text(typeExp[id])
+		$(".typeExplanation").css("left", left)
+		$(".typeExplanation").show()
+	})
+	$(".search").delegate(".searchButton label", "mouseout", function(){
+		$(".typeExplanation").hide()
 	})
 
 	var width = $("#weightChoose").width()

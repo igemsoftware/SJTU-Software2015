@@ -1,4 +1,6 @@
 
+
+
 div.search .searchInputSection{
 	width: 60%;
 	position:relative;
@@ -59,3 +61,17 @@ div.search .rowNumber{
 	display: none;
 	float: right;
 }
+
+div.search .typeExplanation{
+	position: absolute;
+	display: none;
+	background-color: #D4D4D4;
+	border-radius: 20px;
+}
+
+div.search .typeExplanation p{
+	margin-left: 20px;
+	margin-top: 15px;
+}
+
+
