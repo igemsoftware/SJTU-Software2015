@@ -64,8 +64,18 @@ You can just visit our website without any installation. But you are permitted t
 What you need is __Apache__, __MySQL__, __Perl__, __PHP__ and __downloading this project__.
 
 ### Apache
-  - MacOS: Apache is installed and you don't have to download it from the Internet. Just open the __terminal__ and input ```sudo apachectl start``` command.
-  - Other OS: We recommand you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefriends.org/download.html) to configure the environment.
+
+#### MacOS: Apache is installed and you don't have to download it from the Internet. Just open the __terminal__ and input ```$ sudo apachectl start``` command.
+
+#### Other OS: We recommand you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefriends.org/download.html) to configure the environment.
 
 ### MySQL
-  - MacOS: MySQL is not included in the original operating system. We can download it from [MySQL Download](http://dev.mysql.com/downloads/mysql/). But it is not fast for most chinese users. [MySQL SOHU Mirror](http://mirrors.sohu.com/mysql/MySQL-5.6/) will be a better choice.
+
+#### MacOS: MySQL is not included in the original operating system. We can download it from [MySQL Download](http://dev.mysql.com/downloads/mysql/). But it is not fast for most chinese users. [MySQL SOHU Mirror](http://mirrors.sohu.com/mysql/MySQL-5.6/) will be a better choice.
+  - Luanch: You can easily control the status of MySQL in __perference__ after installation.
+  - Login: Open terminal, type in ```$ mysql -u root -p```. At first the password is empty. You can change it by ```$ sudo /usr/local/mysql/bin/mysqladmin -u root password yourpassword``` command.
+  - Remember to change your password in __Perl__ source file. I will remind you later.
+  - Then type in ```MySQL> create database base;``` to create __base__ database.
+  - Type in ```MySQL> source xxx;``` to update data in the database. __xxx__ is the route of the __base_v6.sql__ file in our project.
+
+#### Other OS: __XAMPP__
