@@ -43,14 +43,17 @@
   </div>
   <ul class="am-nav am-nav-pills am-nav-justify mainNav">
     <li><a class = "mainNavItem" href = "../../search/search.html">Search</a></li>
-    <li class = "am-active"><a class = "mainNavItem" href = "../advice/advice.html">Device Design</a></li>
+    <li class="am-dropdown" data-am-dropdown>
+      <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+        Device Design <span class="am-icon-caret-down"></span>
+      </a>
+      <ul class="am-dropdown-content">
+        <li><a href="../advice/advice.html">Construct</a></li>
+        <li><a href="../compare/compare.html">Evaluate</a></li>
+        <li class="am-active"><a href="upload.html">Upload</a></li>
+      </ul>
+    </li>
   </ul>
-  <ul class="am-nav am-nav-pills am-nav-justify subNav">
-    <li><a class = "mainNavItem" href = "../advice/advice.html">Advice</a></li>
-    <li><a class = "mainNavItem" href = "../compare/compare.html">Compare</a></li>
-    <li class = "am-active"><a class = "mainNavItem" href = "upload.html">Upload</a></li>
-  </ul>
-  <br/><br/>
   <button type="button" class="am-btn helpButton" data-am-modal="{target: '#helpModel', closeViaDimmer: 0}">Help</button>
   <div class="am-modal am-modal-alert" tabindex="-1" id="helpModel">
     <div class="am-modal-dialog">

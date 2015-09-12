@@ -201,9 +201,9 @@ var typeDetailPanel = function(){
 
 var setUpMargin = function(){
 	var leftMargin = $(".mainNav").css("margin-left")
-	var width = $(".subNav .mainNavItem").innerWidth()
+	var width = $(".mainNav .mainNavItem").innerWidth()
 	$("table").css({
-		"width": width * 2 / 3
+		"width": width / 3
 	})
 
 	var iconWidth = $(".evaluation table td").innerWidth()
