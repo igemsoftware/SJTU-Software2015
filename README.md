@@ -1,6 +1,8 @@
 BASE
 ======
 
+![image](https://github.com/igemsoftware/SJTU-Software2015/icon/baselogoweb-color-02.png)
+
 ## Introduction
 
 BASE is web-based tool for biobrick evaluation, helping researchers bulid new devices and systems.
@@ -14,3 +16,7 @@ BASE is web-based tool for biobrick evaluation, helping researchers bulid new de
 Our web pages is developed by [jQuery](http://jquery.com) and [Amaze UI](http://amazeui.org/?_ver=2.x).
 
 We use [Perl](https://www.perl.org) as back-end and [MySQL](http://www.mysql.com) as the database.
+
+## Use
+
+You can visit [BASE](http://www.igembase.com) to use our software.
