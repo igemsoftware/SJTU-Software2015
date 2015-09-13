@@ -79,7 +79,7 @@ sub gscore{
 my $host = "localhost";
 my $dbname = "base";
 my $username = "root";
-my $password = "huangwenze";
+my $password = "";
 
 my $object = $ARGV[0];
 my $type = $ARGV[1];

@@ -14,7 +14,7 @@ use DBI;
 my $host = "localhost";
 my $dbname = "base";
 my $username = "root";
-my $password = "superjjj2486";
+my $password = "";
 my $completiton = -3;#the completiton of the device
 my $i = 0;
 my $j = 0;
