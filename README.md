@@ -108,9 +108,16 @@ We recommend you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefr
 Notice that __win xp__ and __win 2003__ are not supported.
 
   - Open the control panel, find module __Apache__ and click start.
-  - Click __Explorer__ button to the root directory of XAMPP. We will use the directory __htdocs__ later.
+  - Click __Explorer__ button to the root directory of XAMPP. Move the project file into __htdocs__ directory.
   - Now, you can enjoy the service of apache.
 
+###### Linux
+
+We recommend you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefriends.org/download.html) to configure the environment.
+
+  - Open the control panel, find tab __Manage Servers__, start the __Apache Web Server__.
+  - Back to tab __Welcome__, click __Open Application Folder__ to the root directory of XAMPP. Move the project file into __htdocs__ directory.
+  - Now, you can enjoy the service of apache.
 
 #### MySQL
 
@@ -130,10 +137,21 @@ MySQL is not included in the original operating system. You can download it from
 
 XAMPP will do most of the works. We suppose that you have installed the XAMPP.
 
-  - Open the control panel, file module __MySQL__ and click start.
+  - Open the control panel, find module __MySQL__ and click start.
   - Click __Shell__ button on the right of the panel.
   - Move to the root directory of the project. Enter directory __base_v6__.
-  - Type in ```# mysql -u username -p```. At first the password is empty, so click __Enter__ on the keyboard again to use MySQL. Of course, you can change your password by type in ```# mysqladmin -u root -p password yourpassword```.
+  - Type in ```# mysql -u root -p```. At first the password is empty, so click __Enter__ on the keyboard again to use MySQL. Of course, you can change your password by type in ```# mysqladmin -u root -p password yourpassword```.
+  - Type in ```MySQL> create database base;``` to create __base__ database.
+  - Type in ```MySQL> use base;``` to use __base__.
+  - Type in ```MySQL> source base_v6.sql;``` to update data in the database.
+
+###### Linux
+
+XAMPP will do most of the works. We suppose that you have installed the XAMPP.
+
+  - Open the control panel, click tab __Manage Server__ and start __MySQL Database__.
+  - Open terminal, move to the root directory of the project. Enter directory __base_v6__.
+  - Type in ```$ ../../../bin/mysql -u root -p``` to connect to MySQL. At first the password is empty, so click __Enter__ on the keyboard again to use MySQL. Of course, you can change your password by type in ```$ ../../../bin/mysqladimin -u root -p password yourpassword```.
   - Type in ```MySQL> create database base;``` to create __base__ database.
   - Type in ```MySQL> use base;``` to use __base__.
   - Type in ```MySQL> source base_v6.sql;``` to update data in the database.
@@ -160,6 +178,12 @@ XAMPP will do most of the works. We suppose that you have installed the XAMPP.
   - Type in ```perl xxx.pl arguments...``` to run the __xxx.pl__.
   - If the system tells you that your computer lacks __libmysql_.dll__, you should just download one from the Internet and drag it to __C:\Windows\system32__.
 
+###### Linux
+
+XAMPP will do most of the works. We suppose that you have installed the XAMPP.
+  - Back to tab __Welcome__, click __Open Application Folder__ to the root directory of XAMPP.
+  - Move to __bin__ directory, find __perl__ file and move to __usr/bin__ and replace the original file. This means that once we type in ```perl xxx.pl arguments...``` in terminal, we will use the perl intepreter included in XAMPP instead of the original one.
+
 #### PHP
 
 ###### MacOS
@@ -171,7 +195,11 @@ PHP is automatically installed in MacOS.
   - Then put the directory of our project into ___/Library/WebServer/Documents___.
   - Open your browser, visit __http://localhost/iGem2015_SJTU_Software/search/search.html___ to use our website.
 
-###### Other OS
+###### Windows
+
+XAMPP will do all the works. You don't need to do anything.
+
+###### Windows
 
 XAMPP will do all the works. You don't need to do anything.
 
