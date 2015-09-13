@@ -49,7 +49,7 @@ In this part, you can drag the __left icons__ to the blank and input functions y
 ###### Evaluate
 
 According to the brick id and functions, the back-end will automatically evaluate your device, tell you the score and the optimal one of each brick.
-  - The text fields will be automatically filled with the brick id and functions in __Contruct__ part if you click the __Next-Compare__ button.
+  - The text fields will be automatically filled with the brick id and functions in __Contruct__ part if you click the __Next-Evaluate__ button.
   - You can add and delete as many rows as you want.
   - Click __Upload__ button to upload your device after evaluation.
 
