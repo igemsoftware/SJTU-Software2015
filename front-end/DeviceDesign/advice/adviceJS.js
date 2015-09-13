@@ -50,6 +50,12 @@ $(document).ready(function(){
 		}
 	})
 
+	$(".evaluation").delegate(".functionInput input", "keydown", function(e){
+		if (e.keyCode == 13){
+			$("#idChooseAlert").modal()
+		}
+	})
+
  	window.onbeforeunload = unloadTips
 
 	typeDetailPanel()
@@ -152,8 +158,8 @@ var cancelSelected = function(){
 		var originText = $(".idHistory").text()
 		var originFunctionText = $(".functionHistory").text()
 		for (var i = 0; i < id; ++i){
-			index = originText.indexOf('*', index)
-			funcIndex = originFunctionText.indexOf('*', funcIndex)
+			index = originText.indexOf('*', index + 1)
+			funcIndex = originFunctionText.indexOf('*', funcIndex + 1)
 		}
 		if (id == 0){
 			$(".idHistory").text("History id:")
