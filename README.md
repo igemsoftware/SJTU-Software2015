@@ -199,7 +199,7 @@ PHP is automatically installed in MacOS.
 
 XAMPP will do all the works. You don't need to do anything.
 
-###### Windows
+###### Linux
 
 XAMPP will do all the works. You don't need to do anything.
 
