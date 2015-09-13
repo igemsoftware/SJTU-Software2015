@@ -95,6 +95,13 @@ XAMPP will do most of works.
 
 Perl is automatically installed in MacOS.
   - Type in ```perl xxx.pl arguments...``` to run the __xxx.pl__.
+  - You should install [DBI](http://search.cpan.org/CPAN/authors/id/T/TI/TIMB/DBI-1.620.tar.gz ) and [DBD](http://search.cpan.org/CPAN/authors/id/C/CA/CAPTTOFU/DBD-mysql-4.021.tar.gz) to use MySQL in Perl scripts.
+  - Open terminal, move to the root directory, type in ```$ perl makefile.pl```
+  - Type in ```$ make test```
+  - Type in ```$ make```
+  - Type in ```$ make install``` or ```$ sudo make install``` if it isn't the root user.
+  - After installation of these two plugins, you can use MySQL in Perl scripts.
+  
 
 ###### Other OS
 
