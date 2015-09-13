@@ -158,7 +158,7 @@ XAMPP will do most of works. We suppose that you have installed the XAMPP.
 
   - Click __Shell__ button on the right of panel.
   - Type in ```perl xxx.pl arguments...``` to run the __xxx.pl__.
-  - If the system tells you that your computer lacks of __libmysql_.dll__, you should just download one from the Internet and install it.
+  - If the system tells you that your computer lacks of __libmysql_.dll__, you should just download one from the Internet and drag it to __C:\Windows\system32__.
 
 #### PHP
 
