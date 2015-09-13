@@ -1,0 +1,112 @@
+<!doctype html>
+<html class = "js cssanimations">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>BASE</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="../../icon/baselogoweb-color-06.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="../../icon/baselogoweb-color-06.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="../../icon/baselogoweb-color-06.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="../../icon/baselogoweb-color-06.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="../../assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="../../assets/css/app.css">
+  <link rel="stylesheet" href="../../mainCSS.css">
+  <link rel="stylesheet" href="compareCSS.css">
+</head>
+<body>
+  <div class = "am-g">
+    <div class = "am-u-lg-1 am-u-md-2 am-u-sm-4"></div>
+    <div class = "am-u-lg-11 am-u-md-10 am-u-sm-8 mainTitle"><img src = "../../icon/baselogoweb-color-02.png"></img></div>
+  </div>
+  <ul class="am-nav am-nav-pills am-nav-justify mainNav">
+    <li><a class = "mainNavItem" href = "../../home/home.html">Home</a></li>
+    <li><a class = "mainNavItem" href = "../../search/search.html">Search</a></li>
+    <li class="am-dropdown" data-am-dropdown>
+      <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+        Device Design <span class="am-icon-caret-down"></span>
+      </a>
+      <ul class="am-dropdown-content">
+        <li><a href="../advice/advice.html">Construct</a></li>
+        <li class="am-active"><a href="compare.html">Evaluate</a></li>
+        <li><a href="../upload/upload.html">Upload</a></li>
+      </ul>
+    </li>
+  </ul>
+  <button type="button" class="am-btn helpButton" data-am-modal="{target: '#helpModel', closeViaDimmer: 0}">Help</button>
+  <div class="am-modal am-modal-alert" tabindex="-1" id="helpModel">
+    <div class="am-modal-dialog">
+      <div class="am-modal-hd">COMPARE HELP</div>
+      <div class="am-modal-bd">
+        <p>In this part you can submit a complete device,then all biobricks of your device will be evaluated. Some biobrick will be recommended to be replaced if its score is too low,instead we will provide you with better biobrick. Enter all information required of your device,then click the ‘compare’ button to get the result.</p>
+      </div>
+      <div class="am-modal-footer">
+        <span class="am-modal-btn">OK</span>
+      </div>
+    </div>
+  </div>
+
+  <div class = "compare">
+    <p class = "score">Score: </p>
+    <div class = "row">
+      <form class="am-form am-form-horizontal am-g inputRow" id = "">
+        <div class="am-form-group am-u-sm-4 am-u-md-4 am-u-lg-4">
+          <label for="doc-ipt-pwd-2" class="am-u-sm-2 am-form-label formGroupLabel">ID:</label>
+            <div class="am-u-sm-10 formGroupInput">
+              <input type="text" id="" class = "required brickId" placeholder = "Required">
+            </div>
+        </div>
+        <div class="am-form-group am-u-sm-6 am-u-md-6 am-u-lg-6">
+          <label for="doc-ipt-pwd-2" class="am-u-sm-2 am-form-label formGroupLabel">Function:</label>
+            <div class="am-u-sm-10 formGroupInput">
+              <input type="text" id="" class = "functions">
+            </div>
+        </div>
+        <div>
+          <button type="button" class="am-btn am-btn-default addButton am-round am-u-lg-1 am-u-md-1 am-u-sm-1"><i class="am-icon-plus"></i></button>
+          <button type="button" class="am-btn am-btn-default deleteButton am-round am-u-lg-1 am-u-md-1 am-u-sm-1"><i class="am-icon-close"></i></button>
+        </div>
+      </form>
+    </div>
+    <button type="button" class="am-btn am-btn-default compareButton">Compare</i></button>
+    <a href = "javascript:void(0)" class = "passDataURL"><button type="button" class="am-btn am-btn-default toUpload">Upload</i></button></a>
+  </div>
+
+
+<!--在这里编写你的代码-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../mainJS.js"></script>
+<script src="compareJS.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+<script src="../../assets/js/amazeui.min.js"></script>
+</body>
+</html>

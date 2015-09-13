@@ -5,15 +5,26 @@ BASE
 
 ## Introduction
 
+<<<<<<< HEAD
 BASE is the web-based tool for biobrick evaluation, helping researchers build new devices and systems.
   - The BASE web server is designed to provide a ranking to all existing biobricks and help users design their new devices.
   - Firstly, users can use the search function to find biobricks according to the score given by BASE and choose one they need.
   - Then users can make their own devices by using construction function. After construction, users can upload the device to BASE, and improve the device via the compare function. 
+=======
+BASE is web-based tool for biobrick evaluation, helping researchers bulid new devices and systems.
+  - The BASE web server is designed to provide a ranking to all existing biobricks and help users design their new devices.
+  - Firstly, users can use the search function to find biobricks according to the score given by BASE and choose one they need.
+  - Then users can make their own devices by using construction function. After constructing, users could upload the device to BASE, and improve the device via the compare function. 
+>>>>>>> b31a9cc6708cec74b9988e63ef42b45ef185b6c5
   - At last, users may apply the upload function to submit the device to the iGEM Registry and/or BASE database.
 
 ## Requirement
 
+<<<<<<< HEAD
 Our web pages are developed by [jQuery](http://jquery.com) and [Amaze UI](http://amazeui.org/?_ver=2.x).
+=======
+Our web pages is developed by [jQuery](http://jquery.com) and [Amaze UI](http://amazeui.org/?_ver=2.x).
+>>>>>>> b31a9cc6708cec74b9988e63ef42b45ef185b6c5
 
 We use [Perl](https://www.perl.org) as back-end and [MySQL](http://www.mysql.com) as the database.
 
@@ -27,11 +38,19 @@ A brief introduction of our project.
 
 #### Search
 
+<<<<<<< HEAD
 You can type the keywords you want to search into the input field. Of course, our back-end supports multi-keywords. What you have to do is just separating the words by '\*'. 
   - For example, Terminator\*RBS
   - You can choose either __part__ or __device__ type.
   - The button __Advanced__ will lead to making some advanced choices. Now you can change the weight of each dimension so that the back-end algorithm will pay more attention on the one with higher weight. In addition, modifying the number of rows which will be shown is permitted.
   - The results will be demonstrated as a table. Of course you will be informed of how many rows there are. There are four colors, blue implies high score and red implies the lower one. You can click the __Brick_id__ to redirect to the iGem official website so that you can get more information. The details of the score will be shown if you click __Score__ of a specific row.
+=======
+You can type in the keywords you want to search into the input field. Of course, our back-end supports multi-keywords. What you have to do is just seperating the words by '\*'. 
+  - For example, Terminator\*RBS
+  - You can choose either __part__ or __device__ type.
+  - The button __Advanced__ will lead to make some advanced choices. Now you can change the weight of each dimension so that the back-end algorithm will pay more attention on the one with higher weight. In addition, modifying the number of rows which will be shown is permitted.
+  - The results will be demostrated as a table. Of course you will be informed of how many rows there are. There are four colors, blue implies high score and red implies the lower one. You can click the __Brick_id__ to redirect to the iGem official website so that you can get more information. The details of score will be shown if you click __Score__ of a specific row.
+>>>>>>> b31a9cc6708cec74b9988e63ef42b45ef185b6c5
   - Remember to click the __help__ button if you want more instructions.
 
 #### Device Design
@@ -42,27 +61,44 @@ You can design your own bio-brick in this part of our software.
 
 In this part, you can drag the __left icons__ to the blank and input functions you would like to realize. Our back-end algorithm will tell you which brick you should choose.
   - You can add no more than __32__ bricks.
+<<<<<<< HEAD
   - The order of bricks is important. 
+=======
+  - The sequence of bricks is important. 
+>>>>>>> b31a9cc6708cec74b9988e63ef42b45ef185b6c5
   - Click __Next-Compare__ to evaluation your device.
   - __Help__ button is always useful.
 
 ###### Evaluate
 
+<<<<<<< HEAD
 According to the brick id and functions, the back-end will automatically evaluate your device, tell you the score and the optimal one of each brick.
   - The text fields will be automatically filled with the brick id and functions in __Contruct__ part if you click the __Next-Compare__ button.
+=======
+According to the brick id and functions, the back-end will automaticlly evaluate your device, tell you the score and the optimal one of each brick.
+  - The text fields will be automaticlly filled with the brick id and functions in __Contruct__ part if you click the __Next-Compre__ button.
+>>>>>>> b31a9cc6708cec74b9988e63ef42b45ef185b6c5
   - You can add and delete as many rows as you want.
   - Click __Upload__ button to upload your device after evaluation.
 
 ###### Upload
 
 This is the last part of our design. After completing the required information of your device, you can upload it to our database and iGem official database soon.
+<<<<<<< HEAD
   - Some text fields will be automatically filled with what you input in the former parts.
+=======
+  - Some text fields will be automaticlly filled with what you input in the former parts.
+>>>>>>> b31a9cc6708cec74b9988e63ef42b45ef185b6c5
 
 ## File Structure
 
 #### base_v6
 
+<<<<<<< HEAD
 Including four __.txt__ files and one __.sql__ file. They are the source file of the database.
+=======
+Including four __.txt__ files and one __.sql__ file. They are the source file of database.
+>>>>>>> b31a9cc6708cec74b9988e63ef42b45ef185b6c5
 
 #### front-end
 
@@ -103,7 +139,11 @@ Apache is installed and you don't have to download it from the Internet. Just op
 
 ###### Windows
 
+<<<<<<< HEAD
 We recommend you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefriends.org/download.html) to configure the environment.
+=======
+We recommand you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefriends.org/download.html) to configure the environment.
+>>>>>>> b31a9cc6708cec74b9988e63ef42b45ef185b6c5
 
 Notice that __win xp__ and __win 2003__ are not supported.
 
@@ -116,11 +156,19 @@ Notice that __win xp__ and __win 2003__ are not supported.
 
 ###### MacOS
 
+<<<<<<< HEAD
 MySQL is not included in the original operating system. You can download it from [MySQL Download](http://dev.mysql.com/downloads/mysql/). But it is not fast for most users in China. [MySQL SOHU Mirror](http://mirrors.sohu.com/mysql/MySQL-5.6/) will be a better choice.
   - Launch: You can easily control the status of MySQL in __perference__ after installation.
   - Move to the root directory of the project. Enter directory __base_v6__.
   - Login: Open terminal, type in ```$ mysql -u root -p```. At first the password is empty. You can change it by ```$ sudo /usr/local/mysql/bin/mysqladmin -u root password yourpassword``` command.
   - Remember to change your password in __Perl__ source file. We will remind you later.
+=======
+MySQL is not included in the original operating system. We can download it from [MySQL Download](http://dev.mysql.com/downloads/mysql/). But it is not fast for most chinese users. [MySQL SOHU Mirror](http://mirrors.sohu.com/mysql/MySQL-5.6/) will be a better choice.
+  - Luanch: You can easily control the status of MySQL in __perference__ after installation.
+  - Move to the root directory of the project. Enter directory __base_v6__.
+  - Login: Open terminal, type in ```$ mysql -u root -p```. At first the password is empty. You can change it by ```$ sudo /usr/local/mysql/bin/mysqladmin -u root password yourpassword``` command.
+  - Remember to change your password in __Perl__ source file. I will remind you later.
+>>>>>>> b31a9cc6708cec74b9988e63ef42b45ef185b6c5
   - Then type in ```MySQL> create database base;``` to create __base__ database.
   - Type in ```MySQL> use base;``` to use __base__.
   - Type in ```MySQL> source base_v6.sql;``` to update data in the database.
@@ -128,10 +176,17 @@ MySQL is not included in the original operating system. You can download it from
 
 ###### Windows
 
+<<<<<<< HEAD
 XAMPP will do most of the works. We suppose that you have installed the XAMPP.
 
   - Open the control panel, file module __MySQL__ and click start.
   - Click __Shell__ button on the right of the panel.
+=======
+XAMPP will do most of works. We suppose that you have installed the XAMPP.
+
+  - Open the control panel, file module __MySQL__ and click start.
+  - Click __Shell__ button on the right of panel.
+>>>>>>> b31a9cc6708cec74b9988e63ef42b45ef185b6c5
   - Move to the root directory of the project. Enter directory __base_v6__.
   - Type in ```# mysql -u username -p```. At first the password is empty, so click __Enter__ on the keyboard again to use MySQL. Of course, you can change your password by type in ```# mysqladmin -u root -p password yourpassword```.
   - Type in ```MySQL> create database base;``` to create __base__ database.
@@ -154,11 +209,19 @@ Perl is automatically installed in MacOS.
 
 ###### Windows
 
+<<<<<<< HEAD
 XAMPP will do most of the works. We suppose that you have installed the XAMPP.
 
   - Click __Shell__ button on the right of the panel.
   - Type in ```perl xxx.pl arguments...``` to run the __xxx.pl__.
   - If the system tells you that your computer lacks __libmysql_.dll__, you should just download one from the Internet and drag it to __C:\Windows\system32__.
+=======
+XAMPP will do most of works. We suppose that you have installed the XAMPP.
+
+  - Click __Shell__ button on the right of panel.
+  - Type in ```perl xxx.pl arguments...``` to run the __xxx.pl__.
+  - If the system tells you that your computer lacks of __libmysql_.dll__, you should just download one from the Internet and drag it to __C:\Windows\system32__.
+>>>>>>> b31a9cc6708cec74b9988e63ef42b45ef185b6c5
 
 #### PHP
 

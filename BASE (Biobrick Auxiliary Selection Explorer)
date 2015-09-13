@@ -1,0 +1,38 @@
+BASE (Biobrick Auxiliary Selection Explorer)
+
+元件层次的生物积块评估、推荐、可视化系统
+
+The Evaluation, Recommendation, Visualization system for biobricks on device level
+
+合成生物学的发展使得生物积块的数量快速增加，
+然而其中大量的生物积块没有完备的描述，
+这使得实验研究人员在利用这些生物积块搭建新元件和系统时困难重重。
+为了解决这些问题，
+我们开发了基于网页的应用“BASE”，
+基于网页的设计这使得我们的软件在使用上更为方便自由。
+通过BASE，用户可以根据不同参考因素来搜索生物积块。
+此外，用户还可以在可视化的界面上画出自己的系统，
+并能方便快速地上传自己的系统和积块。
+BASE最大的亮点在于我们会根据多种因素对积块进行评价，
+并更多地从整个元件的角度进行了考虑。
+在构建系统时，用户可以通过积块描述、所属类别、目标功能乃至在元件中的位置等来进行搜索，
+软件会根据输入条件和软件计算的分数给出最佳积块的排名，
+积块的分数综合考虑了积块的生物学表现、构建的便易性、积块间搭配的倾向性、用户习惯等因素，
+具体的参数项包括用户反馈的评价、是否能够直接获得元件的序列、在类似功能的系统中某积块被使用时其他积块出现的频率等等，
+并有默认权重，不仅如此，用户还可以自行调整各因素的权重。对于多元件相互作用组成的系统我们的软件也可以对其进行一定的优化，
+如对相互调节的元件的启动子强度进行初步的平衡等。
+
+The rapid development of synthetic biology leads to the great growth of the number of biobricks which may not be interpreted well. 
+It also makes it more difficult for researchers to choose appropriate biobricks when creating new devices and systems. 
+To solve the problem, we develop a web-based appliance, “BASE”(Biobrick Auxiliary Selection Explorer) and allows more freedom and convenience in use.
+Through BASE, users can not only search biobricks according to different factors but also draw and display their systems in visual interface.
+The highlight of BASE is that it will judge every biobrick depending on several rational factors and consider more from the perspective of the entire device. 
+When building a system, users can search for biobricks with keywords about the descriptions of the bricks, 
+the class that the brick belongs to, projected function, or even the position in the device. 
+And according to both user’s input and the score calculated through our algorithm, 
+BASE will provide a ranking of applicative biobricks. The standard of scoring takes many factors into consideration, 
+such as the biological profile, the ease of use of, the bias between biobricks, the habit of the user and so on. 
+Specific parameters with built-in weight are saved in BASE, including evaluation from the user feedback, 
+whether or not the sequence can be gotten directly, the frequency of other biobricks when a given brick is used in systems with similar functions. 
+Moreover, the weight of those factors can be user-defined. For systems with interactions between devices, 
+our software also helps when optimizing them, such as the elementary balance of the promotion ability of promoters for the devices regulating each other. 

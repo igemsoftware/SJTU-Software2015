@@ -1,0 +1,54 @@
+div.compare{
+	width: 50%;
+	position: relative;
+	margin: auto;
+	margin-top: 50px;
+}
+
+
+div.compare .formGroupLabel{
+	text-align: right;
+	padding-left: 0px;
+	padding-right: 15px;
+	color: #8C8C8C;	
+	width: 30%
+}
+
+div.compare .formGroupInput{
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 70%
+}
+
+.compare .score{
+	display: none;
+}
+
+.compare button{
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8C8C8C', endColorstr='#D4D4D4'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#8C8C8C), to(#D4D4D4)); /* for webkit browsers */
+	background: -moz-linear-gradient(top, #8C8C8C, #D4D4D4);/* for firefox 3.6+ */
+}
+
+.compare button:hover{
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5F9EA0', endColorstr='#7AC5CD');
+	background: -webkit-gradient(linear, left top, left bottom, from(#5F9EA0), to(#7AC5CD));
+	background: -moz-linear-gradient(top, #5F9EA0, #7AC5CD);	
+}
+
+.compare .deleteButton{
+	display: none;
+}
+
+.compare .compareButton{
+	float: right;
+}
+
+.compare .toUpload{
+	float: right;
+	display: none;
+	color: #333344
+}
+
+
+
