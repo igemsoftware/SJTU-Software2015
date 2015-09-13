@@ -58,6 +58,38 @@ According to the brick id and functions, the back-end will automaticlly evaluate
 This is the last part of our design. After completing the required information of your device, you can upload it to our database and iGem official database soon.
   - Some text fields will be automaticlly filled with what you input in the former parts.
 
+## File Structure
+
+#### base_v6
+
+Including four __.txt__ files and one __.sql__ file. They are the source file of database.
+
+#### front-end
+
+The source files of our website. 
+
+  - Device Design: source files of device design function, including three __.pl__ files which will be changed when installing.
+  - Assets: The UI framework.
+  - help: help documents
+  - home: source files of homepage.
+  - icon: icons of website.
+  - iconpng: icons of website.
+  - search: source files of search function, including one __.pl__ file which will be changed when installing.
+  - mainCSS.css: __.css__ file.
+  - mainJS.js: __.js__ file.
+
+#### BASE \(Biobrick Auxiliary Selection Explorer\)
+
+An instruction of our project.
+
+#### Draft of science and Technology Museum poster
+
+An instruction of our project.
+
+#### README.md
+
+A document for users.
+
 ## Install
 You can just visit our website without any installation. But you are permitted to boot up a copy of your web server.
 
@@ -124,5 +156,5 @@ XAMPP will do most of works.
 
 #### Project
 
-Find ```my $password = "superjjj2486";``` in all the __.pl__ file. Change it to ```my $password = "xxx";``` where xxx is your password of username __root__ in MySQL.
+Find ```my $password = "";``` in all the __.pl__ file. Change it to ```my $password = "xxx";``` where xxx is your password of username __root__ in MySQL.
   
