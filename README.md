@@ -182,7 +182,7 @@ XAMPP will do most of the works. We suppose that you have installed the XAMPP.
 
 XAMPP will do most of the works. We suppose that you have installed the XAMPP.
   - Back to tab __Welcome__, click __Open Application Folder__ to the root directory of XAMPP.
-  - Move to __bin__ directory, find __perl__ file and move to __/usr/bin__ and replace the original file. This means that once we type in ```perl xxx.pl arguments...``` in terminal, we will use the perl intepreter included in XAMPP instead of the original one.
+  - Move to __bin__ directory, find __perl__ file and move to __/usr/bin__ and replace the original file. This means that once we type in ```perl xxx.pl arguments...``` in the terminal, we will use the Perl interpreter included in XAMPP instead of the original one.
 
 #### PHP
 
