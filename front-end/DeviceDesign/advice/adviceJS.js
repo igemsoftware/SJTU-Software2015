@@ -105,6 +105,9 @@ var beginAdvise = function(){
 
 	var history = $(".idHistory").text().substr(12)
 	history = history.substring(0, history.length - 1)
+	if (history == ""){
+		history == "--"
+	}
 
 	functionInputText = $(".functionInput input").val()
 	$(".functionInput").remove()
