@@ -101,9 +101,16 @@ What you need is __Apache__, __MySQL__, __Perl__, __PHP__ and __this project__.
 
 Apache is installed and you don't have to download it from the Internet. Just open the __terminal__ and input ```$ sudo apachectl start``` command.
 
-###### Other OS
+###### Windows
 
 We recommand you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefriends.org/download.html) to configure the environment.
+
+Notice that __win xp__ and __win 2003__ are not supported.
+
+  - Open the control panel, find module __Apache__ and click start.
+  - Click __Explorer__ button to the root directory of XAMPP. We will use the directory __htdocs__ later.
+  - Now, you can enjoy the service of apache.
+
 
 #### MySQL
 
@@ -111,15 +118,25 @@ We recommand you to download [XAMPP(Apache+MySQL+PHP+PERL)](https://www.apachefr
 
 MySQL is not included in the original operating system. We can download it from [MySQL Download](http://dev.mysql.com/downloads/mysql/). But it is not fast for most chinese users. [MySQL SOHU Mirror](http://mirrors.sohu.com/mysql/MySQL-5.6/) will be a better choice.
   - Luanch: You can easily control the status of MySQL in __perference__ after installation.
+  - Move to the root directory of the project. Enter directory __base_v6__.
   - Login: Open terminal, type in ```$ mysql -u root -p```. At first the password is empty. You can change it by ```$ sudo /usr/local/mysql/bin/mysqladmin -u root password yourpassword``` command.
   - Remember to change your password in __Perl__ source file. I will remind you later.
   - Then type in ```MySQL> create database base;``` to create __base__ database.
-  - Type in ```MySQL> source xxx;``` to update data in the database. __xxx__ is the route of the __base_v6.sql__ file in our project.
+  - Type in ```MySQL> use base;``` to use __base__.
+  - Type in ```MySQL> source base_v6.sql;``` to update data in the database.
   - After that, all the data is stored in the database named __base__.
 
-###### Other OS
+###### Windows
 
-XAMPP will do most of works.
+XAMPP will do most of works. We suppose that you have installed the XAMPP.
+
+  - Open the control panel, file module __MySQL__ and click start.
+  - Click __Shell__ button on the right of panel.
+  - Move to the root directory of the project. Enter directory __base_v6__.
+  - Type in ```# mysql -u username -p```. At first the password is empty, so click __Enter__ on the keyboard again to use MySQL. Of course, you can change your password by type in ```# mysqladmin -u root -p password yourpassword```.
+  - Type in ```MySQL> create database base;``` to create __base__ database.
+  - Type in ```MySQL> use base;``` to use __base__.
+  - Type in ```MySQL> source base_v6.sql;``` to update data in the database.
 
 #### Perl
 
@@ -135,9 +152,13 @@ Perl is automatically installed in MacOS.
   - After installation of these two plugins, you can use MySQL in Perl scripts.
   
 
-###### Other OS
+###### Windows
 
-XAMPP will do most of works.
+XAMPP will do most of works. We suppose that you have installed the XAMPP.
+
+  - Click __Shell__ button on the right of panel.
+  - Type in ```perl xxx.pl arguments...``` to run the __xxx.pl__.
+  - If the system tells you that your computer lacks of __libmysql_.dll__, you should just download one from the Internet and install it.
 
 #### PHP
 
@@ -152,7 +173,7 @@ PHP is automatically installed in MacOS.
 
 ###### Other OS
 
-XAMPP will do most of works.
+XAMPP will do all the works. You don't need to do anything.
 
 #### Project
 
