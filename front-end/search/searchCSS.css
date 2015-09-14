@@ -5,7 +5,7 @@ div.search .searchInputSection{
 	width: 60%;
 	position:relative;
 	margin: auto;
-	top: 150px;
+	margin-top: 150px;
 }
 
 div.search .searchButton{
@@ -45,7 +45,7 @@ div.search .resultSection{
 	width: 80%;
 	position:relative;
 	margin: auto;
-	top:250px;
+	margin-top: 100px;
 }
 
 div.search th.tableHeader{
@@ -76,7 +76,7 @@ div.search .typeExplanation p{
 
 #helpModel p{
 	line-height: 100%;
-	font-weight: 8px;
+	font-size: 13px;
 }
 
 

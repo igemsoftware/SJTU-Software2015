@@ -84,6 +84,11 @@ li > a.mainNavItem:hover{
 #helpModel{
 	width: 1000px;
 }
+.basefooter p{
+	font-size: 12px;
+	text-align: center;
+	color: gray
+}
 
 
 
