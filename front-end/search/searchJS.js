@@ -1,4 +1,5 @@
 var weightList = ["7.5", "6.8", "11.9", "7.5","13.7", "6.7", "3.5", "2.7", "5.5", "10", "10.5", "13.7"]
+var finalWeight = []
 var typeExp = ["Pieces of DNA that form a functional unit (for example promoter, RBS, etc.)", "Collection set of parts with defined function. In simple terms, a set of complementary BioBrick parts put together forms a device."]
 var scoreType = ["Part_status: ", "Sample_Status: ", "Part_Results: ", "Star_rating: ", "Uses: ", "DNA_Status: ", "Qualitative_experience: ", "Group_favorite: ", "Del: ", "Confirmed_times: ", "Number_comments: ", "Ave_rating: "]
 var score = []
@@ -56,7 +57,7 @@ $(document).ready(function(){
 })
 
 var search = function(){
-	var finalWeight = []
+	finalWeight = []
 
 	var key = $(".keyWord").val()
 	var type = $("input:checked").attr("value")
@@ -94,7 +95,6 @@ var beginWeight = function(){
 		$(this).attr("placeholder", "Default: " + weightList[$(this).attr("id")])
 		$(this).val(weightList[$(this).attr("id")])
 	})
-	$(".limitInput").attr("placeholder", "Default: " + limitNumber)
 	$(".limitInput").val(limitNumber)
 }
 
@@ -110,8 +110,9 @@ var showScore = function(){
 	var i = 0
 	var scoreList = score[$(this).attr("id")]
 	var arr = scoreList.split("|")
+	var totalWeight = finalWeight.split("*")
 	$("#scoreModel p").each(function(){
-		$(this).text(scoreType[i] + arr[i])
+		$(this).text(scoreType[i] + arr[i] + "/" + parseFloat(totalWeight[i]).toFixed(2))
 		++i
 	})
 	$("#scoreModel").modal()
