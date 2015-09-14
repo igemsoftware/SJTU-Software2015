@@ -192,14 +192,14 @@ PHP is automatically installed in MacOS.
   - Type in ```$ sudo open -e /etc/apache2/httpd.conf``` in __terminal__.
   - Find ```#LoadModule php5_module``` in this file and remove the \#.
   - Restart apache server. ```$ sudo apachectl restart```
-  - Then put the directory of our project into ___/Library/WebServer/Documents___.
-  - Open your browser, visit __http://localhost/iGem2015_SJTU_Software/search/search.html___ to use our website.
+  - Then put the directory of our project into __/Library/WebServer/Documents__.
+  - Open your browser, visit __http://localhost/iGem2015_SJTU_Software/search/search.html__ to use our website.
 
 ###### Windows
 
 XAMPP will do all the works. You don't need to do anything.
 
-###### Windows
+###### Linux
 
 XAMPP will do all the works. You don't need to do anything.
 
