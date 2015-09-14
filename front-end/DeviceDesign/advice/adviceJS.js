@@ -36,12 +36,15 @@ $(document).ready(function(){
 		"ondragover": "allowDrop(event)",
 		"ondrop": "drop(event)"
 	})
+	//begin and end advise
 	$("#idChooseAlert").on("open.modal.amui", beginAdvise)
 	$("#idChooseAlert").on("close.modal.amui", completeAdvise)
+	//id choice
 	$(".evaluation").delegate("input:radio", "change", function(){
 		idChoose = $(this).attr("value")
 		$("#idChooseAlert .am-modal-footer").fadeIn(200)
 	})
+	//to next part - evaluate
 	$(".evaButton").click(function(){
 		var passData = $(".idHistory").text() + "|" + $(".functionHistory").text()
 		$(".passDataURL").attr("href","../compare/compare.html?data=" + passData);
@@ -49,7 +52,7 @@ $(document).ready(function(){
 			return
 		}
 	})
-
+	//key down event: id choose
 	$(".evaluation").delegate(".functionInput input", "keydown", function(e){
 		if (e.keyCode == 13){
 			$("#idChooseAlert").modal()
@@ -61,9 +64,9 @@ $(document).ready(function(){
 	typeDetailPanel()
 	cancelSelected()
 })
-
+//drag icon
 var beginDrag = function(ev){
-	ev.dataTransfer.setData("image", ev.target.id)
+	ev.dataTransfer.setData("Text", ev.target.id)
 	$(".typeDetail").hide()
 }
 
@@ -73,29 +76,33 @@ var allowDrop = function(ev){
 
 var drop = function(ev){
 	ev.preventDefault()
-	var data = ev.dataTransfer.getData("image")
+	var data = ev.dataTransfer.getData("Text")
 	var target = $(".inputSection").children()
 	var width = target.css("width")
 	for (var num = 0; num < target.length; ++num){
+		//find the first empty field
 		if (target.eq(num).children().length == 0) {
 			var image = document.getElementById(data)
 			var newImage = image.cloneNode(true)
+			//drop
 			target.eq(num).append(image)
 			$(image).attr("draggable", "false")
 			$(image).removeClass("tableIcon")
 			$(image).addClass("selectedIcon")
+			//a new photo is placed at the original place
 			$(".iconSection").children().eq(parseInt(data) % 10).children().eq(parseInt(data) > 9).children().append(newImage)
 			$(".inputSection .selectedIcon").css({
 				"width": width,
 				"vertical-align": "middle",
 				"margin-top": "50px"
 			})
-
+			//add a function input field
 			$(".inputField").eq(num).append(functionInput)
 			$(".functionInput").show()
 			$(".functionInput").css({
 				"display": "table",
 			})
+			//you can't drag any icon until you click the advise button
 			$(".tableIcon").attr("draggable", "false")
 			break;
 		}
@@ -105,23 +112,24 @@ var drop = function(ev){
 var beginAdvise = function(){
 	var field = $(".inputField").has(".functionInput")
 	var id = field.children(".selectedIcon").attr("id")
+	//get icon type
 	var type = typeDataSource[id][0]
-
+	//get function
 	var func = field.children(".functionInput").children("input").val()
-
+	//get history id
 	var history = $(".idHistory").text().substr(12)
 	history = history.substring(0, history.length - 1)
 	if (history == ""){
 		history == "--"
 	}
-
+	//get history functuon
 	functionInputText = $(".functionInput input").val()
 	$(".functionInput").remove()
 	$(".tableIcon").attr("draggable", "true")
 	$("#idChooseAlert .am-modal-hd").html("Waiting")	
 	$("#idChooseAlert .am-modal-bd").html("Loading Data...")
 	$("#idChooseAlert .am-modal-footer").css("display", "none")
-
+	//pass data to back-end
 	$.post("advice.php", {
 		type: type,
 		userFunction: func,
@@ -136,6 +144,7 @@ var beginAdvise = function(){
 		$("#idChooseAlert .am-modal-bd").html(data)
 	})
 }
+//update the history id and function
 var completeAdvise = function(){
 	$(".idHistory").append(idChoose + "*")
 	$(".functionHistory").append(functionInputText + "*")
@@ -143,16 +152,18 @@ var completeAdvise = function(){
 	functionInputText = "NoResult"
 }
 
-
+//remove the selected icon
 var cancelSelected = function(){
 	var target = $(".cancelButton")
 	$(".evaluation").delegate(".cancelButton", "click", function(){
 		var field = $(this).parent()
 		var id = parseInt(field.attr("id"))
 		field.children().remove()
+		//remove all the icons after the specific icon we have chosen
 		for (var i = id; field.siblings().eq(i).children().length != 0; ++i){
 			field.siblings().eq(i).children().remove()
 		}	
+		//update the history field
 		var index = 0
 		var funcIndex = 0
 		var originText = $(".idHistory").text()
@@ -170,19 +181,19 @@ var cancelSelected = function(){
 		}
 		$(".tableIcon").attr("draggable", "true")	
 	})
-
+	//show the 'remove' button
 	$(".evaluation").delegate(".inputField", "mouseover", function(){
 		if ($(this).children().length > 0){
 			$(this).prepend(target)
 			target.show()
 		}
 	})
-
+	//hide the 'remove' button
 	$(".evaluation").delegate(".inputField", "mouseout", function(){
 		target.hide()
 	})
 }
-
+//show the detail panel of each type icon
 var typeDetailPanel = function(){
 	var target = $(".typeDetail")
 	$(".evaluation").delegate(".tableIcon", "mouseover", function(){
@@ -205,7 +216,7 @@ var typeDetailPanel = function(){
 		target.hide()
 	})
 }
-
+//set the layout
 var setUpMargin = function(){
 	var leftMargin = $(".mainNav").css("margin-left")
 	var width = $(".mainNav .mainNavItem").innerWidth()
@@ -229,7 +240,7 @@ var setUpMargin = function(){
 		"margin-top": buttonMarginTop,
 	})
 }
-
+//if you want to leave the web when there are some icons in the field, you will get a tip.
 var unloadTips = function(){
 	if ($(".inputField").children().length == 0){
 		return

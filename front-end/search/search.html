@@ -60,13 +60,12 @@
     <div class="am-modal-dialog">
       <div class="am-modal-hd">SEARCH HELP</div>
       <div class="am-modal-bd">
-        <p>This part provides you with information about the biobrick at the level of part.</p>
-        <p>You can enter keywords related to your target biobrick in this blank</p>
-        <img src = "../help/search1.png" style = "width: 700px"></img>
-        <p>Click radio ‘Part’ or ‘Device’ before searching to choose which kind of biobrick you need (basic part or composite part).</p>
-        <p>Click button ‘Weight’ to change your weight of the dimensions.</p>
-        <p>You can get these information about your target biobrick:</p>
+        <p>This part provides you with information about the biobrick at the level of part or device. You can enter one or more keyword (separated  by  ‘*’)related to your target biobrick in this blank to start your search.</p>
+        <img src = "../help/search1.png" style = "width: 700px;"></img>
+        <p>Click radio button ‘Part’ or ‘Device’ before searching to choose which kind of biobrick you need (part or device).You can get these information about your target biobrick:</p>
         <img src = "../help/search2.png" style = "width: 700px"></img>
+        <p>Button ‘Advanced’ enables you to adjust the weights. Click it to change your weights of the dimensions,here you can also change the lower bounds of score to limit the search scope. Remember to click button ‘Sure’ to save your changes. </p>
+        <img src = "../help/search3.png" style = "width: 700px; height: 300px"></img>
       </div>
       <div class="am-modal-footer">
         <span class="am-modal-btn">OK</span>
@@ -88,7 +87,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Part_status</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="0" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="0" class = "weightInput" placeholder = "Default: 7.5">
                       </div>
                   </div>
                 </li>
@@ -96,7 +95,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Sample_Status</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="1" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="1" class = "weightInput" placeholder = "Default: 6.8">
                       </div>
                   </div>
                 </li>
@@ -104,7 +103,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Part_Results</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="2" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="2" class = "weightInput" placeholder = "Default: 11.9">
                       </div>
                   </div>
                 </li>
@@ -112,7 +111,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Star_rating</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="3" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="3" class = "weightInput" placeholder = "Default: 7.5">
                       </div>
                   </div>
                 </li>
@@ -120,7 +119,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Uses</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="4" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="4" class = "weightInput" placeholder = "Default: 13.7">
                       </div>
                   </div>
                 </li>
@@ -128,7 +127,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">DNA_Status</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="5" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="5" class = "weightInput" placeholder = "Default: 6.7">
                       </div>
                   </div>
                 </li>
@@ -136,7 +135,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Qualitative_experience</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="6" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="6" class = "weightInput" placeholder = "Default: 3.5">
                       </div>
                   </div>
                 </li>
@@ -144,7 +143,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Group_favorite</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="7" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="7" class = "weightInput" placeholder = "Default: 2.7">
                       </div>
                   </div>
                 </li>
@@ -152,7 +151,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Del</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="8" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="8" class = "weightInput" placeholder = "Default: 5.5">
                       </div>
                   </div>
                 </li>
@@ -160,7 +159,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Confirmed_times</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="9" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="9" class = "weightInput" placeholder = "Default: 10">
                       </div>
                   </div>
                 </li>
@@ -168,7 +167,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Number_comments</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="10" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="10" class = "weightInput" placeholder = "Default: 10.5">
                       </div>
                   </div>
                 </li>
@@ -176,7 +175,7 @@
                   <div class="am-form-group">
                     <label for="doc-ipt-pwd-2" class="am-u-sm-6 am-form-label formGroupLabel">Ave_rating</label>
                       <div class="am-u-sm-6 formGroupInput">
-                        <input type="text" id="11" class = "weightInput" placeholder = "Default: ">
+                        <input type="text" id="11" class = "weightInput" placeholder = "Default: 13.7">
                       </div>
                   </div>
                 </li>

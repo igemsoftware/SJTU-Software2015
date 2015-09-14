@@ -6,16 +6,18 @@ var score = []
 var limitNumber = "45"
 
 $(document).ready(function(){
+	//key down event: search
 	$(".keyWord").keydown(function(e){
 		if (e.keyCode == 13){
 			search()
 		}
 	})
+
 	$(".beginSearch").click(function(e){
 		e.preventDefault()
 		search();
 	})
-
+	//show the introduction of two types: part and device
 	$(".search").delegate(".searchButton label", "mouseover", function(){
 		var left = $(this).position().left - 150 + 35
 		var id = $(this).attr("id")
@@ -30,18 +32,22 @@ $(document).ready(function(){
 		$(".typeExplanation").css("left", left)
 		$(".typeExplanation").show()
 	})
+	//hide the introduction of two types: part and device
 	$(".search").delegate(".searchButton label", "mouseout", function(){
 		$(".typeExplanation").hide()
 	})
-
+	//set the postion of weight and score model
 	var width = $("#weightChoose").width()
 	$("#weightChoose, #scoreModel").css("margin-left", -1 * (width) / 2)
+	//begin choosing weight and end choosing.
 	$("#weightChoose").on("open.modal.amui", beginWeight)
 	$("#weightChoose").on("close.modal.amui", endWeight)
+	//dynamically check the input data of weight and score field.
 	$(".search").delegate(".weightInput, .limitInput", "input onpropertychange", function(){
 		var checked = true
 		var len = $(this).val().length
 		for (var i = 0; i < len; ++i){
+			//if some characters is not a number or '.', the 'sure' button will hide.
 			if (($(this).val()[i] > '9' || $(this).val()[i] < '0') && $(this).val()[i] != '.'){
 				checked = false
 				break
@@ -53,15 +59,18 @@ $(document).ready(function(){
 			$(".am-modal-footer").fadeOut(200)
 		}
 	})
+	//show the score model
 	$(".search").delegate(".scoreDetail", "click", showScore)
 })
 
 var search = function(){
 	finalWeight = []
-
+	//key word
 	var key = $(".keyWord").val()
+	//type
 	var type = $("input:checked").attr("value")
 	var total = 0
+	//get weight(percentage)
 	for (var i = 0; i < weightList.length; ++i){
 		finalWeight.push(weightList[i])
 		total += parseFloat(weightList[i])
@@ -71,6 +80,7 @@ var search = function(){
 		finalWeight[i] = String(val / total * 100)
 	}
 	finalWeight = finalWeight.join("*")
+	//pass data to the back-end
 	$.post("search.php", {
 		searchKeyWord: key, 
 		searchType: type,
@@ -79,8 +89,10 @@ var search = function(){
 	},	function(data){
 		if (data.length > 0){
 			score = []
-			var arr = data.split("@")
+			var arr = data.split("^")
+			//show the result
 			$(".searchResult").html(arr[0])
+			//show the number of row
 			$(".rowNumber").css("display", "inline")
 			$(".rowNumber p").text("Total: " + arr[1])
 			for (var i = 2; i < arr.length; ++i){
@@ -89,15 +101,14 @@ var search = function(){
 		}
 	})
 }
-
+//show the advanced model
 var beginWeight = function(){
 	$(".weightInput").each(function(){
-		$(this).attr("placeholder", "Default: " + weightList[$(this).attr("id")])
 		$(this).val(weightList[$(this).attr("id")])
 	})
 	$(".limitInput").val(limitNumber)
 }
-
+//hide the advanced model and 
 var endWeight = function(){
 	$(".weightInput").each(function(){
 		if ($(this).val() != weightList[$(this).attr("id")] && $(this).val() != ""){
@@ -106,6 +117,7 @@ var endWeight = function(){
 	})
 	limitNumber = $(".limitInput").val()
 }
+//show the score model
 var showScore = function(){
 	var i = 0
 	var scoreList = score[$(this).attr("id")]

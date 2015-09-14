@@ -180,7 +180,7 @@ sub gscore{
 	my $host = "localhost";
 	my $dbname = "base";
 	my $username = "root";
-	my $password = "superjjj2486";
+	my $password = "";
 	my $score = 0.0;
 
 	my $i = 0;

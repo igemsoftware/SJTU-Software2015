@@ -74,4 +74,9 @@ div.search .typeExplanation p{
 	margin-top: 15px;
 }
 
+#helpModel p{
+	line-height: 100%;
+	font-weight: 8px;
+}
+
 

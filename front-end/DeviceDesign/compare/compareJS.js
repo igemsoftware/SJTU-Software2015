@@ -6,21 +6,22 @@ $(document).ready(function(){
 	window.onbeforeunload = unloadTips
 	prepareData()
 })
-
+//add a 'id and function' row
 var addRow = function(){
 	var newRow = "<div class = \"row\"><form class=\"am-form am-form-horizontal am-g inputRow\" id = \"\">" + $(this).parent().parent().html() + "</form></div>"
 	$(this).parent().parent().parent().after(newRow)
 	$(".compare .deleteButton").css("display", "inline")
 }
-
+//delete a 'id and function' row
 var deleteRow = function(){
 	$(this).parent().parent().parent().remove()
 	if ($(".compare .row").length == 1) {
 		$(".compare .deleteButton").hide()
 	}
 }
-
+//begin compare
 var beginCompare = function(){
+	//show optinal id label
 	$(".compare .inputRow").each(function(){
 		if ($(this).attr("id") == ""){
 			$(this).attr("id", "compared")
@@ -32,6 +33,7 @@ var beginCompare = function(){
 
 	var bricks = ""
 	$(".compare .brickId").each(function(){
+		//if id fields are not completed, you cannot evaluate.
 		if ($(this).val() == ""){
 			checked = false
 			$(".toUpload").fadeOut(200)
@@ -44,7 +46,7 @@ var beginCompare = function(){
 		}
 	})
 	bricks = bricks.substring(0, bricks.length - 1)
-
+	//get the function
 	var functions = ""
 	$('.compare .functions').each(function(){
 		functions += $(this).val() + ','
@@ -58,6 +60,7 @@ var beginCompare = function(){
 		$(".compare .optID").each(function(){
 			$(this).text("Optimal ID: Loading")
 		})
+		//pass data to back-end
 		$.post("compare.php", {
 			brick: bricks,
 			funcs: functions,
@@ -79,9 +82,11 @@ var beginCompare = function(){
 		})
 	}
 }
+//upload the data we have compared
 var beginUpload = function(){
 	var bricks = ""
 	var checked = true
+	//you can upload data only after comparasion
 	$(".compare .brickId").each(function(){
 		if ($(this).val() == ""){
 			checked = false
@@ -106,7 +111,7 @@ var beginUpload = function(){
 	}
 }
 
-
+//if you want to leave the web when there are some icons in the field, you will get a tip.
 var unloadTips = function(){
 	var check = 0
 	$(".compare :text").each(function(){
@@ -120,7 +125,7 @@ var unloadTips = function(){
 		return
 	}
 }
-
+//if this page comes from 'construct', we should prepare some data.
 var prepareData = function(){
 	var data = window.location.search
 	if (data != ""){
