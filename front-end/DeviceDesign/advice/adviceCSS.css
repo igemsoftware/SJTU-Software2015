@@ -69,10 +69,14 @@ table td{
 	margin: auto;
 }
 
+.evaButtonSection {
+	position: fixed;
+}
+
 
 .evaluation .evaButtonSection .evaButton{
 	float: right;
-	color: #333344
+	color: #333344;
 }
 
 .basefooter{

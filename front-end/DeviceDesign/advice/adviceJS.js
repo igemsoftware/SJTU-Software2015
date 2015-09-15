@@ -1,11 +1,13 @@
 var functionInput = $(".functionInput")
 
+var currAdvise = 0
+
 var idChoose = "NoResult"
 var functionInputText = "NoResult"
 
 var typeDataSource = [
 	["Dna", "DNA parts provide functionality to the DNA itself. DNA parts include cloning sites, scars, primer binding sites, spacers, recombination sites, conjugative tranfer elements, transposons, origami, and aptamers."],
-	["Termminator", "A terminator is an RNA sequence that usually occurs at the end of a gene or operon mRNA and causes transcription to stop."],
+	["Terminator", "A terminator is an RNA sequence that usually occurs at the end of a gene or operon mRNA and causes transcription to stop."],
 	["Composite", "unknown"],
 	["Project", "unknown"],
 	["Reporter", "unknown"],
@@ -96,16 +98,16 @@ var drop = function(ev){
 				"vertical-align": "middle",
 				"margin-top": "50px"
 			})
-			//add a function input field
-			$(".inputField").eq(num).append(functionInput)
-			$(".functionInput").show()
-			$(".functionInput").css({
-				"display": "table",
-			})
-			//you can't drag any icon until you click the advise button
-			$(".tableIcon").attr("draggable", "false")
 			break;
 		}
+	}
+	if ($(".inputField").eq(currAdvise).children("functionInput").length == 0){
+		//add a function input field
+		$(".inputField").eq(currAdvise).append(functionInput)
+		$(".functionInput").show()
+		$(".functionInput").css({
+			"display": "table",
+		})
 	}
 }
 
@@ -150,6 +152,14 @@ var completeAdvise = function(){
 	$(".functionHistory").append(functionInputText + "*")
 	idChoose = "NoResult"
 	functionInputText = "NoResult"
+	currAdvise += 1
+	if ($(".inputField").eq(currAdvise).children().length != 0){
+		$(".inputField").eq(currAdvise).append(functionInput)
+		$(".functionInput").show()
+		$(".functionInput").css({
+			"display": "table",
+		})
+	}
 }
 
 //remove the selected icon
@@ -158,6 +168,7 @@ var cancelSelected = function(){
 	$(".evaluation").delegate(".cancelButton", "click", function(){
 		var field = $(this).parent()
 		var id = parseInt(field.attr("id"))
+		currAdvise = parseInt(id)
 		field.children().remove()
 		//remove all the icons after the specific icon we have chosen
 		for (var i = id; field.siblings().eq(i).children().length != 0; ++i){
@@ -235,9 +246,9 @@ var setUpMargin = function(){
 		"height": $(".evaluation table").innerHeight()
 	})
 
-	var buttonMarginTop = $(".evaluation table").innerHeight() - $(".evaButtonSection").innerHeight()
+	var buttonMarginTop = $(window).height() + $(document).scrollTop()
 	$(".evaButtonSection").css({
-		"margin-top": buttonMarginTop,
+		"margin-top": buttonMarginTop - $(".evaButtonSection").height() - $(".showArea").offset().top - 80,
 	})
 }
 //if you want to leave the web when there are some icons in the field, you will get a tip.
