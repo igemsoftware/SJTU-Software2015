@@ -10,21 +10,21 @@ var typeDataSource = [
 	["Terminator", "A terminator is an RNA sequence that usually occurs at the end of a gene or operon mRNA and causes transcription to stop."],
 	["Composite", "unknown"],
 	["Project", "unknown"],
-	["Reporter", "unknown"],
+	["Reporter", "All of our reporter genes encode for fluorescent proteins (FP's). These fluorescent proteins are derived from two different families of proteins: the Aeqoria Victoria jellyfish, which produces a wild-type GFP, and the Discosoma corals, which (after heavy modification) produces a monomeric RFP (mRFP)."],
 	["Coding", "Protein coding sequences encode the amino acid sequence of a particular protein. Note that some protein coding sequences only encode a protein domain or half a protein. Others encode a full-length protein from start codon to stop codon. Coding sequences for gene expression reporters such as LacZ and GFP are also included here."],
 	["Regulatory", "A promoter is a DNA sequence that tends to recruit transcriptional machinery and lead to transcription of the downstream DNA sequence."],
-	["Rna", "unknown"],
-	["Signalling", "unknown"],
-	["Inverter", "unknown"],
+	["Rna", "These parts code for RNA segments with novel structures or functions, such as stem-loop riboregulators. All of these contain promoter regions regulating RNA production."],
+	["Signalling", "This category signifies parts which allow cells to send extracellular messages to other cells."],
+	["Inverter", "Classically, a genetic inverter receives as input the concentration of repressor A and, via gene expression, sends as output the concentration of repressor B."],
 	["T7", "Bacteriophage T7 is an obligate lytic phage of E. coli."],
-	["Generators", "unknown"],
+	["Generators", "Protein Generator is a composite-type part based on the combination of a Protein Coding region with one or more other parts. Protein Generators enable expression of the mRNA encoded by the CDS. "],
 	["Primer", "A primer is a short single-stranded DNA sequences used as a starting point for PCR amplification or sequencing. Although primers are not actually available via the Registry distribution, we include commonly used primer sequences here."],
 	["Protein_Domain", "Protein domains are portions of proteins cloned in frame with other proteins domains to make up a protein coding sequence. Some protein domains might change the protein's location, alter its degradation rate, target the protein for cleavage, or enable it to be readily purified."],
 	["Translational_Unit", "Translational units are composed of a ribosome binding site and a protein coding sequence. They begin at the site of translational initiation, the RBS, and end at the site of translational termination, the stop codon."],
 	["RBS", "A ribosome binding site (RBS) is an RNA sequence found in mRNA to which ribosomes can bind and initiate translation."],
 	["Intermediate", "unknown"],
-	["Measurement", "unknown"],
-	["Other", "unknown"]
+	["Measurement", "These systems allow measurement of the relative strength of a promoter when it is not being repressed. They all require external validation of the operating conditions such as plasmid copy number and cell metabolism."],
+	["Other", "Other"]
 ]
 
 $(document).ready(function(){
