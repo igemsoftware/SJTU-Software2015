@@ -168,7 +168,9 @@ var cancelSelected = function(){
 	$(".evaluation").delegate(".cancelButton", "click", function(){
 		var field = $(this).parent()
 		var id = parseInt(field.attr("id"))
-		currAdvise = parseInt(id)
+		if (parseInt(id) <= currAdvise){
+			currAdvise = parseInt(id)
+		}
 		field.children().remove()
 		//remove all the icons after the specific icon we have chosen
 		for (var i = id; field.siblings().eq(i).children().length != 0; ++i){
@@ -179,11 +181,11 @@ var cancelSelected = function(){
 		var funcIndex = 0
 		var originText = $(".idHistory").text()
 		var originFunctionText = $(".functionHistory").text()
-		for (var i = 0; i < id; ++i){
+		for (var i = 0; i < currAdvise; ++i){
 			index = originText.indexOf('*', index + 1)
 			funcIndex = originFunctionText.indexOf('*', funcIndex + 1)
 		}
-		if (id == 0){
+		if (id == 0 || index == -1){
 			$(".idHistory").text("History id:")
 			$(".functionHistory").text("History Function:")
 		}else{
