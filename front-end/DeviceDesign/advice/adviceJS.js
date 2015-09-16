@@ -1,5 +1,9 @@
 var functionInput = $(".functionInput")
 
+var advisedID = []
+var advisedFunc = []
+
+var advisedList = []
 var currAdvise = 0
 
 var idChoose = "NoResult"
@@ -17,7 +21,7 @@ var typeDataSource = [
 	["Signalling", "This category signifies parts which allow cells to send extracellular messages to other cells."],
 	["Inverter", "Classically, a genetic inverter receives as input the concentration of repressor A and, via gene expression, sends as output the concentration of repressor B."],
 	["T7", "Bacteriophage T7 is an obligate lytic phage of E. coli."],
-	["Generators", "Protein Generator is a composite-type part based on the combination of a Protein Coding region with one or more other parts. Protein Generators enable expression of the mRNA encoded by the CDS. "],
+	["Generator", "Protein Generator is a composite-type part based on the combination of a Protein Coding region with one or more other parts. Protein Generators enable expression of the mRNA encoded by the CDS. "],
 	["Primer", "A primer is a short single-stranded DNA sequences used as a starting point for PCR amplification or sequencing. Although primers are not actually available via the Registry distribution, we include commonly used primer sequences here."],
 	["Protein_Domain", "Protein domains are portions of proteins cloned in frame with other proteins domains to make up a protein coding sequence. Some protein domains might change the protein's location, alter its degradation rate, target the protein for cleavage, or enable it to be readily purified."],
 	["Translational_Unit", "Translational units are composed of a ribosome binding site and a protein coding sequence. They begin at the site of translational initiation, the RBS, and end at the site of translational termination, the stop codon."],
@@ -39,12 +43,21 @@ $(document).ready(function(){
 		"ondrop": "drop(event)"
 	})
 	//begin and end advise
+	$(".evaluation").delegate(".functionInput button", "click", function(){
+		currAdvise = parseInt($(this).parent().parent().parent().attr("id"))
+	})
 	$("#idChooseAlert").on("open.modal.amui", beginAdvise)
 	$("#idChooseAlert").on("close.modal.amui", completeAdvise)
 	//id choice
 	$(".evaluation").delegate("input:radio", "change", function(){
 		idChoose = $(this).attr("value")
-		$("#idChooseAlert .am-modal-footer").fadeIn(200)
+		if (idChoose == "other"){
+			$(".userBrickForm").fadeIn(200)
+			$("#idChooseAlert .am-modal-footer").fadeOut(200)
+		}else{
+			$(".userBrickForm").fadeOut(200)
+			$("#idChooseAlert .am-modal-footer").fadeIn(200)
+		}
 	})
 	//to next part - evaluate
 	$(".evaButton").click(function(){
@@ -61,10 +74,15 @@ $(document).ready(function(){
 		}
 	})
 
+	$(".evaluation").delegate(".userBrickButton", "click", checkWhetherInDatabase)
+	$(".evaluation").delegate("#userBrick", "input onpropertychange", function(){
+		$("#idChooseAlert .am-modal-footer").fadeOut(200)
+	})
+
  	window.onbeforeunload = unloadTips
 
 	typeDetailPanel()
-	cancelSelected()
+	hoverEvent()
 })
 //drag icon
 var beginDrag = function(ev){
@@ -78,6 +96,8 @@ var allowDrop = function(ev){
 
 var drop = function(ev){
 	ev.preventDefault()
+	advisedList.push(false)
+	advisedID.push("")
 	var data = ev.dataTransfer.getData("Text")
 	var target = $(".inputSection").children()
 	var width = target.css("width")
@@ -101,18 +121,10 @@ var drop = function(ev){
 			break;
 		}
 	}
-	if ($(".inputField").eq(currAdvise).children("functionInput").length == 0){
-		//add a function input field
-		$(".inputField").eq(currAdvise).append(functionInput)
-		$(".functionInput").show()
-		$(".functionInput").css({
-			"display": "table",
-		})
-	}
 }
 
 var beginAdvise = function(){
-	var field = $(".inputField").has(".functionInput")
+	var field = $(".inputField").eq(currAdvise)
 	var id = field.children(".selectedIcon").attr("id")
 	//get icon type
 	var type = typeDataSource[id][0]
@@ -126,6 +138,7 @@ var beginAdvise = function(){
 	}
 	//get history functuon
 	functionInputText = $(".functionInput input").val()
+	advisedFunc[currAdvise] = functionInputText
 	$(".functionInput").remove()
 	$(".tableIcon").attr("draggable", "true")
 	$("#idChooseAlert .am-modal-hd").html("Waiting")	
@@ -143,55 +156,43 @@ var beginAdvise = function(){
 			$("#idChooseAlert .am-modal-hd").html("Warning")
 			$("#idChooseAlert .am-modal-footer").fadeIn(200)
 		}
-		$("#idChooseAlert .am-modal-bd").html(data)
+		$("#idChooseAlert .am-modal-bd").html(data + "<div class = \"userBrickForm am-g\"><form class=\"am-form am-u-sm-9 am-u-md-9 am-u-lg-9\"><div class=\"am-form-group\"><input type=\"text\" class=\"\" id=\"userBrick\" placeholder=\"You can input a brick id as you like.\"></div></form><button type=\"button\" class=\"am-btn am-u-sm-3 am-u-md-3 am-u-lg-3 userBrickButton\">Check</button></div>")
 	})
 }
+
 //update the history id and function
 var completeAdvise = function(){
+	advisedList[currAdvise] = true
+	advisedID[currAdvise] = idChoose
 	$(".idHistory").append(idChoose + "*")
 	$(".functionHistory").append(functionInputText + "*")
 	idChoose = "NoResult"
 	functionInputText = "NoResult"
-	currAdvise += 1
-	if ($(".inputField").eq(currAdvise).children().length != 0){
-		$(".inputField").eq(currAdvise).append(functionInput)
-		$(".functionInput").show()
-		$(".functionInput").css({
-			"display": "table",
-		})
-	}
 }
 
 //remove the selected icon
-var cancelSelected = function(){
+var hoverEvent = function(){
 	var target = $(".cancelButton")
 	$(".evaluation").delegate(".cancelButton", "click", function(){
 		var field = $(this).parent()
 		var id = parseInt(field.attr("id"))
-		if (parseInt(id) <= currAdvise){
-			currAdvise = parseInt(id)
-		}
+		advisedList[id] = false
 		field.children().remove()
 		//remove all the icons after the specific icon we have chosen
 		for (var i = id; field.siblings().eq(i).children().length != 0; ++i){
 			field.siblings().eq(i).children().remove()
 		}	
 		//update the history field
-		var index = 0
-		var funcIndex = 0
-		var originText = $(".idHistory").text()
-		var originFunctionText = $(".functionHistory").text()
-		for (var i = 0; i < currAdvise; ++i){
-			index = originText.indexOf('*', index + 1)
-			funcIndex = originFunctionText.indexOf('*', funcIndex + 1)
+		var resID = "History id:"
+		var resFunc = "History Function:"
+		for (var i = 0; i < id; ++i){
+			if (advisedList[i] == true){
+				resID += advisedID[i] + "*"
+				resFunc += advisedFunc[i] + "*"
+			}
 		}
-		if (id == 0 || index == -1){
-			$(".idHistory").text("History id:")
-			$(".functionHistory").text("History Function:")
-		}else{
-			$(".idHistory").text(originText.substring(0, index + 1))
-			$(".functionHistory").text(originFunctionText.substring(0, funcIndex + 1))
-		}
+		$(".idHistory").text(resID)
+		$(".functionHistory").text(resFunc)
 		$(".tableIcon").attr("draggable", "true")	
 	})
 	//show the 'remove' button
@@ -199,11 +200,20 @@ var cancelSelected = function(){
 		if ($(this).children().length > 0){
 			$(this).prepend(target)
 			target.show()
+			if (advisedList[$(this).attr("id")] == false){
+				$(this).append(functionInput)
+				$(".functionInput").show()
+				$(".functionInput").css({
+					"display": "table",
+				})
+			}
 		}
+
 	})
 	//hide the 'remove' button
 	$(".evaluation").delegate(".inputField", "mouseout", function(){
 		target.hide()
+		$(".functionInput").hide()
 	})
 }
 //show the detail panel of each type icon
@@ -229,6 +239,29 @@ var typeDetailPanel = function(){
 		target.hide()
 	})
 }
+
+//check whether the id user input exists in the database
+var checkWhetherInDatabase = function(){
+	var field = $(".inputField").eq(currAdvise)
+	var iconid = field.children(".selectedIcon").attr("id")
+	var id = $("#userBrick").val()
+	var type = typeDataSource[iconid][0]
+	console.log(type)
+	console.log(id)
+	$.post("judge.php", {
+		usertype: type,
+		userid: id
+	}, function(data){
+		if (data == "Yes"){
+			$("#idChooseAlert .am-modal-footer").fadeIn(200)
+			$("#userBrick").css("border-color", "#ccc")
+			idChoose = id
+		}else{
+			$("#userBrick").css("border-color", "red")
+		}
+	})
+}
+
 //set the layout
 var setUpMargin = function(){
 	var leftMargin = $(".mainNav").css("margin-left")

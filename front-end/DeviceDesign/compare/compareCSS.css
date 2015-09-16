@@ -50,5 +50,10 @@ div.compare .formGroupInput{
 	color: #333344
 }
 
+.accuracy{
+	width: 17%;
+	position: absolute;
+}
+
 
 

@@ -70,7 +70,7 @@ li > a.mainNavItem:hover{
 .helpButton{
 	position: absolute;
 	right: 10%;
-	margin-top: 20px;
+	margin-top: 8px;
 	background-color: #D4D4D4;
 	color: #8C8C8C;
 	transition:none;

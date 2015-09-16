@@ -3,6 +3,8 @@ $(document).ready(function(){
 	$(".compareButton").click(beginCompare)
 	$(".compare").delegate(".deleteButton", "click", deleteRow)
 	$(".toUpload").click(beginUpload)
+	$(".accuracy").css("left", $(".mainNav").offset().left)
+	$(".accuracy").css("top", $(".helpButton").offset().top)
 	window.onbeforeunload = unloadTips
 	prepareData()
 })
@@ -60,11 +62,14 @@ var beginCompare = function(){
 		$(".compare .optID").each(function(){
 			$(this).text("Optimal ID: Loading")
 		})
+
+		var acc = $(".accuracy select").val()
+		console.log(acc)
 		//pass data to back-end
 		$.post("compare.php", {
 			brick: bricks,
 			funcs: functions,
-			weight: "50"
+			weight: acc
 		}, function(data){
 			var res = data.split("*")
 			var opts = res[1].split("@")

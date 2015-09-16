@@ -69,6 +69,13 @@ table td{
 	margin: auto;
 }
 
+.evaluation .userBrickForm{
+	width: 90%;
+	position: relative;
+	margin: auto;
+	display: none;
+}
+
 .evaButtonSection {
 	position: fixed;
 }

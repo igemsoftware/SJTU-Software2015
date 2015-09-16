@@ -28,6 +28,8 @@
 		foreach ($dictionary as $key => $value) {
 			$result .= "<label class=\"am-radio\"><input type=\"radio\" name=\"radio1\" value=\"".$key."\" data-am-ucheck>".$key."&nbsp".$value."</label>";
 		}
+		$result .= "<label class=\"am-radio\"><input type=\"radio\" name=\"radio1\" value=\"other\" data-am-ucheck>other</label>";
+		$result .= "</div>";
 	}
 	echo $result;
 ?>
