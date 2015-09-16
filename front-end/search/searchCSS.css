@@ -68,8 +68,20 @@ div.search .typeExplanation{
 	background-color: #D4D4D4;
 	border-radius: 20px;
 }
+div.search .weightExplanation{
+	position: absolute;
+	display: none;
+	background-color: #D4D4D4;
+	border-radius: 20px;
+	z-index: 100
+}
 
 div.search .typeExplanation p{
+	margin-left: 20px;
+	margin-top: 15px;
+}
+div.search .weightExplanation p{
+	text-align: center;
 	margin-left: 20px;
 	margin-top: 15px;
 }

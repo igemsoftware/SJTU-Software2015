@@ -2,6 +2,20 @@ var weightList = ["7.5", "6.8", "11.9", "7.5","13.7", "6.7", "3.5", "2.7", "5.5"
 var finalWeight = []
 var typeExp = ["Pieces of DNA that form a functional unit (for example promoter, RBS, etc.)", "Collection set of parts with defined function. In simple terms, a set of complementary BioBrick parts put together forms a device."]
 var scoreType = ["Part_status: ", "Sample_Status: ", "Part_Results: ", "Star_rating: ", "Uses: ", "DNA_Status: ", "Qualitative_experience: ", "Group_favorite: ", "Del: ", "Confirmed_times: ", "Number_comments: ", "Ave_rating: "]
+var scoreExp = [
+	"The status of a part based on the completeness of its documentation and characterization",
+	"The status of the part's physical DNA (sample) in the Repository",
+	"whether a part is work",
+	"whether a part is given a star by the registry",
+	"The number of times the part is specified in composite parts in the Registry",
+	"whether the DNA sequence of a part is available",
+	"the performance of a part in qualitative experiment",
+	"whether a part is a group’s favorite",
+	"whether a part is deleted in the registry",
+	"Times of the sequence of the part being confirmed.",
+	"the times that a part is commented by users",
+	"the part’s average stars given by users"
+]
 var score = []
 var limitNumber = "45"
 
@@ -36,6 +50,20 @@ $(document).ready(function(){
 	$(".search").delegate(".searchButton label", "mouseout", function(){
 		$(".typeExplanation").hide()
 	})
+	//show the introduction of weights
+	$(".search").delegate(".weightConfig label", "mouseover", function(){
+		var id = $(this).parent().find("input").eq(0).attr("id")
+		$(".weightExplanation p").text(scoreExp[id])
+		$(".weightExplanation").width(300)
+		$(".weightExplanation").css("top", (parseInt(id / 2) + 1) * $(this).parent().parent().height() + 70)
+		$(".weightExplanation").css("left", (id % 2) * $(this).parent().parent().width())
+		$(".weightExplanation").show()
+	})
+	//hide the introduction of weights
+	$(".search").delegate(".weightConfig label", "mouseout", function(){
+		$(".weightExplanation").hide()
+	})
+
 	//set the postion of weight and score model
 	var width = $("#weightChoose").width()
 	$("#weightChoose, #scoreModel").css("margin-left", -1 * (width) / 2)
@@ -117,6 +145,7 @@ var endWeight = function(){
 	})
 	limitNumber = $(".limitInput").val()
 }
+
 //show the score model
 var showScore = function(){
 	var i = 0
