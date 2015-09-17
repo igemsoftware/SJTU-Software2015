@@ -44,7 +44,7 @@ var beginCompare = function(){
 				$(this).text("Optimal ID: Error")
 			})
 		}else{
-			bricks += $(this).val() + ','
+			bricks += $(this).val() + '    '
 		}
 	})
 	bricks = bricks.substring(0, bricks.length - 1)
