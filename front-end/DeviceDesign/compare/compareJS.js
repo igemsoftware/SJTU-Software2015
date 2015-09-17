@@ -64,7 +64,6 @@ var beginCompare = function(){
 		})
 
 		var acc = $(".accuracy select").val()
-		console.log(acc)
 		//pass data to back-end
 		$.post("compare.php", {
 			brick: bricks,
@@ -79,6 +78,8 @@ var beginCompare = function(){
 			$(".compare .optID").each(function(){
 				if (res[0] == "Uncomplete"){
 					opts[num] = "Uncomplete"
+				}else if (res[0] == "Wrong Sequence"){
+					opts[num] = "Wrong Sequence"
 				}
 				$(this).text("Optimal ID: " + opts[num])
 				num = num + 1

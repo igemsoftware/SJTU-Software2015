@@ -61,7 +61,13 @@ $(document).ready(function(){
 	})
 	//to next part - evaluate
 	$(".evaButton").click(function(){
-		var passData = $(".idHistory").text() + "|" + $(".functionHistory").text()
+		var idres = ""
+		for (var i = 0; i < advisedList.length; ++i){
+			if (advisedList[i] == true){
+				idres += advisedID[i] + '*'
+			}
+		}
+		var passData = "History id:" + idres + "|" + $(".functionHistory").text()
 		$(".passDataURL").attr("href","../compare/compare.html?data=" + passData);
 		window.onbeforeunload = function(){
 			return
