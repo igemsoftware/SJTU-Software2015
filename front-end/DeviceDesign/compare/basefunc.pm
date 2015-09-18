@@ -85,6 +85,7 @@ sub evaluate_score{
 						if($ref_2->{'tolscore'} eq ""){$ref_2->{'tolscore'} = 0;}
 						if($ref_2->{'unzore'} eq ""){$ref_2->{'unzore'} = 1;}
 						if($ref_2->{'tolnum'} eq ""){$ref_2->{'tolnum'} = 1;}
+						if($ref_2->{'unzore'} == 0){$ref_2->{'unzore'} = 1;$ref_2->{'tolscore'} = 0;}
 						$influence_part_score = $influence_part_score + 0.65 * $ref_2->{'tolscore'} / $ref_2->{'unzore'} + 0.35 * $ref_2->{'tolscore'} / $ref_2->{'tolnum'};
 						$count_influence = $count_influence + 1;
 					}
@@ -217,11 +218,11 @@ sub evaluate{
 	}else{
 		print "1\n";
 	}
-	
+
 	#if the device is ordered,print 1
 	#if the device is not ordered,print 0
 	if($order_flag == 1){
-		if($order == -100){
+		if($order < -50){
 			print "0\n";
 		}else{
 			print "1\n";
@@ -235,7 +236,7 @@ sub evaluate{
 	}
 	#print the score of device	
 	$total_score = $total_score + evaluate_score($device);
-	print "$total_score\n";
+	printf "%.2f\n",$total_score;
 	
 	
 	#evaluate
@@ -255,10 +256,10 @@ sub evaluate{
 	for($i = 0;$i <= $#part; $i = $i + 1){
 		if($desc{$part[$i]} == 1){
 			my $sth_3;
-			if($description =~ /,*/){
-				$sth_3 = $dbh->prepare("(SELECT Bri_id FROM brick where Btype like '%".$part_desc{$part[$i]}."%' order by Score desc)");
-			}else{
+			if($function[$i] =~ /\S+/){
 				$sth_3 = $dbh->prepare("(SELECT Bri_id FROM brick where Btype like '%".$part_desc{$part[$i]}."%' and ($keyword[$i]) order by Score desc)");
+			}else{
+				$sth_3 = $dbh->prepare("(SELECT Bri_id FROM brick where Btype like '%".$part_desc{$part[$i]}."%' order by Score desc)");
 			}
 			$sth_3->execute();
 			while(my $ref_3 = $sth_3->fetchrow_hashref()){
@@ -285,7 +286,12 @@ sub evaluate{
 			$j = 0;
 			%opt_score = ();
 			$count_best = 0;
-			my $sth_4 = $dbh->prepare("(SELECT Bri_id FROM brick where Btype like '%".$part_desc{$part[$i]}."%' order by Score desc)");
+			my $sth_4;
+			if($function[$i] =~ /\S+/){
+				$sth_4 = $dbh->prepare("(SELECT Bri_id FROM brick where Btype like '%".$part_desc{$part[$i]}."%' and ($keyword[$i]) order by Score desc)");
+			}else{
+				$sth_4 = $dbh->prepare("(SELECT Bri_id FROM brick where Btype like '%".$part_desc{$part[$i]}."%' order by Score desc)");
+			}
 			$sth_4->execute();
 			while(my $ref_4 = $sth_4->fetchrow_hashref()){
 				if($count_best <= $cutoff){
