@@ -44,14 +44,18 @@ var beginCompare = function(){
 				$(this).text("Optimal ID: Error")
 			})
 		}else{
-			bricks += $(this).val() + '    '
+			bricks += $(this).val() + ','
 		}
 	})
 	bricks = bricks.substring(0, bricks.length - 1)
 	//get the function
 	var functions = ""
 	$('.compare .functions').each(function(){
-		functions += $(this).val() + ','
+		if ($(this).val().indexOf(" ") != -1){
+			functions += $(this).val().replace(" ", "+") + ','
+		}else{
+			functions += $(this).val() + ','
+		}
 	})
 	functions = functions.substring(0, functions.length - 1)
 
