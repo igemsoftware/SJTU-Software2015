@@ -33,7 +33,7 @@ var upload = function(){
 	})
 	if (checked){
 		var result = ""
-		$(".upload :text").each(function(){
+		$(".upload .useful :text").each(function(){
 			if ($(this).val() == ""){
 				result += "--*"
 			}else{
@@ -45,6 +45,8 @@ var upload = function(){
 
 		$("#submitAlert .am-modal-footer").css("display", "none")
 		//pass data to the back-end
+		console.log(result)
+		console.log(type)
 		$.post("upload.php", {
 			data: result,
 			type: type,
