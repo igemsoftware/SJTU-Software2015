@@ -29,7 +29,6 @@ if($type eq "brick"){
 	}
 }elsif($type eq "devic"){
 	my $sth1 = $dbh->prepare("insert into combine values('".$uni[0]."','".$uni[1]."','".$uni[2]."','".$uni[3]."','".$uni[4]."','".$uni[5]."','".$uni[6]."',0,0,'".$uni[7]."','".$uni[8]."','".$uni[9]."','".$uni[10]."','".$uni[11]."',0,0,-1,'".$uni[12]."',0)");
-    $sth1->execute();
 	if($sth1->execute()){
 		print "OK\n";
 	}else{
